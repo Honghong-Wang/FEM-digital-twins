@@ -1,0 +1,46 @@
+# J2 Path-Dependent Baseline Robust Statistics
+
+Each row reports both mean/std and robust median/IQR statistics on the cyclic primary test path.
+All evaluated paths are stored in JSON: `monotonic, unload_reload, cyclic, nonproportional`.
+
+| Model | Metric | Mean | Std | Median | Q1 | Q3 | IQR | Min | Max | N |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| True differentiable J2 QP-HistoryGNO | Cyclic disp. rel. L2 | 133.171 | 100.682 | 117.103 | 66.4877 | 125.227 | 58.7397 | 33.9456 | 323.094 | 5 |
+| True differentiable J2 QP-HistoryGNO | Cyclic history rel. L2 | 1.08659 | 0.0899623 | 1.03952 | 1.02296 | 1.13258 | 0.109623 | 0.996472 | 1.2414 | 5 |
+| True differentiable J2 QP-HistoryGNO | History-increment rel. L2 | 1.09865 | 0.0689073 | 1.09247 | 1.06732 | 1.12352 | 0.056198 | 1.00004 | 1.20991 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP history rel. L2 | 1.56931 | 0.390355 | 1.44659 | 1.40432 | 1.91898 | 0.514658 | 0.992695 | 2.08394 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP history-inc. rel. L2 | 1.38132 | 0.204719 | 1.43533 | 1.37454 | 1.49605 | 0.121511 | 1.00008 | 1.6006 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP eqp rel. L2 | 1.54403 | 0.64071 | 1.05693 | 1.00745 | 2.29233 | 1.28488 | 1 | 2.36344 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP plastic-work rel. L2 | 1.51827 | 0.613244 | 1.04846 | 1.00605 | 2.22845 | 1.22239 | 1 | 2.30839 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP von-Mises rel. L2 | 0.715497 | 0.0689429 | 0.747498 | 0.649716 | 0.773997 | 0.124281 | 0.617443 | 0.788829 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP reversal scalar-inc. rel. L2 | 1.00536 | 0.138042 | 1.05384 | 1 | 1.06066 | 0.0606601 | 0.75 | 1.16231 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP reversal eqp-inc. rel. L2 | 1.09274 | 0.133297 | 1.00173 | 1 | 1.12186 | 0.12186 | 0.998092 | 1.34204 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP reversal work-inc. rel. L2 | 1.08649 | 0.125214 | 1.0015 | 1 | 1.11117 | 0.111175 | 0.998161 | 1.3216 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP reversal yield MAE | 0.483696 | 0.083357 | 0.509058 | 0.45471 | 0.525362 | 0.0706522 | 0.34058 | 0.588768 | 5 |
+| True differentiable J2 QP-HistoryGNO | QP inactive false plasticity | 0.271673 | 0.155093 | 0.264018 | 0.250255 | 0.403061 | 0.152807 | 0 | 0.441031 | 5 |
+| True differentiable J2 QP-HistoryGNO | True-J2 consistency rel. RMS | 0.363882 | 0.231638 | 0.317939 | 0.184811 | 0.383295 | 0.198484 | 0.140655 | 0.792713 | 5 |
+| True differentiable J2 QP-HistoryGNO | True-J2 active consistency rel. RMS | 2.49968e-08 | 1.49142e-08 | 2.66507e-08 | 2.01245e-08 | 3.35003e-08 | 1.33758e-08 | 0 | 4.47084e-08 | 5 |
+| True differentiable J2 QP-HistoryGNO | True-J2 negative dgamma | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| True differentiable J2 QP-HistoryGNO | True-J2 active QP frac. | 0.388251 | 0.283214 | 0.270663 | 0.246755 | 0.653005 | 0.40625 | 0 | 0.770833 | 5 |
+| True differentiable J2 QP-HistoryGNO | Eqp increment rel. L2 | 1.70704 | 0.839422 | 1.09392 | 1.07565 | 2.26783 | 1.19218 | 1 | 3.09779 | 5 |
+| True differentiable J2 QP-HistoryGNO | Plastic-work inc. rel. L2 | 1.67817 | 0.816116 | 1.08169 | 1.06686 | 2.19547 | 1.12861 | 1 | 3.04683 | 5 |
+| True differentiable J2 QP-HistoryGNO | Reversal hist-inc. rel. L2 | 1.09819 | 0.0537392 | 1.12497 | 1.08398 | 1.13067 | 0.0466942 | 1 | 1.15134 | 5 |
+| True differentiable J2 QP-HistoryGNO | Reversal yield-flag MAE | 0.396812 | 0.120211 | 0.418944 | 0.27459 | 0.425319 | 0.150729 | 0.269126 | 0.596084 | 5 |
+| True differentiable J2 QP-HistoryGNO | Yield-surface RMS | 0.0268563 | 0.0169071 | 0.0333418 | 0.0152961 | 0.0394684 | 0.0241723 | 0 | 0.0461752 | 5 |
+| True differentiable J2 QP-HistoryGNO | Plastic-work violation abs. | 9.05244e-09 | 1.25428e-08 | 1.10413e-09 | 6.96514e-10 | 1.05464e-08 | 9.84993e-09 | 0 | 3.29151e-08 | 5 |
+| True differentiable J2 QP-HistoryGNO | Plastic-work violation target-norm. | 0.000556699 | 0.000771343 | 6.79008e-05 | 4.28335e-05 | 0.000648575 | 0.000605742 | 0 | 0.00202418 | 5 |
+| True differentiable J2 QP-HistoryGNO | Plastic-work violation pred-norm. | 0.000242531 | 0.000239579 | 0.000144438 | 8.41655e-05 | 0.000306325 | 0.000222159 | 0 | 0.000677728 | 5 |
+| True differentiable J2 QP-HistoryGNO | FEM residual rel. RMS | 10.18 | 6.10393 | 8.51417 | 5.21857 | 16.2845 | 11.0659 | 2.64731 | 18.2356 | 5 |
+| True differentiable J2 QP-HistoryGNO | FEM energy rel. err. | 159.589 | 149.672 | 67.5485 | 34.3347 | 314.518 | 280.183 | 14.8441 | 366.699 | 5 |
+| True differentiable J2 QP-HistoryGNO | FEM tangent-solver rel. RMS | 333.796 | 251.534 | 289.528 | 167.322 | 317.483 | 150.162 | 86.3334 | 808.315 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton initial residual rel. RMS | 9.97258 | 5.90706 | 8.46288 | 5.16284 | 15.8553 | 10.6925 | 2.62945 | 17.7524 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton final residual rel. RMS | 0.000342831 | 0.000227423 | 0.000309169 | 0.000236776 | 0.000436395 | 0.000199619 | 2.21003e-05 | 0.000709713 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton residual ratio | 4.16534e-05 | 4.27521e-05 | 2.40653e-05 | 2.09021e-05 | 2.87015e-05 | 7.79944e-06 | 8.49622e-06 | 0.000126102 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton residual decrease frac. | 0.999958 | 4.27665e-05 | 0.999976 | 0.999971 | 0.999979 | 7.86781e-06 | 0.999874 | 0.999992 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton step decrease frac. | 0.999958 | 4.27665e-05 | 0.999976 | 0.999971 | 0.999979 | 7.86781e-06 | 0.999874 | 0.999992 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton step 1 residual ratio | 4.16534e-05 | 4.27521e-05 | 2.40653e-05 | 2.09021e-05 | 2.87015e-05 | 7.79944e-06 | 8.49622e-06 | 0.000126102 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton step 1 decrease frac. | 0.999958 | 4.27665e-05 | 0.999976 | 0.999971 | 0.999979 | 7.86781e-06 | 0.999874 | 0.999992 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton correction rel. norm | 2.31036 | 1.41827 | 2.63878 | 1.28732 | 3.71643 | 2.42911 | 0.128046 | 3.78124 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton accepted damping | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton convergence rate | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 5 |
+| True differentiable J2 QP-HistoryGNO | Newton failure rate | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |

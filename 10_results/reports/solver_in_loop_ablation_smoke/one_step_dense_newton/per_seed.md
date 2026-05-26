@@ -1,0 +1,8 @@
+# J2 Path-Dependent Baseline Per-Seed Appendix
+
+Per-seed cyclic-primary metrics for diagnosing stochastic training stability and outliers.
+All evaluated paths are stored in JSON: `monotonic, cyclic, nonproportional`.
+
+| Model | Seed | Train final loss | Cyclic disp. rel. L2 | Cyclic history rel. L2 | History-increment rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | QP eqp rel. L2 | QP plastic-work rel. L2 | QP von-Mises rel. L2 | QP reversal scalar-inc. rel. L2 | QP reversal eqp-inc. rel. L2 | QP reversal work-inc. rel. L2 | QP reversal yield MAE | QP inactive false plasticity | True-J2 consistency rel. RMS | True-J2 active consistency rel. RMS | True-J2 negative dgamma | True-J2 active QP frac. | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | FEM residual rel. RMS | FEM energy rel. err. | FEM tangent-solver rel. RMS |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| True differentiable J2 QP-HistoryGNO | 20260517 | 1.25737e+06 | 809.976 | 1.17644 | 1.00062 | 1.76502 | 1.00095 | 9.923 | 11.0406 | 1.08533 | 1.00003 | 6.75124 | 7.9571 | 0.490385 | 0.50006 | 3.21199e-07 | 3.21199e-07 | 0 | 1 | 13.1765 | 15.2635 | 1.00048 | 0.558824 | 1.89006e-07 | 0 | 0 | 0 | 36.5376 | 3377.31 | 2.10355 |

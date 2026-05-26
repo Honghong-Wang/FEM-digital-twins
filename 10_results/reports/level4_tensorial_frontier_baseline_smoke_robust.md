@@ -1,0 +1,50 @@
+# J2 Path-Dependent Baseline Robust Statistics
+
+Each row reports both mean/std and robust median/IQR statistics on the cyclic test path.
+
+| Model | Metric | Mean | Std | Median | Q1 | Q3 | IQR | Min | Max | N |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Thermo-hard HistoryGNO | Cyclic disp. rel. L2 | 2.67156 | 0 | 2.67156 | 2.67156 | 2.67156 | 0 | 2.67156 | 2.67156 | 1 |
+| Thermo-hard HistoryGNO | Cyclic history rel. L2 | 1.03978 | 0 | 1.03978 | 1.03978 | 1.03978 | 0 | 1.03978 | 1.03978 | 1 |
+| Thermo-hard HistoryGNO | History-increment rel. L2 | 1.00007 | 0 | 1.00007 | 1.00007 | 1.00007 | 0 | 1.00007 | 1.00007 | 1 |
+| Thermo-hard HistoryGNO | Eqp increment rel. L2 | 0.93037 | 0 | 0.93037 | 0.93037 | 0.93037 | 0 | 0.93037 | 0.93037 | 1 |
+| Thermo-hard HistoryGNO | Plastic-work inc. rel. L2 | 0.968545 | 0 | 0.968545 | 0.968545 | 0.968545 | 0 | 0.968545 | 0.968545 | 1 |
+| Thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 1.00332 | 0 | 1.00332 | 1.00332 | 1.00332 | 0 | 1.00332 | 1.00332 | 1 |
+| Thermo-hard HistoryGNO | Reversal yield-flag MAE | 0.951613 | 0 | 0.951613 | 0.951613 | 0.951613 | 0 | 0.951613 | 0.951613 | 1 |
+| Thermo-hard HistoryGNO | Yield-surface RMS | 4.42289e-07 | 0 | 4.42289e-07 | 4.42289e-07 | 4.42289e-07 | 0 | 4.42289e-07 | 4.42289e-07 | 1 |
+| Thermo-hard HistoryGNO | Plastic-work violation abs. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| Thermo-hard HistoryGNO | Plastic-work violation target-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| Thermo-hard HistoryGNO | Plastic-work violation pred-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| HANO-style history-aware NO | Cyclic disp. rel. L2 | 2.8113 | 0 | 2.8113 | 2.8113 | 2.8113 | 0 | 2.8113 | 2.8113 | 1 |
+| HANO-style history-aware NO | Cyclic history rel. L2 | 4.98488 | 0 | 4.98488 | 4.98488 | 4.98488 | 0 | 4.98488 | 4.98488 | 1 |
+| HANO-style history-aware NO | History-increment rel. L2 | 1.34003 | 0 | 1.34003 | 1.34003 | 1.34003 | 0 | 1.34003 | 1.34003 | 1 |
+| HANO-style history-aware NO | Eqp increment rel. L2 | 14.0889 | 0 | 14.0889 | 14.0889 | 14.0889 | 0 | 14.0889 | 14.0889 | 1 |
+| HANO-style history-aware NO | Plastic-work inc. rel. L2 | 29.2423 | 0 | 29.2423 | 29.2423 | 29.2423 | 0 | 29.2423 | 29.2423 | 1 |
+| HANO-style history-aware NO | Reversal hist-inc. rel. L2 | 1.25962 | 0 | 1.25962 | 1.25962 | 1.25962 | 0 | 1.25962 | 1.25962 | 1 |
+| HANO-style history-aware NO | Reversal yield-flag MAE | 0.573134 | 0 | 0.573134 | 0.573134 | 0.573134 | 0 | 0.573134 | 0.573134 | 1 |
+| HANO-style history-aware NO | Yield-surface RMS | 0.540701 | 0 | 0.540701 | 0.540701 | 0.540701 | 0 | 0.540701 | 0.540701 | 1 |
+| HANO-style history-aware NO | Plastic-work violation abs. | 2.2422 | 0 | 2.2422 | 2.2422 | 2.2422 | 0 | 2.2422 | 2.2422 | 1 |
+| HANO-style history-aware NO | Plastic-work violation target-norm. | 185.93 | 0 | 185.93 | 185.93 | 185.93 | 0 | 185.93 | 185.93 | 1 |
+| HANO-style history-aware NO | Plastic-work violation pred-norm. | 6.31915 | 0 | 6.31915 | 6.31915 | 6.31915 | 0 | 6.31915 | 6.31915 | 1 |
+| INCDE-style controlled recurrent operator | Cyclic disp. rel. L2 | 290.972 | 0 | 290.972 | 290.972 | 290.972 | 0 | 290.972 | 290.972 | 1 |
+| INCDE-style controlled recurrent operator | Cyclic history rel. L2 | 4.45589 | 0 | 4.45589 | 4.45589 | 4.45589 | 0 | 4.45589 | 4.45589 | 1 |
+| INCDE-style controlled recurrent operator | History-increment rel. L2 | 1.03286 | 0 | 1.03286 | 1.03286 | 1.03286 | 0 | 1.03286 | 1.03286 | 1 |
+| INCDE-style controlled recurrent operator | Eqp increment rel. L2 | 4.97545 | 0 | 4.97545 | 4.97545 | 4.97545 | 0 | 4.97545 | 4.97545 | 1 |
+| INCDE-style controlled recurrent operator | Plastic-work inc. rel. L2 | 2.02409 | 0 | 2.02409 | 2.02409 | 2.02409 | 0 | 2.02409 | 2.02409 | 1 |
+| INCDE-style controlled recurrent operator | Reversal hist-inc. rel. L2 | 1.02761 | 0 | 1.02761 | 1.02761 | 1.02761 | 0 | 1.02761 | 1.02761 | 1 |
+| INCDE-style controlled recurrent operator | Reversal yield-flag MAE | 0.349958 | 0 | 0.349958 | 0.349958 | 0.349958 | 0 | 0.349958 | 0.349958 | 1 |
+| INCDE-style controlled recurrent operator | Yield-surface RMS | 0.402116 | 0 | 0.402116 | 0.402116 | 0.402116 | 0 | 0.402116 | 0.402116 | 1 |
+| INCDE-style controlled recurrent operator | Plastic-work violation abs. | 0.344288 | 0 | 0.344288 | 0.344288 | 0.344288 | 0 | 0.344288 | 0.344288 | 1 |
+| INCDE-style controlled recurrent operator | Plastic-work violation target-norm. | 28.4897 | 0 | 28.4897 | 28.4897 | 28.4897 | 0 | 28.4897 | 28.4897 | 1 |
+| INCDE-style controlled recurrent operator | Plastic-work violation pred-norm. | 13.4656 | 0 | 13.4656 | 13.4656 | 13.4656 | 0 | 13.4656 | 13.4656 | 1 |
+| TINN-style hard-thermo operator | Cyclic disp. rel. L2 | 290.972 | 0 | 290.972 | 290.972 | 290.972 | 0 | 290.972 | 290.972 | 1 |
+| TINN-style hard-thermo operator | Cyclic history rel. L2 | 1.04521 | 0 | 1.04521 | 1.04521 | 1.04521 | 0 | 1.04521 | 1.04521 | 1 |
+| TINN-style hard-thermo operator | History-increment rel. L2 | 1.00118 | 0 | 1.00118 | 1.00118 | 1.00118 | 0 | 1.00118 | 1.00118 | 1 |
+| TINN-style hard-thermo operator | Eqp increment rel. L2 | 0.946025 | 0 | 0.946025 | 0.946025 | 0.946025 | 0 | 0.946025 | 0.946025 | 1 |
+| TINN-style hard-thermo operator | Plastic-work inc. rel. L2 | 1.01887 | 0 | 1.01887 | 1.01887 | 1.01887 | 0 | 1.01887 | 1.01887 | 1 |
+| TINN-style hard-thermo operator | Reversal hist-inc. rel. L2 | 1.0078 | 0 | 1.0078 | 1.0078 | 1.0078 | 0 | 1.0078 | 1.0078 | 1 |
+| TINN-style hard-thermo operator | Reversal yield-flag MAE | 0.951613 | 0 | 0.951613 | 0.951613 | 0.951613 | 0 | 0.951613 | 0.951613 | 1 |
+| TINN-style hard-thermo operator | Yield-surface RMS | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| TINN-style hard-thermo operator | Plastic-work violation abs. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| TINN-style hard-thermo operator | Plastic-work violation target-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| TINN-style hard-thermo operator | Plastic-work violation pred-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |

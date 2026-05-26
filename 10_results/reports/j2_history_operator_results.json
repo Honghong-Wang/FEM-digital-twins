@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "model": "HistoryGraphOperator",
+    "epochs": 1,
+    "batch_size": 1,
+    "learning_rate": 0.001,
+    "teacher_forcing_ratio": 0.25,
+    "train_samples": 1,
+    "eval_samples": 1,
+    "load_steps": 5,
+    "load_path": "cyclic"
+  },
+  "train_loss_history": [
+    45979.72265625
+  ],
+  "test": {
+    "total_loss": 3143.746337890625,
+    "displacement_loss": 3086.177490234375,
+    "history_loss": 57.553104400634766,
+    "predicted_eq_plastic_strain_monotonic_violation": 0.0,
+    "predicted_plastic_work_monotonic_violation": 0.0,
+    "predicted_negative_plastic_multiplier_violation": 0.0,
+    "predicted_yield_flag_bounds_violation": 0.0,
+    "predicted_max_eq_plastic_strain": 4.565995216369629,
+    "predicted_mean_plastic_work": 1.4847737550735474
+  },
+  "ood_material": {
+    "total_loss": 717.47119140625,
+    "displacement_loss": 684.0397338867188,
+    "history_loss": 33.4279899597168,
+    "predicted_eq_plastic_strain_monotonic_violation": 0.0,
+    "predicted_plastic_work_monotonic_violation": 0.0,
+    "predicted_negative_plastic_multiplier_violation": 0.0,
+    "predicted_yield_flag_bounds_violation": 0.0,
+    "predicted_max_eq_plastic_strain": 4.721717357635498,
+    "predicted_mean_plastic_work": 1.4439029693603516
+  },
+  "ood_loading": {
+    "total_loss": 86.3316879272461,
+    "displacement_loss": 70.83627319335938,
+    "history_loss": 15.485151290893555,
+    "predicted_eq_plastic_strain_monotonic_violation": 0.0,
+    "predicted_plastic_work_monotonic_violation": 0.0,
+    "predicted_negative_plastic_multiplier_violation": 0.0,
+    "predicted_yield_flag_bounds_violation": 0.0,
+    "predicted_max_eq_plastic_strain": 4.608051776885986,
+    "predicted_mean_plastic_work": 1.4629768133163452
+  }
+}

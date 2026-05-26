@@ -1,0 +1,6 @@
+Model,Seed,Train final loss,Cyclic disp. rel. L2,Cyclic history rel. L2,History-increment rel. L2,Eqp increment rel. L2,Plastic-work inc. rel. L2,Reversal hist-inc. rel. L2,Reversal yield-flag MAE,Yield-surface RMS,Plastic-work violation abs.,Plastic-work violation target-norm.,Plastic-work violation pred-norm.,HANO strain rel. L2,HANO stress rel. L2,FEM residual rel. RMS,FEM energy rel. err.
+Faithful HANO strain-stress spectral-window NO,20260517,20923.8,138.936,1.48317,1.00347,191.352,335.529,1.0064,0.278867,0.0949611,0.0022015,199.579,0.594348,13.8046,9.5555,615.853,88181.6
+Faithful HANO strain-stress spectral-window NO,20260518,9133.16,137.024,3.02872,1.013,330.517,149.313,1.00559,0.266149,0.14567,0.0115792,1049.72,7.01804,92.2702,7.74921,2185.92,1.03782e+06
+Faithful HANO strain-stress spectral-window NO,20260519,18765.2,148.442,1.94085,1.03056,959.165,1025.51,1.03837,0.631982,0.667168,0.0885254,8025.33,7.82368,52.6761,18.7013,1308.34,661907
+Faithful HANO strain-stress spectral-window NO,20260520,56030.9,322.958,1.98412,1.02232,899.717,158.766,1.03355,0.243647,0.00728717,0.0840829,7622.6,47.9323,59.067,15.6342,1930.7,1.26664e+06
+Faithful HANO strain-stress spectral-window NO,20260521,6894.35,119.792,1.28223,1.00427,323.201,1052,1.00924,0.583197,0.421723,0.00383842,347.975,0.330692,84.4778,12.68,2738.7,2.90121e+06

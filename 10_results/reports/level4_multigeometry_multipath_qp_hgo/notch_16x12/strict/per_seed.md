@@ -1,0 +1,11 @@
+# J2 Path-Dependent Baseline Per-Seed Appendix
+
+Per-seed cyclic-path metrics for diagnosing stochastic training stability and outliers.
+
+| Model | Seed | Train final loss | Cyclic disp. rel. L2 | Cyclic history rel. L2 | History-increment rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | FEM residual rel. RMS | FEM energy rel. err. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-thermo-hard HistoryGNO | 20260517 | 652.793 | 51.1074 | 2.20588 | 0.999994 | 3.39124 | 1.00007 | 10.0948 | 10.5131 | 0.999992 | 0.863404 | 5.61758e-06 | 0 | 0 | 0 | 90.6429 | 4285.75 |
+| QP-thermo-hard HistoryGNO | 20260518 | 5315.44 | 109.937 | 2.17686 | 0.999009 | 3.35025 | 0.999106 | 6.22536 | 6.28994 | 0.997802 | 0.856559 | 3.89063e-05 | 0 | 0 | 0 | 37.1312 | 359.37 |
+| QP-thermo-hard HistoryGNO | 20260519 | 2581.54 | 77.8714 | 2.20856 | 1.00009 | 3.39523 | 1.0002 | 13.4122 | 14.1985 | 1.00016 | 0.863833 | 7.0568e-08 | 0 | 0 | 0 | 202.118 | 17522.1 |
+| QP-thermo-hard HistoryGNO | 20260520 | 3195.91 | 62.297 | 2.20716 | 1.00002 | 3.39302 | 1.00015 | 10.1737 | 10.5784 | 1.00008 | 0.863681 | 3.02878e-06 | 0 | 0 | 0 | 369.419 | 43741.9 |
+| QP-thermo-hard HistoryGNO | 20260521 | 3854.44 | 76.2341 | 2.21176 | 1.00023 | 3.3995 | 1.00051 | 27.227 | 31.1405 | 1.00038 | 0.863834 | 5.95461e-08 | 0 | 0 | 0 | 162.105 | 7539.72 |

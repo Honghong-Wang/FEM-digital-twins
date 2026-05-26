@@ -1,0 +1,43 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-path metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.991439 | 1.01572 | 1 | 20260518=1.10226 | 1.02219 | 0.040099 | 1.00116 | 0.00607073 | 1.00038 | 1.10226 |
+| Thermo-hard HistoryGNO | Yield-surface RMS | 1.5*IQR | -0.000461785 | 0.000770143 | 1 | 20260518=0.00102615 | 0.00026698 | 0.000397883 | 2.22616e-07 | 0.000307982 | 1.72901e-07 | 0.00102615 |
+| HistoryGNO data-only | Cyclic history rel. L2 | 1.5*IQR | 6.20824 | 7.332 | 1 | 20260519=9.35515 | 7.18629 | 1.11109 | 6.82589 | 0.280939 | 6.21016 | 9.35515 |
+| HistoryGNO data-only | History-increment rel. L2 | 1.5*IQR | 2.27676 | 2.39989 | 2 | 20260517=2.20908; 20260519=3.19806 | 2.4857 | 0.359933 | 2.34474 | 0.0307825 | 2.20908 | 3.19806 |
+| HistoryGNO data-only | Plastic-work inc. rel. L2 | 1.5*IQR | 22522.4 | 30178.6 | 2 | 20260517=9768.66; 20260519=30548.6 | 23768.8 | 7229.96 | 25825.6 | 1914.03 | 9768.66 | 30548.6 |
+| HistoryGNO data-only | Reversal hist-inc. rel. L2 | 1.5*IQR | 4.08615 | 4.38378 | 2 | 20260517=3.96667; 20260519=6.02014 | 4.54274 | 0.74679 | 4.25695 | 0.0744066 | 3.96667 | 6.02014 |
+| HistoryGNO data-only | Plastic-work violation pred-norm. | 1.5*IQR | -6.81929 | 17.673 | 1 | 20260517=20.0692 | 6.98258 | 7.00064 | 2.4673 | 6.12306 | 1.52271 | 20.0692 |
+| HANO-window recent-history NO | History-increment rel. L2 | 1.5*IQR | 0.993241 | 1.04226 | 1 | 20260521=1.12253 | 1.03541 | 0.0442615 | 1.01859 | 0.012254 | 1.00042 | 1.12253 |
+| HANO-window recent-history NO | Eqp increment rel. L2 | 1.5*IQR | 55.9623 | 674.57 | 1 | 20260521=1007.3 | 440.525 | 306.046 | 368.707 | 154.652 | 96.0843 | 1007.3 |
+| HANO-window recent-history NO | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.962848 | 1.16585 | 1 | 20260521=1.40863 | 1.12135 | 0.146544 | 1.06675 | 0.0507506 | 1.0027 | 1.40863 |
+| HANO-window recent-history NO | Yield-surface RMS | 1.5*IQR | -0.270057 | 0.715523 | 1 | 20260517=0.830013 | 0.305838 | 0.284937 | 0.233974 | 0.246395 | 0.0197354 | 0.830013 |
+| HANO-window recent-history NO | Plastic-work violation abs. | 1.5*IQR | -0.0276151 | 0.141077 | 1 | 20260521=0.399673 | 0.11165 | 0.146033 | 0.0434665 | 0.042173 | 0.00165055 | 0.399673 |
+| HANO-window recent-history NO | Plastic-work violation target-norm. | 1.5*IQR | -1030.85 | 5266.28 | 1 | 20260521=14919.4 | 4167.81 | 5451.26 | 1622.56 | 1574.28 | 61.6135 | 14919.4 |
+| INCDE Euler neural CDE | Cyclic disp. rel. L2 | 1.5*IQR | 245.905 | 384.849 | 1 | 20260520=827.479 | 407.577 | 211.94 | 328.165 | 34.7362 | 251.489 | 827.479 |
+| INCDE Euler neural CDE | Cyclic history rel. L2 | 1.5*IQR | 0.72607 | 1.01194 | 1 | 20260518=1.03271 | 0.894147 | 0.0746604 | 0.871848 | 0.0714684 | 0.828157 | 1.03271 |
+| INCDE Euler neural CDE | History-increment rel. L2 | 1.5*IQR | 0.997934 | 1.00781 | 1 | 20260520=1.00812 | 1.00318 | 0.00283024 | 1.00225 | 0.00246859 | 0.999778 | 1.00812 |
+| INCDE Euler neural CDE | Yield-surface RMS | 1.5*IQR | 0.0656903 | 0.209013 | 1 | 20260520=0.213078 | 0.142503 | 0.0406479 | 0.131977 | 0.0358307 | 0.092757 | 0.213078 |
+| Thermo-projected neural CDE | Cyclic disp. rel. L2 | 1.5*IQR | 244.329 | 385.873 | 1 | 20260520=827.478 | 407.46 | 211.999 | 328.111 | 35.3862 | 251.509 | 827.478 |
+| Thermo-projected neural CDE | Cyclic history rel. L2 | 1.5*IQR | 0.989956 | 0.997282 | 1 | 20260519=0.956903 | 0.986803 | 0.0149959 | 0.993609 | 0.00183129 | 0.956903 | 0.996263 |
+| Thermo-projected neural CDE | History-increment rel. L2 | 1.5*IQR | 0.999887 | 1.00019 | 1 | 20260519=1.16234 | 1.03247 | 0.0649324 | 1.00001 | 7.52807e-05 | 0.99993 | 1.16234 |
+| Thermo-projected neural CDE | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.999539 | 1.0008 | 1 | 20260519=1.37185 | 1.07444 | 0.148709 | 1.00015 | 0.000316381 | 0.999841 | 1.37185 |
+| Thermo-projected neural CDE | Reversal yield-flag MAE | 1.5*IQR | 0.543939 | 0.544055 | 1 | 20260519=0.532905 | 0.541784 | 0.00443951 | 0.544011 | 2.89083e-05 | 0.532905 | 0.544012 |
+| Thermo-projected neural CDE | Yield-surface RMS | 1.5*IQR | -0.000215462 | 0.000361173 | 1 | 20260519=0.00571454 | 0.00117328 | 0.0022713 | 6.07297e-06 | 0.000144159 | 6.80166e-08 | 0.00571454 |
+| Non-recurrent GNO sequence | Cyclic disp. rel. L2 | 1.5*IQR | 19.4428 | 184.089 | 1 | 20260521=217.657 | 111.503 | 57.4907 | 83.3899 | 41.1616 | 52.9359 | 217.657 |
+| Non-recurrent GNO sequence | Plastic-work inc. rel. L2 | 1.5*IQR | -1.18518 | 16.5443 | 1 | 20260521=20.0014 | 9.02363 | 6.26289 | 8.60778 | 4.43238 | 1.14978 | 20.0014 |
+| Non-recurrent GNO sequence | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.999533 | 1.00014 | 1 | 20260521=1.00029 | 0.999871 | 0.000232512 | 0.999814 | 0.000151277 | 0.999586 | 1.00029 |
+| Non-recurrent GNO sequence | Reversal yield-flag MAE | 1.5*IQR | 0.515106 | 0.532877 | 1 | 20260519=0.47918 | 0.515794 | 0.0183823 | 0.525526 | 0.00444281 | 0.47918 | 0.52628 |
+| Non-recurrent GNO sequence | Yield-surface RMS | 1.5*IQR | 0.0609622 | 0.24232 | 1 | 20260519=0.512535 | 0.209103 | 0.155198 | 0.153327 | 0.0453394 | 0.0763687 | 0.512535 |
+| Non-recurrent GNO sequence | Plastic-work violation pred-norm. | 1.5*IQR | 0.779528 | 1.36745 | 2 | 20260518=0; 20260519=1.96165 | 1.02607 | 0.623448 | 1.02171 | 0.146981 | 0 | 1.96165 |
+| Static DeepONet sequence | Cyclic disp. rel. L2 | 1.5*IQR | 8.50613 | 12.5313 | 1 | 20260517=15.8332 | 11.345 | 2.28308 | 10.0425 | 1.0063 | 9.81183 | 15.8332 |
+| Static DeepONet sequence | History-increment rel. L2 | 1.5*IQR | 0.999924 | 1.00007 | 1 | 20260518=1.00012 | 1.00002 | 5.35115e-05 | 1 | 3.618e-05 | 0.999968 | 1.00012 |
+| Static DeepONet sequence | Eqp increment rel. L2 | 1.5*IQR | 0.643873 | 1.54555 | 1 | 20260517=5.25969 | 1.88476 | 1.68992 | 1.03487 | 0.22542 | 0.939814 | 5.25969 |
+| Static DeepONet sequence | Plastic-work inc. rel. L2 | 1.5*IQR | -4.44875 | 9.96987 | 1 | 20260518=16.1544 | 4.86727 | 5.798 | 1.71311 | 3.60466 | 0.947737 | 16.1544 |
+| Static DeepONet sequence | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.999686 | 1.00035 | 1 | 20260518=0.999492 | 0.999963 | 0.00025144 | 1.00007 | 0.000165164 | 0.999492 | 1.00021 |
+| Static DeepONet sequence | Reversal yield-flag MAE | 1.5*IQR | 0.520905 | 0.534277 | 1 | 20260518=0.517262 | 0.526452 | 0.00519416 | 0.526877 | 0.00334316 | 0.517262 | 0.532939 |
+| Static DeepONet sequence | Plastic-work violation abs. | 1.5*IQR | -0.000164834 | 0.000274723 | 1 | 20260518=0.000423887 | 0.000113889 | 0.000160109 | 3.56689e-05 | 0.000109889 | 0 | 0.000423887 |
+| Static DeepONet sequence | Plastic-work violation target-norm. | 1.5*IQR | -6.1531 | 10.2552 | 1 | 20260518=15.8233 | 4.25138 | 5.97673 | 1.33149 | 4.10207 | 0 | 15.8233 |

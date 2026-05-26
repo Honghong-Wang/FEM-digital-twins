@@ -1,0 +1,11 @@
+# J2 Path-Dependent Baseline Pathwise Table
+
+Data root: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\multi_hole_16x12`
+Train load paths: `monotonic`
+Evaluated paths: `monotonic, cyclic`
+Protocol: 50 epochs, 5 seeds
+
+| Model | Load path | Seeds | Disp. rel. L2 | History rel. L2 | History-increment rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | QP eqp rel. L2 | QP plastic-work rel. L2 | QP von-Mises rel. L2 | QP reversal scalar-inc. rel. L2 | QP reversal eqp-inc. rel. L2 | QP reversal work-inc. rel. L2 | QP reversal yield MAE | QP inactive false plasticity | True-J2 consistency rel. RMS | True-J2 active consistency rel. RMS | True-J2 negative dgamma | True-J2 active QP frac. | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | HANO strain rel. L2 | HANO stress rel. L2 | FEM residual rel. RMS | FEM energy rel. err. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Faithful HANO strain-stress spectral-window NO | monotonic | 5 | 136.3820 +/- 48.4573 | 1.8019 +/- 0.5946 | 1.0325 +/- 0.0194 |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 327.3657 +/- 126.0127 | 224.2638 +/- 173.6479 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.5204 +/- 0.2793 | 0.0056 +/- 0.0041 | 755.3661 +/- 544.8055 | 8.0386 +/- 8.4895 | 44.0907 +/- 34.8428 | 19.6409 +/- 5.2021 | 1138.2335 +/- 1179.6899 | 4526.6127 +/- 7482.5011 |
+| Faithful HANO strain-stress spectral-window NO | cyclic | 5 | 163.4487 +/- 58.1426 | 1.6503 +/- 0.5389 | 1.0091 +/- 0.0050 |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 107.3237 +/- 41.4021 | 73.6309 +/- 57.1911 | 1.0293 +/- 0.0220 | 0.5276 +/- 0.0916 | 0.5204 +/- 0.2793 | 0.0056 +/- 0.0041 | 248.8066 +/- 179.4500 | 8.0385 +/- 8.4893 | 58.2590 +/- 46.0502 | 17.9363 +/- 4.7262 | 1187.7285 +/- 1232.2860 | 1497653.0922 +/- 2429437.0177 |

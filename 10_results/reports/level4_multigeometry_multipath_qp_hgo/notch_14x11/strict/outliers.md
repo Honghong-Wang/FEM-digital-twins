@@ -1,0 +1,17 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-path metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-thermo-hard HistoryGNO | Cyclic history rel. L2 | 1.5*IQR | 1.42744 | 1.43087 | 2 | 20260520=1.42019; 20260521=1.43122 | 1.42782 | 0.00390089 | 1.42938 | 0.0008564 | 1.42019 | 1.43122 |
+| QP-thermo-hard HistoryGNO | History-increment rel. L2 | 1.5*IQR | 0.999967 | 1.00018 | 2 | 20260520=0.999676; 20260521=1.00019 | 1.00002 | 0.000177273 | 1.00008 | 5.20945e-05 | 0.999676 | 1.00019 |
+| QP-thermo-hard HistoryGNO | QP history rel. L2 | 1.5*IQR | 2.29833 | 2.30283 | 2 | 20260520=2.28546; 20260521=2.30313 | 2.29812 | 0.00641575 | 2.30088 | 0.00112414 | 2.28546 | 2.30313 |
+| QP-thermo-hard HistoryGNO | QP history-inc. rel. L2 | 1.5*IQR | 0.999924 | 1.00036 | 1 | 20260521=1.0004 | 1.00016 | 0.000146353 | 1.00016 | 0.00010848 | 0.999951 | 1.0004 |
+| QP-thermo-hard HistoryGNO | Eqp increment rel. L2 | 1.5*IQR | -1.61193 | 15.9643 | 1 | 20260521=16.4625 | 8.65536 | 4.34499 | 8.18794 | 4.39406 | 4.27405 | 16.4625 |
+| QP-thermo-hard HistoryGNO | Plastic-work inc. rel. L2 | 1.5*IQR | -2.3013 | 17.1899 | 1 | 20260521=18.5262 | 9.24946 | 5.0824 | 8.49612 | 4.87281 | 4.3363 | 18.5262 |
+| QP-thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.999963 | 1.00014 | 2 | 20260520=0.998509; 20260521=1.00016 | 0.999766 | 0.000630056 | 1.00006 | 4.43459e-05 | 0.998509 | 1.00016 |
+| QP-thermo-hard HistoryGNO | Reversal yield-flag MAE | 1.5*IQR | 0.730863 | 0.730881 | 1 | 20260520=0.729411 | 0.730581 | 0.000584688 | 0.730874 | 4.41074e-06 | 0.729411 | 0.730874 |
+| QP-thermo-hard HistoryGNO | Yield-surface RMS | 1.5*IQR | -1.35597e-07 | 3.86903e-07 | 1 | 20260520=1.93988e-05 | 3.95382e-06 | 7.72267e-06 | 6.18319e-08 | 1.30625e-07 | 5.71379e-08 | 1.93988e-05 |
+| QP-thermo-hard HistoryGNO | FEM residual rel. RMS | 1.5*IQR | 7.23652 | 90.5535 | 1 | 20260520=198.171 | 73.5432 | 63.3623 | 47.5524 | 20.8292 | 24.2032 | 198.171 |
+| QP-thermo-hard HistoryGNO | FEM energy rel. err. | 1.5*IQR | -3803.29 | 9185.2 | 1 | 20260520=16322.5 | 4773.63 | 5943.84 | 2097.57 | 3247.12 | 66.1213 | 16322.5 |

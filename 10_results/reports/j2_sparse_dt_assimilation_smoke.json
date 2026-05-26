@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "model_kind": "thermo_hard_hgo",
+    "train_load_paths": [
+      "monotonic"
+    ],
+    "eval_load_paths": [
+      "cyclic"
+    ],
+    "epochs": 1,
+    "train_samples": 1,
+    "eval_samples": 1,
+    "num_sensors": 2,
+    "num_observation_steps": 2,
+    "observation_noise_std": 0.001,
+    "inversion_steps": 5,
+    "num_posterior_chains": 2,
+    "mesh_kind": "structured",
+    "grid_shape": [
+      3,
+      3
+    ],
+    "data_root": "05_data_pipeline\\processed\\j2_sparse_dt_assimilation_smoke"
+  },
+  "train_loss_history": [
+    951.4755249023438
+  ],
+  "evaluations": {
+    "cyclic": {
+      "field_coverage_95": 0.0,
+      "field_crps": 0.12837059795856476,
+      "field_ece": 0.7874999642372131,
+      "field_interval_width_95": 4.539335307640613e-08,
+      "field_sharpness": 2.2696676538203064e-08,
+      "history_coverage_95": 0.13333334028720856,
+      "history_ece": 0.6541666388511658,
+      "history_final_relative_l2": 32.30060958862305,
+      "history_posterior_std": 8.787605452198477e-07,
+      "history_relative_l2": 0.7140741944313049,
+      "inversion_final_loss": 21986.62890625,
+      "material_parameter_coverage_95": 0.0,
+      "material_parameter_ece": 0.7874999642372131,
+      "material_parameter_mae": 0.6959035396575928,
+      "material_parameter_posterior_std": 6.208817349140361e-10,
+      "material_parameter_relative_l2": 0.03278075531125069,
+      "rollout_displacement_relative_l2": 20.71343994140625,
+      "sparse_observation_relative_l2": 188.37261962890625,
+      "sparse_observation_rmse": 0.148582324385643
+    }
+  }
+}

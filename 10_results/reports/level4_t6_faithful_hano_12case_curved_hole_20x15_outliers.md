@@ -1,0 +1,14 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-primary metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+All evaluated paths are stored in JSON: `monotonic, cyclic`.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Faithful HANO strain-stress spectral-window NO | Cyclic disp. rel. L2 | 1.5*IQR | 31.8426 | 240.459 | 1 | 20260520=250.087 | 148.893 | 55.3238 | 127.045 | 52.1542 | 95.0297 | 250.087 |
+| Faithful HANO strain-stress spectral-window NO | Eqp increment rel. L2 | 1.5*IQR | 58.7373 | 242.547 | 2 | 20260517=58.6506; 20260519=286.551 | 161.079 | 74.1798 | 158.908 | 45.9524 | 58.6506 | 286.551 |
+| Faithful HANO strain-stress spectral-window NO | Reversal hist-inc. rel. L2 | 1.5*IQR | 1.00989 | 1.03062 | 1 | 20260521=1.06618 | 1.02866 | 0.0190132 | 1.02217 | 0.0051837 | 1.01442 | 1.06618 |
+| Faithful HANO strain-stress spectral-window NO | Yield-surface RMS | 1.5*IQR | -0.00352605 | 0.727306 | 1 | 20260519=0.868216 | 0.38692 | 0.280211 | 0.329447 | 0.182708 | 0.0131581 | 0.868216 |
+| Faithful HANO strain-stress spectral-window NO | Plastic-work violation abs. | 1.5*IQR | -0.00398375 | 0.0153547 | 1 | 20260519=0.0196747 | 0.00789357 | 0.00645541 | 0.00745199 | 0.00483462 | 0.000970177 | 0.0196747 |
+| Faithful HANO strain-stress spectral-window NO | Plastic-work violation target-norm. | 1.5*IQR | -274.13 | 1056.59 | 1 | 20260519=1353.86 | 543.173 | 444.21 | 512.787 | 332.68 | 66.7599 | 1353.86 |
+| Faithful HANO strain-stress spectral-window NO | HANO strain rel. L2 | 1.5*IQR | 53.5466 | 121.684 | 2 | 20260517=14.8084; 20260518=144.413 | 83.2328 | 41.4988 | 81.712 | 17.0344 | 14.8084 | 144.413 |

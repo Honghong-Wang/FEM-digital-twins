@@ -1,0 +1,16 @@
+Model,Metric,Mean,Std,Median,Q1,Q3,IQR,Min,Max,N
+QP-thermo-hard HistoryGNO,Cyclic disp. rel. L2,69.1982,31.3754,63.9139,38.9915,99.3968,60.4053,32.7565,110.933,5
+QP-thermo-hard HistoryGNO,Cyclic history rel. L2,1.45658,0.162496,1.53772,1.53688,1.53792,0.00104332,1.13159,1.53877,5
+QP-thermo-hard HistoryGNO,History-increment rel. L2,1.00888,0.017644,1.00006,1.00005,1.00011,5.68628e-05,1.00001,1.04417,5
+QP-thermo-hard HistoryGNO,QP history rel. L2,2.35215,0.169654,2.43685,2.43574,2.43715,0.00140929,2.01284,2.43816,5
+QP-thermo-hard HistoryGNO,QP history-inc. rel. L2,1.0365,0.0727679,1.00013,1.00011,1.00022,0.000115991,1.00003,1.18204,5
+QP-thermo-hard HistoryGNO,Eqp increment rel. L2,8.64245,4.02976,8.33728,5.1359,9.60946,4.47356,4.4157,15.7139,5
+QP-thermo-hard HistoryGNO,Plastic-work inc. rel. L2,8.89163,4.34905,8.46846,5.10536,9.83667,4.73131,4.44785,16.5998,5
+QP-thermo-hard HistoryGNO,Reversal hist-inc. rel. L2,0.999986,9.16022e-05,1.00004,0.999922,1.00005,0.00012356,0.999839,1.00009,5
+QP-thermo-hard HistoryGNO,Reversal yield-flag MAE,0.727856,0.0701232,0.762942,0.762839,0.762945,0.000106096,0.58761,0.762945,5
+QP-thermo-hard HistoryGNO,Yield-surface RMS,0.0297193,0.0594379,9.43254e-08,6.74643e-08,1.16015e-06,1.09268e-06,6.61916e-08,0.148595,5
+QP-thermo-hard HistoryGNO,Plastic-work violation abs.,0,0,0,0,0,0,0,0,5
+QP-thermo-hard HistoryGNO,Plastic-work violation target-norm.,0,0,0,0,0,0,0,0,5
+QP-thermo-hard HistoryGNO,Plastic-work violation pred-norm.,0,0,0,0,0,0,0,0,5
+QP-thermo-hard HistoryGNO,FEM residual rel. RMS,78.4546,42.0543,69.6894,58.8673,76.1699,17.3027,30.8931,156.653,5
+QP-thermo-hard HistoryGNO,FEM energy rel. err.,3866.33,4536.43,1256.15,1058.42,3790.6,2732.18,567.505,12659,5

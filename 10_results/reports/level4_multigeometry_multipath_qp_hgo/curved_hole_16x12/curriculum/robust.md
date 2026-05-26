@@ -1,0 +1,21 @@
+# J2 Path-Dependent Baseline Robust Statistics
+
+Each row reports both mean/std and robust median/IQR statistics on the cyclic test path.
+
+| Model | Metric | Mean | Std | Median | Q1 | Q3 | IQR | Min | Max | N |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-thermo-hard HistoryGNO | Cyclic disp. rel. L2 | 173.605 | 21.4259 | 168.123 | 164.052 | 188.479 | 24.4271 | 142.439 | 204.934 | 5 |
+| QP-thermo-hard HistoryGNO | Cyclic history rel. L2 | 0.973822 | 0.125603 | 1.07489 | 0.85488 | 1.07494 | 0.220061 | 0.789322 | 1.07508 | 5 |
+| QP-thermo-hard HistoryGNO | History-increment rel. L2 | 1.0264 | 0.0527426 | 1.00003 | 1.00003 | 1.00003 | 7.15256e-07 | 1 | 1.13188 | 5 |
+| QP-thermo-hard HistoryGNO | QP history rel. L2 | 1.77685 | 0.155552 | 1.88232 | 1.75523 | 1.88242 | 0.127195 | 1.48176 | 1.88254 | 5 |
+| QP-thermo-hard HistoryGNO | QP history-inc. rel. L2 | 1.0594 | 0.118696 | 1.00007 | 1.00005 | 1.00007 | 1.78814e-05 | 1.00002 | 1.29679 | 5 |
+| QP-thermo-hard HistoryGNO | Eqp increment rel. L2 | 5.89026 | 1.02675 | 6.02057 | 5.37703 | 6.54816 | 1.17112 | 4.24942 | 7.25611 | 5 |
+| QP-thermo-hard HistoryGNO | Plastic-work inc. rel. L2 | 6.12768 | 1.08325 | 6.1793 | 5.64094 | 6.80735 | 1.16641 | 4.40295 | 7.60787 | 5 |
+| QP-thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 0.999982 | 8.53867e-05 | 0.999937 | 0.999936 | 0.999955 | 1.88351e-05 | 0.99993 | 1.00015 | 5 |
+| QP-thermo-hard HistoryGNO | Reversal yield-flag MAE | 0.444003 | 0.0249374 | 0.423655 | 0.423636 | 0.474545 | 0.0509087 | 0.423634 | 0.474545 | 5 |
+| QP-thermo-hard HistoryGNO | Yield-surface RMS | 0.0663393 | 0.0835171 | 6.04174e-07 | 8.07929e-08 | 0.135278 | 0.135277 | 5.24832e-08 | 0.196418 | 5 |
+| QP-thermo-hard HistoryGNO | Plastic-work violation abs. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| QP-thermo-hard HistoryGNO | Plastic-work violation target-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| QP-thermo-hard HistoryGNO | Plastic-work violation pred-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| QP-thermo-hard HistoryGNO | FEM residual rel. RMS | 162.039 | 144.574 | 79.12 | 70.238 | 206.381 | 136.143 | 28.8097 | 425.646 | 5 |
+| QP-thermo-hard HistoryGNO | FEM energy rel. err. | 17832.9 | 27608 | 2506.26 | 1604.02 | 12372.1 | 10768.1 | 300.768 | 72381.2 | 5 |

@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "model_kind": "thermo_hard_hgo",
+    "train_load_paths": [
+      "monotonic"
+    ],
+    "eval_load_paths": [
+      "cyclic"
+    ],
+    "epochs": 1,
+    "train_samples": 1,
+    "eval_samples": 1,
+    "num_sensors": 2,
+    "num_observation_steps": 2,
+    "observation_noise_std": 0.001,
+    "inversion_steps": 4,
+    "num_posterior_chains": 3,
+    "calibrate_posterior": true,
+    "calibration_target_coverage": 0.95,
+    "calibration_max_scale": 10000.0,
+    "mesh_kind": "structured",
+    "grid_shape": [
+      3,
+      3
+    ],
+    "data_root": "05_data_pipeline\\processed\\j2_sparse_dt_calibrated_smoke"
+  },
+  "train_loss_history": [
+    951.4755249023438
+  ],
+  "evaluations": {
+    "cyclic": {
+      "calibrated_field_coverage_95": 0.9629629850387573,
+      "calibrated_field_crps": 0.09426575899124146,
+      "calibrated_field_ece": 0.033796317875385284,
+      "calibrated_field_interval_width_95": 0.43895336985588074,
+      "calibrated_field_sharpness": 0.18863360583782196,
+      "calibrated_field_spread_scale": 1.7996957302093506,
+      "calibrated_history_coverage_95": 1.0,
+      "calibrated_history_ece": 0.16250000894069672,
+      "calibrated_history_posterior_std": 0.8594701290130615,
+      "calibrated_history_spread_scale": 11.774945259094238,
+      "calibrated_material_parameter_coverage_95": 1.0,
+      "calibrated_material_parameter_ece": 0.12083332240581512,
+      "calibrated_material_parameter_posterior_std": 3.1329123973846436,
+      "calibrated_material_parameter_spread_scale": 5.513730049133301,
+      "field_coverage_95": 0.0,
+      "field_crps": 0.12837061285972595,
+      "field_ece": 0.7874999642372131,
+      "field_interval_width_95": 6.850395095625572e-08,
+      "field_sharpness": 2.9505665466444952e-08,
+      "history_coverage_95": 0.13333334028720856,
+      "history_ece": 0.6541666388511658,
+      "history_final_relative_l2": 32.30060958862305,
+      "history_posterior_std": 1.1937689805563423e-06,
+      "history_relative_l2": 0.7140741348266602,
+      "inversion_final_loss": 21986.638671875,
+      "material_parameter_coverage_95": 0.0,
+      "material_parameter_ece": 0.7874999642372131,
+      "material_parameter_mae": 0.6959022879600525,
+      "material_parameter_posterior_std": 5.561042737411981e-09,
+      "material_parameter_relative_l2": 0.032780688256025314,
+      "rollout_displacement_relative_l2": 20.713443756103516,
+      "sparse_observation_relative_l2": 188.37269592285156,
+      "sparse_observation_rmse": 0.14858238399028778
+    }
+  }
+}

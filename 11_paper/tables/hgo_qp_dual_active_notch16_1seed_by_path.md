@@ -1,0 +1,11 @@
+# J2 Path-Dependent Baseline Pathwise Table
+
+Data root: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\notch_16x12`
+Train load paths: `monotonic, cyclic`
+Evaluated paths: `monotonic, cyclic`
+Protocol: 50 epochs, 1 seeds
+
+| Model | Load path | Seeds | Disp. rel. L2 | History rel. L2 | History-increment rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | QP eqp rel. L2 | QP plastic-work rel. L2 | QP von-Mises rel. L2 | QP reversal scalar-inc. rel. L2 | QP reversal eqp-inc. rel. L2 | QP reversal work-inc. rel. L2 | QP reversal yield MAE | QP inactive false plasticity | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | HANO strain rel. L2 | HANO stress rel. L2 | FEM residual rel. RMS | FEM energy rel. err. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Dual-head active-QP HistoryGNO | monotonic | 1 | 99.4533 +/- 0.0000 | 2.1086 +/- 0.0000 | 0.9982 +/- 0.0000 | 3.1980 +/- 0.0000 | 0.9983 +/- 0.0000 | 5.1380 +/- 0.0000 | 5.1041 +/- 0.0000 | 1.1869 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.4007 +/- 0.0000 | 5.5715 +/- 0.0000 | 5.5573 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0004 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 |  |  | 76.6614 +/- 0.0000 | 14.6131 +/- 0.0000 |
+| Dual-head active-QP HistoryGNO | cyclic | 1 | 93.4997 +/- 0.0000 | 1.7822 +/- 0.0000 | 0.9995 +/- 0.0000 | 2.7305 +/- 0.0000 | 0.9996 +/- 0.0000 | 1.6560 +/- 0.0000 | 1.6110 +/- 0.0000 | 1.1983 +/- 0.0000 | 1.0022 +/- 0.0000 | 1.1489 +/- 0.0000 | 1.1255 +/- 0.0000 | 0.5517 +/- 0.0000 | 0.4008 +/- 0.0000 | 1.8390 +/- 0.0000 | 1.7890 +/- 0.0000 | 1.0022 +/- 0.0000 | 0.7202 +/- 0.0000 | 0.0004 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 |  |  | 79.8267 +/- 0.0000 | 4118.4351 +/- 0.0000 |

@@ -1,0 +1,42 @@
+project:
+  name: pcgno_multiphysics_digital_twin
+  seed: 20260516
+
+data:
+  dataset_version: v0
+  train_split: train
+  validation_split: validation
+  test_split: test
+  ood_split: ood
+
+model:
+  name: pcgno
+  backbone: latent_neural_operator
+  generative_module: conditional_diffusion
+  use_physics_constraints: true
+  use_uq: true
+  use_inverse_module: true
+
+loss:
+  data: 1.0
+  pde_residual: 0.1
+  boundary_residual: 0.1
+  energy_residual: 0.05
+  calibration: 0.05
+  inverse: 0.1
+
+training:
+  batch_size: 4
+  max_epochs: 100
+  learning_rate: 0.0001
+  precision: float32
+
+evaluation:
+  metrics:
+    - relative_l2
+    - max_error
+    - residual_norm
+    - coverage
+    - calibration_error
+    - nll
+    - speedup

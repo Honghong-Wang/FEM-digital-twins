@@ -1,0 +1,5 @@
+geometry,family,files,samples,load_paths,splits,node_min,node_max,element_min,element_max,steps,q_points,qp_history,qp_plastic_strain,final_tangent,tangent_sequence,residual_rms_mean,size_mb
+multi_hole_6x5,multi_hole,6,9,3,"test,train",94,96,34,35,4,3,True,True,False,False,0.005617048486798447,0.7910385131835938
+multi_hole_8x6,multi_hole,6,9,3,"test,train",159,160,62,63,4,3,True,True,False,False,0.0037005517451092792,1.3559646606445312
+notch_6x5,notch,6,9,3,"test,train",97,97,37,37,4,3,True,True,False,False,0.004443668268979553,0.8326263427734375
+notch_8x6,notch,6,9,3,"test,train",161,161,66,66,4,3,True,True,False,False,0.0029569096002236826,1.41961669921875

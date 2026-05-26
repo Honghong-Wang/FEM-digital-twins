@@ -1,0 +1,10 @@
+Protocol,Sparse config,Condition root,Summary JSON,Per-seed CSV,Completed seeds,Expected seeds,Missing seeds,Eval paths,Has raw coverage,Has calibrated coverage,Has NLL/ECE,Status
+strict_path_ood,s2_t2,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\strict_path_ood\s2_t2,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing
+strict_path_ood,s4_t2,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\strict_path_ood\s4_t2,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing
+strict_path_ood,s6_t3,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\strict_path_ood\s6_t3,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing
+reversal_curriculum,s2_t2,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\reversal_curriculum\s2_t2,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing
+reversal_curriculum,s4_t2,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\reversal_curriculum\s4_t2,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing
+reversal_curriculum,s6_t3,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\reversal_curriculum\s6_t3,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing
+family_upper_bound,s2_t2,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\family_upper_bound\s2_t2,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing
+family_upper_bound,s4_t2,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\family_upper_bound\s4_t2,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing
+family_upper_bound,s6_t3,<project-root>\10_results\reports\j2_sparse_dt_posterior_calibration_main\family_upper_bound\s6_t3,no,no,0,5,"20260517,20260518,20260519,20260520,20260521",,no,no,no,missing

@@ -1,0 +1,21 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-primary metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+All evaluated paths are stored in JSON: `monotonic, cyclic`.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-thermo-hard HistoryGNO | Cyclic disp. rel. L2 | 1.5*IQR | 33.9373 | 108.279 | 1 | 20260518=110.276 | 76.2956 | 20.104 | 77.9283 | 18.5853 | 51.0573 | 110.276 |
+| QP-thermo-hard HistoryGNO | History-increment rel. L2 | 1.5*IQR | 0.939992 | 1.09861 | 1 | 20260518=1.19554 | 1.04487 | 0.0772879 | 1.00282 | 0.0396547 | 0.987382 | 1.19554 |
+| QP-thermo-hard HistoryGNO | QP history-inc. rel. L2 | 1.5*IQR | 0.931667 | 1.20745 | 1 | 20260518=1.44301 | 1.13639 | 0.157742 | 1.09538 | 0.0689461 | 1.00445 | 1.44301 |
+| QP-thermo-hard HistoryGNO | QP eqp rel. L2 | 1.5*IQR | 1.9925 | 9.08691 | 1 | 20260520=10.3866 | 6.45797 | 2.11142 | 6.25107 | 1.7736 | 4.57274 | 10.3866 |
+| QP-thermo-hard HistoryGNO | QP plastic-work rel. L2 | 1.5*IQR | 1.83248 | 9.08998 | 1 | 20260520=10.7768 | 6.47956 | 2.28584 | 6.18097 | 1.81438 | 4.51752 | 10.7768 |
+| QP-thermo-hard HistoryGNO | FEM energy rel. err. | 1.5*IQR | -16099.3 | 38184.3 | 1 | 20260520=43338.1 | 14657 | 15469.5 | 7510.23 | 13570.9 | 351.891 | 43338.1 |
+| QP-aware thermo-hard HistoryGNO | History-increment rel. L2 | 1.5*IQR | 0.995542 | 1.00744 | 1 | 20260519=1.08304 | 1.01748 | 0.0327989 | 1.00137 | 0.00297451 | 1 | 1.08304 |
+| QP-aware thermo-hard HistoryGNO | QP history-inc. rel. L2 | 1.5*IQR | 0.984959 | 1.02509 | 1 | 20260519=1.26007 | 1.05465 | 0.102774 | 1.00315 | 0.010033 | 1 | 1.26007 |
+| QP-aware thermo-hard HistoryGNO | QP von-Mises rel. L2 | 1.5*IQR | 0.817646 | 1.18537 | 2 | 20260518=0.629322; 20260521=1.21769 | 0.969718 | 0.192062 | 0.998556 | 0.091931 | 0.629322 | 1.21769 |
+| QP-aware thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.994014 | 1.00357 | 1 | 20260519=0.867357 | 0.972812 | 0.0527349 | 0.999118 | 0.00238949 | 0.867357 | 0.999999 |
+| QP-aware thermo-hard HistoryGNO | Reversal yield-flag MAE | 1.5*IQR | -0.188914 | 0.677964 | 1 | 20260521=0.816824 | 0.31568 | 0.264249 | 0.136358 | 0.216719 | 0.136166 | 0.816824 |
+| QP-aware thermo-hard HistoryGNO | Yield-surface RMS | 1.5*IQR | -0.00216008 | 0.00360014 | 1 | 20260519=0.00536186 | 0.0013863 | 0.00206063 | 0.000129559 | 0.00144005 | 2.09666e-09 | 0.00536186 |
+| QP-aware thermo-hard HistoryGNO | FEM residual rel. RMS | 1.5*IQR | -58.6168 | 350.616 | 1 | 20260520=366.837 | 171.462 | 112.164 | 161.562 | 102.308 | 36.9096 | 366.837 |
+| QP-aware thermo-hard HistoryGNO | FEM energy rel. err. | 1.5*IQR | -14112.9 | 35361.8 | 1 | 20260520=43205.8 | 14465.4 | 15357.1 | 7503.89 | 12368.7 | 368.401 | 43205.8 |

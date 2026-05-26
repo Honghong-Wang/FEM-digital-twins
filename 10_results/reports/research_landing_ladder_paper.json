@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "created_at_utc": "2026-05-17T07:04:00.234152+00:00",
+    "preset": "paper",
+    "track": "all",
+    "device": "cpu",
+    "seed": 20260517,
+    "dry_run": false
+  },
+  "research_ladder": [
+    {
+      "level": 1,
+      "claim": "from surrogate to parameterized solution operator with FEM evidence",
+      "evidence": [
+        "unified coords/params/fields/forcing protocol",
+        "FEM snapshots with residual, boundary, and energy callbacks",
+        "fair baseline comparison against PINN, DeepONet, FNO, graph operators, and PCGNO"
+      ]
+    },
+    {
+      "level": 2,
+      "claim": "from static operator to stateful path-dependent history operator",
+      "evidence": [
+        "J2 plasticity path sequences with material history variables",
+        "recurrent graph operator advancing history_t to history_t+1",
+        "path-OOD evaluation: monotonic training, unload-reload/cyclic/nonproportional testing"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "name": "operator_fem_evidence",
+      "claim": "replace case-specific surrogates with a parameterized FEM-backed solution-operator benchmark",
+      "command": [
+        "<local-python>",
+        "<project-root>\\12_reproducibility\\scripts\\run_fem2d_baseline_runner.py",
+        "--model",
+        "all",
+        "--data-dir",
+        "<project-root>\\05_data_pipeline\\processed\\fem2d_operator_evidence_paper",
+        "--epochs",
+        "50",
+        "--train-samples",
+        "64",
+        "--eval-samples",
+        "24",
+        "--batch-size",
+        "8",
+        "--nx",
+        "9",
+        "--ny",
+        "7",
+        "--num-seeds",
+        "5",
+        "--seed",
+        "20260517",
+        "--device",
+        "cpu",
+        "--out",
+        "<project-root>\\10_results\\reports\\fem2d_operator_evidence_paper.json",
+        "--force-regenerate"
+      ],
+      "artifacts": [
+        "<project-root>\\10_results\\reports\\fem2d_operator_evidence_paper.json",
+        "<project-root>\\05_data_pipeline\\processed\\fem2d_operator_evidence_paper"
+      ],
+      "acceptance_criteria": [
+        "same train/test/OOD splits and seeds are used across model families",
+        "report includes field error, FEM residual, boundary violation, and energy consistency",
+        "PCGNO is evaluated through FEMProblemAdapter physics callbacks, not only data MSE"
+      ]
+    },
+    {
+      "name": "stateful_path_operator",
+      "claim": "replace static operators with a recurrent history operator that advances plastic internal variables",
+      "command": [
+        "<local-python>",
+        "<project-root>\\12_reproducibility\\scripts\\run_j2_path_ood_comparison.py",
+        "--data-root",
+        "<project-root>\\05_data_pipeline\\processed\\j2_path_operator_evidence_paper",
+        "--epochs",
+        "50",
+        "--train-samples",
+        "32",
+        "--eval-samples",
+        "12",
+        "--batch-size",
+        "4",
+        "--eval-batch-size",
+        "8",
+        "--hidden-dim",
+        "96",
+        "--message-passing-layers",
+        "3",
+        "--load-steps",
+        "8",
+        "--max-newton-steps",
+        "14",
+        "--eval-load-paths",
+        "monotonic,unload_reload,cyclic,nonproportional",
+        "--seed",
+        "20260517",
+        "--device",
+        "cpu",
+        "--out",
+        "<project-root>\\10_results\\reports\\j2_path_operator_evidence_paper.json",
+        "--force-regenerate"
+      ],
+      "artifacts": [
+        "<project-root>\\10_results\\reports\\j2_path_operator_evidence_paper.json",
+        "<project-root>\\10_results\\reports\\j2_path_operator_evidence_paper.csv",
+        "<project-root>\\05_data_pipeline\\processed\\j2_path_operator_evidence_paper"
+      ],
+      "acceptance_criteria": [
+        "training load path is monotonic only",
+        "test load paths include unload-reload, cyclic, and nonproportional trajectories",
+        "report includes history, history-increment, plastic work, plastic strain, yield-flag, and degradation metrics"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "name": "operator_fem_evidence",
+      "status": "completed",
+      "returncode": 0,
+      "artifacts": [
+        "<project-root>\\10_results\\reports\\fem2d_operator_evidence_paper.json",
+        "<project-root>\\05_data_pipeline\\processed\\fem2d_operator_evidence_paper"
+      ],
+      "stdout_tail": "139323234557,\n        \"std\": 0.08534948576371786\n      },\n      \"gaussian_nll\": {\n        \"mean\": -1.5570055007934571,\n        \"std\": 0.2224034221435103\n      },\n      \"interval_width_95\": {\n        \"mean\": 0.9312182545661927,\n        \"std\": 0.08101721592741609\n      },\n      \"max_abs_error\": {\n        \"mean\": 0.628441059589386,\n        \"std\": 0.06846004404227247\n      },\n      \"pde_residual_relative\": {\n        \"mean\": 1.3649922132492065,\n        \"std\": 0.28890536316089627\n      },\n      \"pde_residual_rms\": {\n        \"mean\": 0.028476640582084656,\n        \"std\": 0.006027179850538995\n      },\n      \"relative_l2\": {\n        \"mean\": 0.4512989282608032,\n        \"std\": 0.07232257185162702\n      },\n      \"sharpness\": {\n        \"mean\": 0.27934056520462036,\n        \"std\": 0.024627645882981646\n      }\n    },\n    \"ood_material\": {\n      \"boundary_relative\": {\n        \"mean\": 0.10982982516288757,\n        \"std\": 0.02218129458336421\n      },\n      \"boundary_rms\": {\n        \"mean\": 0.012038163840770721,\n        \"std\": 0.002431234288346743\n      },\n      \"coverage_95\": {\n        \"mean\": 0.997949743270874,\n        \"std\": 0.0020851617243378235\n      },\n      \"crps\": {\n        \"mean\": 0.07708675563335418,\n        \"std\": 0.008887549792190445\n      },\n      \"ece\": {\n        \"mean\": 0.18225860893726348,\n        \"std\": 0.0066943648483576606\n      },\n      \"energy_error_relative\": {\n        \"mean\": 0.7471301794052124,\n        \"std\": 0.1660685733113248\n      },\n      \"gaussian_nll\": {\n        \"mean\": -0.5653539626393467,\n        \"std\": 0.7472896164128354\n      },\n      \"interval_width_95\": {\n        \"mean\": 0.8629781007766724,\n        \"std\": 0.10027571847058477\n      },\n      \"max_abs_error\": {\n        \"mean\": 0.21827281415462493,\n        \"std\": 0.05151732976893764\n      },\n      \"pde_residual_relative\": {\n        \"mean\": 2.4070602655410767,\n        \"std\": 0.44902151933587187\n      },\n      \"pde_residual_rms\": {\n        \"mean\": 0.051830985397100446,\n        \"std\": 0.009668735234323081\n      },\n      \"relative_l2\": {\n        \"mean\": 0.6046115458011627,\n        \"std\": 0.11929988975217623\n      },\n      \"sharpness\": {\n        \"mean\": 0.2593503832817078,\n        \"std\": 0.030239798470291485\n      }\n    },\n    \"ood_loading\": {\n      \"boundary_relative\": {\n        \"mean\": 0.12884780913591384,\n        \"std\": 0.027638186322969452\n      },\n      \"boundary_rms\": {\n        \"mean\": 0.09577737897634506,\n        \"std\": 0.020544494894043926\n      },\n      \"coverage_95\": {\n        \"mean\": 0.8716931223869324,\n        \"std\": 0.033641862054481726\n      },\n      \"crps\": {\n        \"mean\": 0.17798763513565063,\n        \"std\": 0.019883293859635585\n      },\n      \"ece\": {\n        \"mean\": 0.0653009295463562,\n        \"std\": 0.014751236548536838\n      },\n      \"energy_error_relative\": {\n        \"mean\": 0.13528991639614105,\n        \"std\": 0.031318942569639116\n      },\n      \"gaussian_nll\": {\n        \"mean\": 14.590134334564208,\n        \"std\": 6.580617303137161\n      },\n      \"interval_width_95\": {\n        \"mean\": 0.9377429366111756,\n        \"std\": 0.07470410330023193\n      },\n      \"max_abs_error\": {\n        \"mean\": 2.109384298324585,\n        \"std\": 0.3224840806321001\n      },\n      \"pde_residual_relative\": {\n        \"mean\": 1.2043294191360474,\n        \"std\": 0.14946724579706272\n      },\n      \"pde_residual_rms\": {\n        \"mean\": 0.06993307247757911,\n        \"std\": 0.008679273679691403\n      },\n      \"relative_l2\": {\n        \"mean\": 0.4073124289512634,\n        \"std\": 0.04907565993522894\n      },\n      \"sharpness\": {\n        \"mean\": 0.2825329124927521,\n        \"std\": 0.02472405313700091\n      }\n    },\n    \"ood_uncertainty_separation\": {\n      \"ood_material_sharpness_ratio\": {\n        \"mean\": 0.9259197979021694,\n        \"std\": 0.037326216504328345\n      },\n      \"ood_loading_sharpness_ratio\": {\n        \"mean\": 1.0143234000968564,\n        \"std\": 0.06987028464704124\n      }\n    }\n  }\n}\nwrote <project-root>\\10_results\\reports\\fem2d_operator_evidence_paper.json\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "stateful_path_operator",
+      "status": "completed",
+      "returncode": 0,
+      "artifacts": [
+        "<project-root>\\10_results\\reports\\j2_path_operator_evidence_paper.json",
+        "<project-root>\\10_results\\reports\\j2_path_operator_evidence_paper.csv",
+        "<project-root>\\05_data_pipeline\\processed\\j2_path_operator_evidence_paper"
+      ],
+      "stdout_tail": "atio\": 1.0090025299238992,\n      \"history_increment_relative_l2_delta\": 0.008810917536417606,\n      \"eq_plastic_strain_relative_l2_ratio\": 0.7337521145594079,\n      \"eq_plastic_strain_relative_l2_delta\": -3.171881675720215,\n      \"eq_plastic_strain_increment_relative_l2_ratio\": 0.7639381264647984,\n      \"eq_plastic_strain_increment_relative_l2_delta\": -1.4785701433817549,\n      \"plastic_work_relative_l2_ratio\": 0.7531464190630706,\n      \"plastic_work_relative_l2_delta\": -21.859176635742188,\n      \"plastic_work_increment_relative_l2_ratio\": 0.7852169672722401,\n      \"plastic_work_increment_relative_l2_delta\": -8.41448974609375,\n      \"plastic_multiplier_increment_relative_l2_ratio\": 0.7618149187449565,\n      \"plastic_multiplier_increment_relative_l2_delta\": -2.8142051696777344,\n      \"yield_flag_mae_ratio\": 1.2817706444517305,\n      \"yield_flag_mae_delta\": 0.11104626456896466,\n      \"von_mises_relative_l2_ratio\": 0.8549477058216097,\n      \"von_mises_relative_l2_delta\": -0.09284595648447669\n    },\n    \"cyclic\": {\n      \"total_loss_ratio\": 1.5231763952967428,\n      \"total_loss_delta\": 0.8837001323699951,\n      \"displacement_relative_l2_ratio\": 1.0293371290777265,\n      \"displacement_relative_l2_delta\": 0.027916888395945305,\n      \"history_relative_l2_ratio\": 1.4357019389637387,\n      \"history_relative_l2_delta\": 0.38475755850474036,\n      \"history_increment_relative_l2_ratio\": 1.0423644156180296,\n      \"history_increment_relative_l2_delta\": 0.041462719440460205,\n      \"eq_plastic_strain_relative_l2_ratio\": 0.5211852195539468,\n      \"eq_plastic_strain_relative_l2_delta\": -5.70424747467041,\n      \"eq_plastic_strain_increment_relative_l2_ratio\": 0.5623389666928587,\n      \"eq_plastic_strain_increment_relative_l2_delta\": -2.7412835756937666,\n      \"plastic_work_relative_l2_ratio\": 0.5050877602711703,\n      \"plastic_work_relative_l2_delta\": -43.82506434122721,\n      \"plastic_work_increment_relative_l2_ratio\": 0.5268858053253691,\n      \"plastic_work_increment_relative_l2_delta\": -18.535051345825195,\n      \"plastic_multiplier_increment_relative_l2_ratio\": 0.5318693933417379,\n      \"plastic_multiplier_increment_relative_l2_delta\": -5.5310583114624015,\n      \"yield_flag_mae_ratio\": 1.4582019409518157,\n      \"yield_flag_mae_delta\": 0.18057812253634137,\n      \"von_mises_relative_l2_ratio\": 0.9277157158914532,\n      \"von_mises_relative_l2_delta\": -0.04626816511154175\n    },\n    \"nonproportional\": {\n      \"total_loss_ratio\": 1.305122748021466,\n      \"total_loss_delta\": 0.5153845151265464,\n      \"displacement_relative_l2_ratio\": 1.022179102007659,\n      \"displacement_relative_l2_delta\": 0.021105388800303215,\n      \"history_relative_l2_ratio\": 1.2697572018286742,\n      \"history_relative_l2_delta\": 0.23821588357289636,\n      \"history_increment_relative_l2_ratio\": 1.009418828013388,\n      \"history_increment_relative_l2_delta\": 0.009218355019887325,\n      \"eq_plastic_strain_relative_l2_ratio\": 0.5569923459060027,\n      \"eq_plastic_strain_relative_l2_delta\": -5.27766768137614,\n      \"eq_plastic_strain_increment_relative_l2_ratio\": 0.6406868125426389,\n      \"eq_plastic_strain_increment_relative_l2_delta\": -2.250552972157797,\n      \"plastic_work_relative_l2_ratio\": 0.5312843788446221,\n      \"plastic_work_relative_l2_delta\": -41.5053227742513,\n      \"plastic_work_increment_relative_l2_ratio\": 0.6454912669368144,\n      \"plastic_work_increment_relative_l2_delta\": -13.888481140136719,\n      \"plastic_multiplier_increment_relative_l2_ratio\": 0.6350859580875894,\n      \"plastic_multiplier_increment_relative_l2_delta\": -4.311533610026041,\n      \"yield_flag_mae_ratio\": 1.3653654265786879,\n      \"yield_flag_mae_delta\": 0.14399110277493793,\n      \"von_mises_relative_l2_ratio\": 0.7662835369158274,\n      \"von_mises_relative_l2_delta\": -0.14959865808486933\n    }\n  }\n}\nwrote <project-root>\\10_results\\reports\\j2_path_operator_evidence_paper.json\nwrote <project-root>\\10_results\\reports\\j2_path_operator_evidence_paper.csv\n",
+      "stderr_tail": ""
+    }
+  ]
+}

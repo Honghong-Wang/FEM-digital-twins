@@ -1,0 +1,55 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Large generated data and model artifacts
+05_data_pipeline/raw/*
+05_data_pipeline/processed/*
+05_data_pipeline/synthetic/*
+07_training/checkpoints/*
+10_results/archived_runs/*
+*.h5
+*.hdf5
+*.npz
+*.pt
+*.pth
+*.ckpt
+
+# Keep the public smoke data tracked.
+!data/
+!data/public_j2_smoke/
+!data/public_j2_smoke/**/*.npz
+
+# Logs and local experiment trackers
+*.log
+outputs/
+wandb/
+mlruns/
+
+# LaTeX and document build intermediates
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+
+# Archives and old release snapshots
+*.zip
+15_release_package/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

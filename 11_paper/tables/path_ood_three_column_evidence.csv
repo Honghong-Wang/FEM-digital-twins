@@ -1,0 +1,9 @@
+metric,strict_path_ood,unload_curriculum,cyclic_seen_upper_bound
+training_paths,monotonic,monotonic + unload_reload,monotonic + unload_reload + cyclic
+strict_path_ood,yes,no,no
+cyclic_displacement_relative_l2,0.9795,1.1386,0.9331
+cyclic_history_relative_l2,1.2678,1.0427,0.9196
+cyclic_history_increment_relative_l2,1.0202,1.0227,0.9971
+cyclic_eq_plastic_strain_increment_relative_l2,3.5222,2.3937,2.2702
+cyclic_yield_flag_mae,0.5747,0.5576,0.5084
+cyclic_total_path_loss,2.5728,16.6730,8.3227

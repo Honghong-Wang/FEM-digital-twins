@@ -1,0 +1,14 @@
+Model,Metric,Mean,Std,Median,Q1,Q3,IQR,Min,Max,N
+Thermo-hard HistoryGNO,Cyclic disp. rel. L2,129.044,0,129.044,129.044,129.044,0,129.044,129.044,1
+Thermo-hard HistoryGNO,Cyclic history rel. L2,2.90228,0,2.90228,2.90228,2.90228,0,2.90228,2.90228,1
+Thermo-hard HistoryGNO,History-increment rel. L2,1.01344,0,1.01344,1.01344,1.01344,0,1.01344,1.01344,1
+Thermo-hard HistoryGNO,Eqp increment rel. L2,787.982,0,787.982,787.982,787.982,0,787.982,787.982,1
+Thermo-hard HistoryGNO,Plastic-work inc. rel. L2,1106.33,0,1106.33,1106.33,1106.33,0,1106.33,1106.33,1
+Thermo-hard HistoryGNO,Reversal hist-inc. rel. L2,0,0,0,0,0,0,0,0,1
+Thermo-hard HistoryGNO,Reversal yield-flag MAE,0,0,0,0,0,0,0,0,1
+Thermo-hard HistoryGNO,Yield-surface RMS,4.92805e-07,0,4.92805e-07,4.92805e-07,4.92805e-07,0,4.92805e-07,4.92805e-07,1
+Thermo-hard HistoryGNO,Plastic-work violation abs.,0,0,0,0,0,0,0,0,1
+Thermo-hard HistoryGNO,Plastic-work violation target-norm.,0,0,0,0,0,0,0,0,1
+Thermo-hard HistoryGNO,Plastic-work violation pred-norm.,0,0,0,0,0,0,0,0,1
+Thermo-hard HistoryGNO,FEM residual rel. RMS,381.964,0,381.964,381.964,381.964,0,381.964,381.964,1
+Thermo-hard HistoryGNO,FEM energy rel. err.,119038,0,119038,119038,119038,0,119038,119038,1

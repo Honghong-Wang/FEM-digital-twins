@@ -1,0 +1,17 @@
+# Level-4 T6/QP Representative All-Step FEM Audit Suite
+
+All rows use QP-thermo-hard HistoryGNO, strict monotonic-to-cyclic training/testing, 50 epochs, five seeds, T=8, T6 elements, quadrature-point plastic strain/history, and all-step matrix-free FEM residual/energy audit loss during training and evaluation.
+
+| Case | Family | Nodes | Elements | Steps | Seeds | Displacement rel. L2 | History rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation target-norm. | FEM residual rel. RMS | FEM energy rel. err. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| multi_hole_18x14 | multi_hole | 885--887 | 400--400 | 8 | 5 | 76.11 +/- 34.72 | 1.071 +/- 0.1232 | 1.797 +/- 0.1535 | 0.9998 +/- 0.001036 | 1 +/- 0.0003364 | 0.4669 +/- 0.01015 | 0.03342 +/- 0.06683 | 0 +/- 0 | 61.36 +/- 50.7 | 5750 +/- 8258 |
+| multi_hole_20x15 | multi_hole | 1048--1056 | 477--481 | 8 | 5 | 54.37 +/- 25.6 | 1.581 +/- 0.1559 | 2.475 +/- 0.1445 | 1.046 +/- 0.09185 | 0.9795 +/- 0.04121 | 0.7304 +/- 0.07063 | 0.01942 +/- 0.03883 | 0 +/- 0 | 113.7 +/- 87.57 | 5993 +/- 6402 |
+| notch_20x15 | notch | 1063--1064 | 492--493 | 8 | 5 | 119.2 +/- 32.1 | 1.854 +/- 0.05681 | 2.797 +/- 0.07647 | 0.9992 +/- 0.001761 | 0.9932 +/- 0.01215 | 0.8165 +/- 0.02169 | 3.01e-05 +/- 3.534e-05 | 0 +/- 0 | 192.8 +/- 131.8 | 1.601e+04 +/- 1.965e+04 |
+| curved_hole_20x15 | curved_hole | 1055--1059 | 483--485 | 8 | 5 | 49.87 +/- 22.85 | 0.9571 +/- 0.1234 | 1.706 +/- 0.1456 | 1.046 +/- 0.09225 | 1 +/- 0.0004418 | 0.4555 +/- 0.01981 | 0.059 +/- 0.07587 | 0 +/- 0 | 53.78 +/- 26.3 | 2308 +/- 1767 |
+
+## Sources
+
+- multi_hole_18x14: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\multi_hole_18x14`, epochs=50, seeds=5, train=monotonic, eval=monotonic,cyclic
+- multi_hole_20x15: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\multi_hole_20x15`, epochs=50, seeds=5, train=monotonic, eval=monotonic,cyclic
+- notch_20x15: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\notch_20x15`, epochs=50, seeds=5, train=monotonic, eval=monotonic,cyclic
+- curved_hole_20x15: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\curved_hole_20x15`, epochs=50, seeds=5, train=monotonic, eval=monotonic,cyclic

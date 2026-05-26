@@ -1,0 +1,9 @@
+# J2 Path-Dependent Baseline Table
+
+Data root: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\curved_hole_14x11`
+Train load paths: `monotonic, unload_reload, cyclic, nonproportional`
+Evaluation: cyclic path, 50 epochs, 5 seeds
+
+| Model | Seeds | Cyclic disp. rel. L2 | Cyclic history rel. L2 | History-increment rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | FEM residual rel. RMS | FEM energy rel. err. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-thermo-hard HistoryGNO | 5 | 15.4301 +/- 7.1656 | 1.0749 +/- 0.0031 | 0.9996 +/- 0.0006 | 1.7651 +/- 0.0054 | 0.9999 +/- 0.0002 | 4.4697 +/- 0.9470 | 4.7198 +/- 1.0923 | 1.0004 +/- 0.0007 | 0.4097 +/- 0.0005 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 47.5165 +/- 28.7068 | 987.5834 +/- 1016.3020 |

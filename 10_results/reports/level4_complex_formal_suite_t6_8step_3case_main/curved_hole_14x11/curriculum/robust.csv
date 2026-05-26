@@ -1,0 +1,78 @@
+Model,Metric,Mean,Std,Median,Q1,Q3,IQR,Min,Max,N
+Thermo-hard HistoryGNO,Cyclic disp. rel. L2,101.089,47.3775,86.1838,69.939,102.317,32.3776,56.3311,190.676,5
+Thermo-hard HistoryGNO,Cyclic history rel. L2,1.12587,0.0052013,1.12628,1.1258,1.12859,0.0027926,1.1165,1.13219,5
+Thermo-hard HistoryGNO,History-increment rel. L2,1.07906,0.102102,1.04142,1.01379,1.06071,0.0469189,1.0005,1.27891,5
+Thermo-hard HistoryGNO,Eqp increment rel. L2,19.1656,5.25244,19.38,13.6189,24.3462,10.7273,12.906,25.5771,5
+Thermo-hard HistoryGNO,Plastic-work inc. rel. L2,24.3055,7.83782,24.493,15.9082,32.6309,16.7227,15.1019,33.3934,5
+Thermo-hard HistoryGNO,Reversal hist-inc. rel. L2,1.14676,0.220968,1.01684,1.0002,1.1411,0.140899,0.999798,1.57588,5
+Thermo-hard HistoryGNO,Reversal yield-flag MAE,0.434383,0.00366462,0.434413,0.430791,0.435157,0.00436562,0.430789,0.440765,5
+Thermo-hard HistoryGNO,Yield-surface RMS,0.000625086,0.000507095,0.000489935,0.000312876,0.000841453,0.000528578,1.47798e-07,0.00148102,5
+Thermo-hard HistoryGNO,Plastic-work violation abs.,7.83445e-14,1.03231e-13,0,0,1.35658e-13,1.35658e-13,0,2.56064e-13,5
+Thermo-hard HistoryGNO,Plastic-work violation target-norm.,3.05635e-09,4.02719e-09,0,0,5.29226e-09,5.29226e-09,0,9.98948e-09,5
+Thermo-hard HistoryGNO,Plastic-work violation pred-norm.,1.29727e-10,1.59406e-10,0,0,3.03909e-10,3.03909e-10,0,3.44726e-10,5
+HistoryGNO data-only,Cyclic disp. rel. L2,115.819,62.3685,110.057,87.2494,116.262,29.013,37.8276,227.698,5
+HistoryGNO data-only,Cyclic history rel. L2,7.05657,0.961961,6.69048,6.45648,7.02697,0.570491,6.20611,8.9028,5
+HistoryGNO data-only,History-increment rel. L2,2.52905,0.324153,2.36965,2.35149,2.52328,0.171798,2.24782,3.153,5
+HistoryGNO data-only,Eqp increment rel. L2,3130.14,1000.72,2472.93,2294.42,4243.92,1949.5,2187.36,4452.09,5
+HistoryGNO data-only,Plastic-work inc. rel. L2,24651.4,8191.56,26578.5,25367.8,31169.2,5801.48,8961.48,31180.2,5
+HistoryGNO data-only,Reversal hist-inc. rel. L2,3.47205,0.485827,3.23517,3.20973,3.47018,0.26045,3.0408,4.40438,5
+HistoryGNO data-only,Reversal yield-flag MAE,0.497767,0.00471002,0.497401,0.494719,0.5003,0.00558111,0.491327,0.505089,5
+HistoryGNO data-only,Yield-surface RMS,0.466592,0.0303759,0.476852,0.441806,0.488908,0.0471011,0.421675,0.503718,5
+HistoryGNO data-only,Plastic-work violation abs.,3.45915,2.48615,1.71288,1.4599,6.41347,4.95357,1.13285,6.57662,5
+HistoryGNO data-only,Plastic-work violation target-norm.,134947,96988.8,66822.4,56953.2,250200,193247,44194.5,256565,5
+HistoryGNO data-only,Plastic-work violation pred-norm.,8.46475,10.0225,2.51412,2.24507,8.22836,5.98329,1.41787,27.9183,5
+HANO-window recent-history NO,Cyclic disp. rel. L2,354.316,111.056,341.735,341.023,353.095,12.0718,193.274,542.456,5
+HANO-window recent-history NO,Cyclic history rel. L2,2.78356,1.15852,3.12963,2.09504,3.56353,1.46849,0.919671,4.20993,5
+HANO-window recent-history NO,History-increment rel. L2,1.00858,0.00684535,1.00657,1.00566,1.00998,0.0043242,1.00001,1.02067,5
+HANO-window recent-history NO,Eqp increment rel. L2,225.362,113.724,217.476,179.902,293.007,113.106,48.1256,388.298,5
+HANO-window recent-history NO,Plastic-work inc. rel. L2,327.782,196.219,304.626,117.675,540.686,423.011,111.807,564.117,5
+HANO-window recent-history NO,Reversal hist-inc. rel. L2,1.01705,0.0145911,1.01279,1.00852,1.02206,0.0135415,0.9995,1.04236,5
+HANO-window recent-history NO,Reversal yield-flag MAE,0.539614,0.0191027,0.530868,0.528484,0.555659,0.0271755,0.515459,0.567601,5
+HANO-window recent-history NO,Yield-surface RMS,0.361657,0.41856,0.202581,0.073415,0.364808,0.291393,0.00541377,1.16207,5
+HANO-window recent-history NO,Plastic-work violation abs.,0.0213238,0.0181456,0.0135448,0.0104018,0.0310699,0.0206681,0,0.0516028,5
+HANO-window recent-history NO,Plastic-work violation target-norm.,831.878,707.889,528.403,405.791,1212.09,806.298,0,2013.11,5
+HANO-window recent-history NO,Plastic-work violation pred-norm.,2.60013,1.86857,3.56623,0.749994,3.97407,3.22408,0,4.71036,5
+INCDE Euler neural CDE,Cyclic disp. rel. L2,261.445,132.096,241.671,167.515,269.277,101.762,124.161,504.6,5
+INCDE Euler neural CDE,Cyclic history rel. L2,0.819908,0.016095,0.815437,0.813429,0.817089,0.00365996,0.803017,0.850568,5
+INCDE Euler neural CDE,History-increment rel. L2,1.00334,0.00458977,1.00085,1.00055,1.00363,0.0030843,0.999556,1.01211,5
+INCDE Euler neural CDE,Eqp increment rel. L2,42.4393,30.8566,44.4651,12.0372,51.4768,39.4396,9.89751,94.32,5
+INCDE Euler neural CDE,Plastic-work inc. rel. L2,271.858,169.41,271.212,121.003,414.589,293.585,52.2663,500.22,5
+INCDE Euler neural CDE,Reversal hist-inc. rel. L2,0.994999,0.0102761,0.998736,0.995833,0.999675,0.00384229,0.975397,1.00535,5
+INCDE Euler neural CDE,Reversal yield-flag MAE,0.534903,0.00247783,0.535481,0.534952,0.536432,0.00148076,0.530241,0.537411,5
+INCDE Euler neural CDE,Yield-surface RMS,0.19204,0.0170877,0.20036,0.19611,0.200532,0.00442234,0.158318,0.20488,5
+INCDE Euler neural CDE,Plastic-work violation abs.,0,0,0,0,0,0,0,0,5
+INCDE Euler neural CDE,Plastic-work violation target-norm.,0,0,0,0,0,0,0,0,5
+INCDE Euler neural CDE,Plastic-work violation pred-norm.,0,0,0,0,0,0,0,0,5
+Thermo-projected neural CDE,Cyclic disp. rel. L2,261.631,132.082,242.603,167.53,269.216,101.687,124.161,504.644,5
+Thermo-projected neural CDE,Cyclic history rel. L2,0.99129,0.00848036,0.994583,0.993566,0.996291,0.00272584,0.974544,0.997464,5
+Thermo-projected neural CDE,History-increment rel. L2,1.00276,0.00560165,0.999986,0.99997,0.999999,2.89083e-05,0.999901,1.01397,5
+Thermo-projected neural CDE,Eqp increment rel. L2,1,0,1,1,1,0,1,1,5
+Thermo-projected neural CDE,Plastic-work inc. rel. L2,1,0,1,1,1,0,1,1,5
+Thermo-projected neural CDE,Reversal hist-inc. rel. L2,1.0031,0.00600498,1.0001,1.00001,1.0003,0.000282884,0.999985,1.01511,5
+Thermo-projected neural CDE,Reversal yield-flag MAE,0.569105,0.000207937,0.569209,0.569209,0.569209,5.36442e-07,0.568689,0.569209,5
+Thermo-projected neural CDE,Yield-surface RMS,0.000919407,0.00183508,6.94303e-07,6.84658e-08,6.68066e-06,6.61219e-06,1.97319e-08,0.00458957,5
+Thermo-projected neural CDE,Plastic-work violation abs.,0,0,0,0,0,0,0,0,5
+Thermo-projected neural CDE,Plastic-work violation target-norm.,0,0,0,0,0,0,0,0,5
+Thermo-projected neural CDE,Plastic-work violation pred-norm.,0,0,0,0,0,0,0,0,5
+Non-recurrent GNO sequence,Cyclic disp. rel. L2,82.3754,39.5919,63.4825,56.0791,126.411,70.3317,33.7112,132.194,5
+Non-recurrent GNO sequence,Cyclic history rel. L2,0.82311,0.0172055,0.827097,0.806167,0.840106,0.0339387,0.800113,0.842069,5
+Non-recurrent GNO sequence,History-increment rel. L2,1.00009,0.000115273,1.00011,1.0001,1.00014,3.56436e-05,0.999873,1.00022,5
+Non-recurrent GNO sequence,Eqp increment rel. L2,1.01835,0.0562766,1.0089,0.990809,1.06994,0.0791276,0.932884,1.08921,5
+Non-recurrent GNO sequence,Plastic-work inc. rel. L2,4.97986,4.30113,4.77564,1.18976,4.82829,3.63853,1.15896,12.9466,5
+Non-recurrent GNO sequence,Reversal hist-inc. rel. L2,0.99974,0.000368482,0.999644,0.999601,0.999702,0.000100553,0.999325,1.00043,5
+Non-recurrent GNO sequence,Reversal yield-flag MAE,0.537613,0.00220359,0.536919,0.536636,0.53927,0.00263363,0.53445,0.54079,5
+Non-recurrent GNO sequence,Yield-surface RMS,0.161256,0.0120369,0.166487,0.153976,0.168967,0.0149904,0.141563,0.175284,5
+Non-recurrent GNO sequence,Plastic-work violation abs.,9.96559e-05,0.000124003,1.60289e-05,9.49612e-06,0.000151393,0.000141897,0,0.000321362,5
+Non-recurrent GNO sequence,Plastic-work violation target-norm.,3.88774,4.83756,0.625315,0.370459,5.90609,5.53563,0,12.5368,5
+Non-recurrent GNO sequence,Plastic-work violation pred-norm.,1.07212,0.646656,1,1,1.37111,0.371115,0,1.9895,5
+Static DeepONet sequence,Cyclic disp. rel. L2,6.41681,0.825544,6.52519,6.35151,6.85128,0.499774,4.9353,7.42079,5
+Static DeepONet sequence,Cyclic history rel. L2,0.818691,0.013373,0.814428,0.806567,0.832457,0.0258895,0.80363,0.836374,5
+Static DeepONet sequence,History-increment rel. L2,1.00003,9.60821e-05,0.999982,0.999961,1.00005,8.95262e-05,0.999952,1.00021,5
+Static DeepONet sequence,Eqp increment rel. L2,1.41347,0.76926,1.02963,0.989215,1.14591,0.156695,0.955961,2.94663,5
+Static DeepONet sequence,Plastic-work inc. rel. L2,4.12112,3.81606,1.22867,1.076,7.27747,6.20147,0.965158,10.0583,5
+Static DeepONet sequence,Reversal hist-inc. rel. L2,0.999914,0.000318118,1.00012,0.999839,1.00014,0.000303388,0.999322,1.00015,5
+Static DeepONet sequence,Reversal yield-flag MAE,0.537059,0.000824382,0.537,0.536997,0.537424,0.000427186,0.535668,0.538209,5
+Static DeepONet sequence,Yield-surface RMS,0.171749,0.0301451,0.165761,0.148822,0.184266,0.0354438,0.136988,0.222907,5
+Static DeepONet sequence,Plastic-work violation abs.,8.84623e-05,0.000103244,1.47627e-05,4.31909e-06,0.000175375,0.000171056,0,0.000247855,5
+Static DeepONet sequence,Plastic-work violation target-norm.,3.45106,4.02774,0.575919,0.168495,6.84167,6.67318,0,9.66922,5
+Static DeepONet sequence,Plastic-work violation pred-norm.,0.868012,0.45307,1,1,1.00323,0.00323212,0,1.33683,5

@@ -1,0 +1,25 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-primary metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+All evaluated paths are stored in JSON: `monotonic, unload_reload, cyclic, nonproportional`.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| True differentiable J2 QP-HistoryGNO | Cyclic disp. rel. L2 | 1.5*IQR | 2.40993 | 136.634 | 1 | 20260521=199.497 | 93.1504 | 55.2477 | 79.8322 | 33.5561 | 47.379 | 199.497 |
+| True differentiable J2 QP-HistoryGNO | History-increment rel. L2 | 1.5*IQR | 1.09068 | 1.31304 | 1 | 20260520=1.04826 | 1.18948 | 0.0780118 | 1.21726 | 0.0555899 | 1.04826 | 1.27815 |
+| True differentiable J2 QP-HistoryGNO | QP history-inc. rel. L2 | 1.5*IQR | 1.10945 | 2.02036 | 1 | 20260520=1.10588 | 1.53626 | 0.240206 | 1.66759 | 0.227727 | 1.10588 | 1.77803 |
+| True differentiable J2 QP-HistoryGNO | Yield-surface RMS | 1.5*IQR | 0.0199571 | 0.0488288 | 2 | 20260519=0.04933; 20260520=0.00318285 | 0.0316251 | 0.0154328 | 0.0368266 | 0.00721793 | 0.00318285 | 0.04933 |
+| True differentiable J2 QP-HistoryGNO | Plastic-work violation abs. | 1.5*IQR | -4.00576e-08 | 8.7207e-08 | 1 | 20260521=2.38623e-07 | 5.89609e-08 | 9.08387e-08 | 9.03205e-09 | 3.18162e-08 | 0 | 2.38623e-07 |
+| True differentiable J2 QP-HistoryGNO | Plastic-work violation target-norm. | 1.5*IQR | -0.0019828 | 0.00431663 | 1 | 20260521=0.0118115 | 0.00291849 | 0.0044964 | 0.000447075 | 0.00157486 | 0 | 0.0118115 |
+| True differentiable J2 QP-HistoryGNO | Plastic-work violation pred-norm. | 1.5*IQR | 8.01703e-05 | 0.000380819 | 2 | 20260520=0; 20260521=0.00208629 | 0.000555543 | 0.00077093 | 0.00023043 | 7.51621e-05 | 0 | 0.00208629 |
+| True differentiable J2 QP-HistoryGNO | FEM energy rel. err. | 1.5*IQR | -234.905 | 570.306 | 1 | 20260517=1066.38 | 328.901 | 380.228 | 222.902 | 201.303 | 19.8244 | 1066.38 |
+| True differentiable J2 QP-HistoryGNO | FEM tangent-solver rel. RMS | 1.5*IQR | 29.9766 | 243.595 | 1 | 20260521=398.714 | 181.476 | 111.333 | 141.926 | 53.4046 | 93.167 | 398.714 |
+| True differentiable J2 QP-HistoryGNO | Newton residual ratio | 1.5*IQR | 0.125 | 0.125001 | 1 | 20260520=0.125001 | 0.125 | 1.40546e-07 | 0.125 | 1.19209e-07 | 0.125 | 0.125001 |
+| True differentiable J2 QP-HistoryGNO | Newton residual decrease frac. | 1.5*IQR | 0.874999 | 0.875 | 1 | 20260520=0.874999 | 0.875 | 1.61703e-07 | 0.875 | 1.19209e-07 | 0.874999 | 0.875 |
+| True differentiable J2 QP-HistoryGNO | Newton step decrease frac. | 1.5*IQR | 0.499999 | 0.5 | 1 | 20260520=0.499999 | 0.499999 | 1.89988e-07 | 0.5 | 1.78814e-07 | 0.499999 | 0.5 |
+| True differentiable J2 QP-HistoryGNO | Newton step 1 residual ratio | 1.5*IQR | 0.5 | 0.500001 | 1 | 20260520=0.500001 | 0.500001 | 2.00895e-07 | 0.500001 | 1.19209e-07 | 0.5 | 0.500001 |
+| True differentiable J2 QP-HistoryGNO | Newton step 2 residual ratio | 1.5*IQR | 0.25 | 0.250001 | 1 | 20260520=0.250001 | 0.250001 | 1.97146e-07 | 0.25 | 1.49012e-07 | 0.25 | 0.250001 |
+| True differentiable J2 QP-HistoryGNO | Newton step 3 residual ratio | 1.5*IQR | 0.125 | 0.125001 | 1 | 20260520=0.125001 | 0.125 | 1.40546e-07 | 0.125 | 1.19209e-07 | 0.125 | 0.125001 |
+| True differentiable J2 QP-HistoryGNO | Newton step 1 decrease frac. | 1.5*IQR | 0.499999 | 0.5 | 1 | 20260520=0.499999 | 0.499999 | 2.0596e-07 | 0.499999 | 1.49012e-07 | 0.499999 | 0.5 |
+| True differentiable J2 QP-HistoryGNO | Newton step 2 decrease frac. | 1.5*IQR | 0.749999 | 0.75 | 1 | 20260520=0.749999 | 0.749999 | 2.05095e-07 | 0.75 | 1.19209e-07 | 0.749999 | 0.75 |
+| True differentiable J2 QP-HistoryGNO | Newton step 3 decrease frac. | 1.5*IQR | 0.874999 | 0.875 | 1 | 20260520=0.874999 | 0.875 | 1.61703e-07 | 0.875 | 1.19209e-07 | 0.874999 | 0.875 |

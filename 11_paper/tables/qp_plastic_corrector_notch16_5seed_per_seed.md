@@ -1,0 +1,12 @@
+# J2 Path-Dependent Baseline Per-Seed Appendix
+
+Per-seed cyclic-primary metrics for diagnosing stochastic training stability and outliers.
+All evaluated paths are stored in JSON: `monotonic, cyclic`.
+
+| Model | Seed | Train final loss | Cyclic disp. rel. L2 | Cyclic history rel. L2 | History-increment rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | QP eqp rel. L2 | QP plastic-work rel. L2 | QP von-Mises rel. L2 | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | FEM residual rel. RMS | FEM energy rel. err. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP plastic-memory corrector HistoryGNO | 20260517 | 1265.34 | 88.3407 | 1.00218 | 1.00003 | 1.00782 | 1.00003 | 0.986668 | 0.987577 | 1.17987 | 0.984905 | 0.985812 | 0.999826 | 0.138141 | 3.38301e-07 | 0 | 0 | 0 | 86.0465 | 4400.06 |
+| QP plastic-memory corrector HistoryGNO | 20260518 | 4722.94 | 89.9311 | 1.76489 | 0.998849 | 2.70206 | 0.999148 | 1.11375 | 1.1017 | 1.18837 | 1.16189 | 1.14603 | 1.00643 | 0.716318 | 0.000199318 | 0 | 0 | 0 | 35.5119 | 450.86 |
+| QP plastic-memory corrector HistoryGNO | 20260519 | 5775.16 | 183.024 | 1.95131 | 0.998818 | 2.99735 | 0.999176 | 2.02931 | 1.9683 | 1.2042 | 2.2838 | 2.21987 | 1.00768 | 0.781186 | 0.000332179 | 0 | 0 | 0 | 111.324 | 10801.5 |
+| QP plastic-memory corrector HistoryGNO | 20260520 | 1909.18 | 34.8749 | 0.961392 | 1.0003 | 0.977973 | 1.00031 | 0.977445 | 0.978768 | 1.18095 | 0.975141 | 0.97633 | 0.996831 | 0.172848 | 1.39404e-05 | 0 | 0 | 0 | 196.9 | 15272.3 |
+| QP plastic-memory corrector HistoryGNO | 20260521 | 10307.8 | 75.0959 | 2.20355 | 0.999998 | 3.3879 | 1 | 1.04188 | 1.0361 | 1.18651 | 1.06239 | 1.05428 | 1.00003 | 0.86316 | 8.50454e-07 | 0 | 0 | 0 | 99.4662 | 2800.21 |

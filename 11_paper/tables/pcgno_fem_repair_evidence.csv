@@ -1,0 +1,3 @@
+training_mode,test_relative_l2,test_fem_residual_relative,test_boundary_relative,test_energy_relative,ood_material_relative_l2,ood_loading_relative_l2,source
+NLL-first paper preset,0.4513,1.3650,0.0417,0.2986,0.6046,0.4073,10_results/reports/fem2d_operator_evidence_paper.json
+MSE-first repair,0.0571,0.3088,0.0435,0.0158,0.3639,0.1951,10_results/reports/pcgno_fem_evidence_repair_mse_5seeds.json

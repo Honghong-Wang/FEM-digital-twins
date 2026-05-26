@@ -1,0 +1,294 @@
+| Ablation | Model | Load path | Metric | No-solver mean | Ablation mean | Mean improvement | Mean improvement % | Mean improved | No-solver median | Ablation median | Median improvement | Median improvement % | Median improved |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | displacement_relative_l2 | 133.171 | 132.931 | 0.24 | 0.180219 | yes | 117.103 | 111.841 | 5.262 | 4.49348 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | final_displacement_relative_l2 | 901.625 | 887.368 | 14.257 | 1.58126 | yes | 791.036 | 747.017 | 44.019 | 5.56473 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | qp_history_relative_l2 | 1.56931 | 1.64518 | -0.07587 | -4.83461 | no | 1.44659 | 1.95064 | -0.50405 | -34.844 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | qp_history_increment_relative_l2 | 1.38132 | 1.18721 | 0.19411 | 14.0525 | yes | 1.43533 | 1.09743 | 0.3379 | 23.5416 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | qp_reversal_eqp_increment_relative_l2 | 1.09274 | 1.09613 | -0.00339 | -0.310229 | no | 1.00173 | 1.026 | -0.02427 | -2.42281 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | qp_reversal_plastic_work_increment_relative_l2 | 1.08649 | 1.08753 | -0.00104 | -0.0957211 | no | 1.0015 | 1.02328 | -0.02178 | -2.17474 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | qp_reversal_yield_flag_mae | 0.483696 | 0.456884 | 0.026812 | 5.54315 | yes | 0.509058 | 0.476449 | 0.032609 | 6.40575 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | fem_residual_relative_rms | 10.18 | 10.195 | -0.015 | -0.147348 | no | 8.51417 | 12.4502 | -3.93603 | -46.2292 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | fem_energy_relative_error | 159.589 | 162.958 | -3.369 | -2.11105 | no | 67.5485 | 186.538 | -118.99 | -176.154 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | cyclic | fem_solver_linearized_residual_relative_rms | 333.796 | 3.38007 | 330.416 | 98.9874 | yes | 289.528 | 3.65792 | 285.87 | 98.7366 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | displacement_relative_l2 | 150.115 | 149.962 | 0.153 | 0.101922 | yes | 132.005 | 125.88 | 6.125 | 4.63998 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | final_displacement_relative_l2 | 195.608 | 192.523 | 3.085 | 1.57713 | yes | 171.835 | 161.38 | 10.455 | 6.08433 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | qp_history_relative_l2 | 1.89193 | 1.94718 | -0.05525 | -2.9203 | no | 1.81272 | 2.43857 | -0.62585 | -34.5255 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | qp_history_increment_relative_l2 | 2.29735 | 1.65514 | 0.64221 | 27.9544 | yes | 2.54097 | 1.36254 | 1.17843 | 46.3772 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | qp_reversal_eqp_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | qp_reversal_plastic_work_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | qp_reversal_yield_flag_mae | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | fem_residual_relative_rms | 9.8043 | 9.82697 | -0.02267 | -0.231225 | no | 8.22466 | 11.8495 | -3.62484 | -44.0728 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | fem_energy_relative_error | 67.808 | 33.2476 | 34.5604 | 50.968 | yes | 36.803 | 24.1061 | 12.6969 | 34.4996 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | monotonic | fem_solver_linearized_residual_relative_rms | 136.492 | 2.35313 | 134.139 | 98.276 | yes | 117.312 | 3.22477 | 114.087 | 97.2511 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | displacement_relative_l2 | 118.553 | 118.302 | 0.251 | 0.21172 | yes | 104.369 | 99.278 | 5.091 | 4.87789 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | final_displacement_relative_l2 | 161.242 | 158.606 | 2.636 | 1.63481 | yes | 141.735 | 132.876 | 8.859 | 6.2504 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | qp_history_relative_l2 | 1.42269 | 1.46371 | -0.04102 | -2.88327 | no | 1.38718 | 1.70379 | -0.31661 | -22.824 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | qp_history_increment_relative_l2 | 2.06285 | 1.53854 | 0.52431 | 25.4168 | yes | 2.18047 | 1.28958 | 0.89089 | 40.8577 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | qp_reversal_eqp_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | qp_reversal_plastic_work_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | qp_reversal_yield_flag_mae | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | fem_residual_relative_rms | 7.87038 | 7.86036 | 0.01002 | 0.127313 | yes | 6.57605 | 9.54226 | -2.96621 | -45.1063 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | fem_energy_relative_error | 55.6153 | 26.5189 | 29.0964 | 52.3173 | yes | 30.4751 | 23.4514 | 7.0237 | 23.0473 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | nonproportional | fem_solver_linearized_residual_relative_rms | 110.048 | 2.16025 | 107.888 | 98.037 | yes | 95.0322 | 2.69969 | 92.3325 | 97.1592 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | displacement_relative_l2 | 136.472 | 136.205 | 0.267 | 0.195645 | yes | 120.067 | 114.347 | 5.72 | 4.76401 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | final_displacement_relative_l2 | 188.2 | 185.005 | 3.195 | 1.69766 | yes | 165.403 | 155.182 | 10.221 | 6.17945 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | qp_history_relative_l2 | 1.6354 | 1.68896 | -0.05356 | -3.27504 | no | 1.57684 | 2.0499 | -0.47306 | -30.0005 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | qp_history_increment_relative_l2 | 2.27941 | 1.64929 | 0.63012 | 27.644 | yes | 2.45398 | 1.35211 | 1.10187 | 44.9013 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | qp_reversal_eqp_increment_relative_l2 | 3.53759 | 4.02398 | -0.48639 | -13.7492 | no | 1.12792 | 3.47901 | -2.35109 | -208.445 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | qp_reversal_plastic_work_increment_relative_l2 | 3.57704 | 4.05581 | -0.47877 | -13.3845 | no | 1.12358 | 3.51285 | -2.38927 | -212.648 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | qp_reversal_yield_flag_mae | 0.679842 | 0.534387 | 0.145455 | 21.3954 | yes | 0.869565 | 0.371542 | 0.498023 | 57.2727 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | fem_residual_relative_rms | 9.18409 | 9.13521 | 0.04888 | 0.532225 | yes | 7.6666 | 11.125 | -3.4584 | -45.11 | no |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | fem_energy_relative_error | 63.0233 | 29.9087 | 33.1146 | 52.5434 | yes | 34.4765 | 22.8599 | 11.6166 | 33.6943 | yes |
+| Tangent-linearized solver loss | hgo_qp_true_j2 | unload_reload | fem_solver_linearized_residual_relative_rms | 127.351 | 2.30583 | 125.045 | 98.1894 | yes | 109.92 | 3.04079 | 106.879 | 97.2336 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | displacement_relative_l2 | 133.171 | 137.525 | -4.354 | -3.26948 | no | 117.103 | 117.343 | -0.24 | -0.204948 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | final_displacement_relative_l2 | 901.625 | 929.891 | -28.266 | -3.13501 | no | 791.036 | 778.633 | 12.403 | 1.56794 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | qp_history_relative_l2 | 1.56931 | 1.53664 | 0.03267 | 2.08181 | yes | 1.44659 | 1.72184 | -0.27525 | -19.0275 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | qp_history_increment_relative_l2 | 1.38132 | 1.37193 | 0.00939 | 0.679785 | yes | 1.43533 | 1.47155 | -0.03622 | -2.52346 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | qp_reversal_eqp_increment_relative_l2 | 1.09274 | 1.07461 | 0.01813 | 1.65913 | yes | 1.00173 | 1.0642 | -0.06247 | -6.23621 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | qp_reversal_plastic_work_increment_relative_l2 | 1.08649 | 1.06728 | 0.01921 | 1.76808 | yes | 1.0015 | 1.05632 | -0.05482 | -5.47379 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | qp_reversal_yield_flag_mae | 0.483696 | 0.439855 | 0.043841 | 9.06375 | yes | 0.509058 | 0.400362 | 0.108696 | 21.3524 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_residual_relative_rms | 10.18 | 9.27224 | 0.90776 | 8.91709 | yes | 8.51417 | 11.2623 | -2.74813 | -32.2771 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_energy_relative_error | 159.589 | 142.716 | 16.873 | 10.5728 | yes | 67.5485 | 159.346 | -91.7975 | -135.899 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_solver_linearized_residual_relative_rms | 333.796 | 345.441 | -11.645 | -3.48866 | no | 289.528 | 288.603 | 0.925 | 0.319486 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_initial_residual_relative_rms | 9.97258 | 8.88586 | 1.08672 | 10.8971 | yes | 8.46288 | 10.5785 | -2.11562 | -24.9988 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_final_residual_relative_rms | 0.000342831 | 0.000374592 | -3.1761e-05 | -9.26433 | no | 0.000309169 | 0.000263038 | 4.6131e-05 | 14.921 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_residual_ratio | 4.16534e-05 | 4.38019e-05 | -2.1485e-06 | -5.15804 | no | 2.40653e-05 | 2.99685e-05 | -5.9032e-06 | -24.5299 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_step1_residual_ratio | 4.16534e-05 | 4.38019e-05 | -2.1485e-06 | -5.15804 | no | 2.40653e-05 | 2.99685e-05 | -5.9032e-06 | -24.5299 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_correction_relative_norm | 2.31036 | 2.46418 | -0.15382 | -6.65784 | no | 2.63878 | 1.97309 | 0.66569 | 25.2272 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_accepted_damping | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_convergence_rate | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| One-step dense Newton | hgo_qp_true_j2 | cyclic | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | displacement_relative_l2 | 150.115 | 154.814 | -4.699 | -3.13027 | no | 132.005 | 132.101 | -0.096 | -0.0727245 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | final_displacement_relative_l2 | 195.608 | 201.189 | -5.581 | -2.85316 | no | 171.835 | 168.813 | 3.022 | 1.75866 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | qp_history_relative_l2 | 1.89193 | 1.81027 | 0.08166 | 4.31623 | yes | 1.81272 | 2.03025 | -0.21753 | -12.0002 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | qp_history_increment_relative_l2 | 2.29735 | 2.27604 | 0.02131 | 0.92759 | yes | 2.54097 | 2.5097 | 0.03127 | 1.23063 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | qp_reversal_eqp_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | qp_reversal_plastic_work_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | qp_reversal_yield_flag_mae | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_residual_relative_rms | 9.8043 | 8.88356 | 0.92074 | 9.39119 | yes | 8.22466 | 10.7636 | -2.53894 | -30.8698 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_energy_relative_error | 67.808 | 64.7992 | 3.0088 | 4.43723 | yes | 36.803 | 48.957 | -12.154 | -33.0245 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_solver_linearized_residual_relative_rms | 136.492 | 141.853 | -5.361 | -3.9277 | no | 117.312 | 122.05 | -4.738 | -4.0388 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_initial_residual_relative_rms | 9.59892 | 8.51664 | 1.08228 | 11.275 | yes | 8.17282 | 10.1237 | -1.95088 | -23.8703 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_final_residual_relative_rms | 0.000332936 | 0.000359961 | -2.7025e-05 | -8.11718 | no | 0.000298321 | 0.00025597 | 4.2351e-05 | 14.1965 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_residual_ratio | 4.22529e-05 | 4.39516e-05 | -1.6987e-06 | -4.02032 | no | 2.43629e-05 | 2.98301e-05 | -5.4672e-06 | -22.4407 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_step1_residual_ratio | 4.22529e-05 | 4.39516e-05 | -1.6987e-06 | -4.02032 | no | 2.43629e-05 | 2.98301e-05 | -5.4672e-06 | -22.4407 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_correction_relative_norm | 2.48036 | 2.8591 | -0.37874 | -15.2696 | no | 2.14256 | 1.44749 | 0.69507 | 32.4411 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_accepted_damping | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_convergence_rate | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| One-step dense Newton | hgo_qp_true_j2 | monotonic | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | displacement_relative_l2 | 118.553 | 122.197 | -3.644 | -3.07373 | no | 104.369 | 104.43 | -0.061 | -0.0584465 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | final_displacement_relative_l2 | 161.242 | 165.744 | -4.502 | -2.79208 | no | 141.735 | 139.202 | 2.533 | 1.78714 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | qp_history_relative_l2 | 1.42269 | 1.37876 | 0.04393 | 3.08781 | yes | 1.38718 | 1.45045 | -0.06327 | -4.56105 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | qp_history_increment_relative_l2 | 2.06285 | 2.0401 | 0.02275 | 1.10284 | yes | 2.18047 | 2.2043 | -0.02383 | -1.09288 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_eqp_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_plastic_work_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_yield_flag_mae | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_residual_relative_rms | 7.87038 | 7.14789 | 0.72249 | 9.17986 | yes | 6.57605 | 8.61911 | -2.04306 | -31.0682 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_energy_relative_error | 55.6153 | 52.1403 | 3.475 | 6.24828 | yes | 30.4751 | 40.5154 | -10.0403 | -32.9459 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_solver_linearized_residual_relative_rms | 110.048 | 114.034 | -3.986 | -3.62206 | no | 95.0322 | 98.078 | -3.0458 | -3.20502 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_initial_residual_relative_rms | 7.70893 | 6.8521 | 0.85683 | 11.1148 | yes | 6.53657 | 8.10896 | -1.57239 | -24.0553 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_final_residual_relative_rms | 0.000265331 | 0.000290222 | -2.4891e-05 | -9.38111 | no | 0.000239454 | 0.000204341 | 3.5113e-05 | 14.6638 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_residual_ratio | 4.16406e-05 | 4.3972e-05 | -2.3314e-06 | -5.59886 | no | 2.44509e-05 | 2.98627e-05 | -5.4118e-06 | -22.1333 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step1_residual_ratio | 4.16406e-05 | 4.3972e-05 | -2.3314e-06 | -5.59886 | no | 2.44509e-05 | 2.98627e-05 | -5.4118e-06 | -22.1333 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_correction_relative_norm | 1.82634 | 2.10149 | -0.27515 | -15.0657 | no | 1.61299 | 1.12006 | 0.49293 | 30.56 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_accepted_damping | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_convergence_rate | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| One-step dense Newton | hgo_qp_true_j2 | nonproportional | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | displacement_relative_l2 | 136.472 | 140.727 | -4.255 | -3.11786 | no | 120.067 | 120.213 | -0.146 | -0.121599 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | final_displacement_relative_l2 | 188.2 | 193.593 | -5.393 | -2.86557 | no | 165.403 | 162.629 | 2.774 | 1.67712 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | qp_history_relative_l2 | 1.6354 | 1.57876 | 0.05664 | 3.46337 | yes | 1.57684 | 1.72157 | -0.14473 | -9.17848 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | qp_history_increment_relative_l2 | 2.27941 | 2.25392 | 0.02549 | 1.11827 | yes | 2.45398 | 2.47612 | -0.02214 | -0.902208 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_eqp_increment_relative_l2 | 3.53759 | 3.63668 | -0.09909 | -2.80106 | no | 1.12792 | 4.2202 | -3.09228 | -274.158 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_plastic_work_increment_relative_l2 | 3.57704 | 3.63622 | -0.05918 | -1.65444 | no | 1.12358 | 4.19856 | -3.07498 | -273.677 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_yield_flag_mae | 0.679842 | 0.667984 | 0.011858 | 1.74423 | yes | 0.869565 | 0.687747 | 0.181818 | 20.9091 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_residual_relative_rms | 9.18409 | 8.31302 | 0.87107 | 9.48455 | yes | 7.6666 | 10.0491 | -2.3825 | -31.0764 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_energy_relative_error | 63.0233 | 59.3789 | 3.6444 | 5.78262 | yes | 34.4765 | 44.8594 | -10.3829 | -30.1159 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_solver_linearized_residual_relative_rms | 127.351 | 132.014 | -4.663 | -3.66153 | no | 109.92 | 113.464 | -3.544 | -3.22416 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_initial_residual_relative_rms | 8.9927 | 7.96814 | 1.02456 | 11.3932 | yes | 7.6204 | 9.4481 | -1.8277 | -23.9843 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_final_residual_relative_rms | 0.000308756 | 0.00033559 | -2.6834e-05 | -8.69101 | no | 0.000278147 | 0.000236794 | 4.1353e-05 | 14.8673 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_residual_ratio | 4.17361e-05 | 4.37982e-05 | -2.0621e-06 | -4.94081 | no | 2.4081e-05 | 2.99428e-05 | -5.8618e-06 | -24.342 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step1_residual_ratio | 4.17361e-05 | 4.37982e-05 | -2.0621e-06 | -4.94081 | no | 2.4081e-05 | 2.99428e-05 | -5.8618e-06 | -24.342 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.999956 | -2e-06 | -0.000200008 | no | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_correction_relative_norm | 2.12376 | 2.44753 | -0.32377 | -15.2451 | no | 1.88055 | 1.29402 | 0.58653 | 31.1893 | yes |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_accepted_damping | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_convergence_rate | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| One-step dense Newton | hgo_qp_true_j2 | unload_reload | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | displacement_relative_l2 | 133.171 | 85.4132 | 47.7578 | 35.862 | yes | 117.103 | 46.7461 | 70.3569 | 60.0812 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | final_displacement_relative_l2 | 901.625 | 559.039 | 342.586 | 37.9965 | yes | 791.036 | 319.06 | 471.976 | 59.6656 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | qp_history_relative_l2 | 1.56931 | 1.56873 | 0.00058 | 0.0369589 | yes | 1.44659 | 1.76048 | -0.31389 | -21.6986 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | qp_history_increment_relative_l2 | 1.38132 | 1.22057 | 0.16075 | 11.6374 | yes | 1.43533 | 1.05375 | 0.38158 | 26.5848 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | qp_reversal_eqp_increment_relative_l2 | 1.09274 | 1.07429 | 0.01845 | 1.68842 | yes | 1.00173 | 1.01411 | -0.01238 | -1.23586 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | qp_reversal_plastic_work_increment_relative_l2 | 1.08649 | 1.06745 | 0.01904 | 1.75243 | yes | 1.0015 | 1.01053 | -0.00903 | -0.901648 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | qp_reversal_yield_flag_mae | 0.483696 | 0.462319 | 0.021377 | 4.41951 | yes | 0.509058 | 0.474638 | 0.03442 | 6.76151 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_residual_relative_rms | 10.18 | 8.35489 | 1.82511 | 17.9284 | yes | 8.51417 | 9.77664 | -1.26247 | -14.8279 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_energy_relative_error | 159.589 | 102.077 | 57.512 | 36.0376 | yes | 67.5485 | 126.397 | -58.8485 | -87.1204 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_solver_linearized_residual_relative_rms | 333.796 | 209.992 | 123.804 | 37.0897 | yes | 289.528 | 118.459 | 171.069 | 59.0855 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_initial_residual_relative_rms | 9.97258 | 8.17648 | 1.7961 | 18.0104 | yes | 8.46288 | 9.56773 | -1.10485 | -13.0552 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_final_residual_relative_rms | 0.000342831 | 1.02207 | -1.02173 | -298026 | no | 0.000309169 | 1.19597 | -1.19566 | -386734 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_residual_ratio | 4.16534e-05 | 0.125001 | -0.124959 | -299998 | no | 2.40653e-05 | 0.125 | -0.124976 | -519320 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_residual_decrease_fraction | 0.999958 | 0.874999 | -0.124959 | -12.4964 | no | 0.999976 | 0.875 | -0.124976 | -12.4979 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.499999 | -0.499959 | -49.998 | no | 0.999976 | 0.499999 | -0.499977 | -49.9989 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_step1_residual_ratio | 4.16534e-05 | 0.500001 | -0.499959 | -1.20028e+06 | no | 2.40653e-05 | 0.500001 | -0.499977 | -2.07758e+06 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.499999 | -0.499959 | -49.998 | no | 0.999976 | 0.499999 | -0.499977 | -49.9989 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_correction_relative_norm | 2.31036 | 3.91736 | -1.607 | -69.5563 | no | 2.63878 | 1.64001 | 0.99877 | 37.8497 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_accepted_damping | 1 | 0.5 | 0.5 | 50 | yes | 1 | 0.5 | 0.5 | 50 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_convergence_rate | 1 | 0 | -1 | -100 | no | 1 | 0 | -1 | -100 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | cyclic | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | displacement_relative_l2 | 150.115 | 96.3093 | 53.8057 | 35.843 | yes | 132.005 | 52.4881 | 79.5169 | 60.2378 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | final_displacement_relative_l2 | 195.608 | 121.247 | 74.361 | 38.0153 | yes | 171.835 | 68.5477 | 103.287 | 60.1084 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | qp_history_relative_l2 | 1.89193 | 1.84941 | 0.04252 | 2.24744 | yes | 1.81272 | 2.1998 | -0.38708 | -21.3535 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | qp_history_increment_relative_l2 | 2.29735 | 1.76274 | 0.53461 | 23.2707 | yes | 2.54097 | 1.19635 | 1.34462 | 52.9176 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | qp_reversal_eqp_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | qp_reversal_plastic_work_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | qp_reversal_yield_flag_mae | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_residual_relative_rms | 9.8043 | 8.00268 | 1.80162 | 18.3758 | yes | 8.22466 | 9.4152 | -1.19054 | -14.4752 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_energy_relative_error | 67.808 | 43.3299 | 24.4781 | 36.0991 | yes | 36.803 | 25.5195 | 11.2835 | 30.6592 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_solver_linearized_residual_relative_rms | 136.492 | 90.2921 | 46.1999 | 33.8481 | yes | 117.312 | 47.8044 | 69.5076 | 59.2502 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_initial_residual_relative_rms | 9.59892 | 7.83007 | 1.76885 | 18.4276 | yes | 8.17282 | 9.20615 | -1.03333 | -12.6435 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_final_residual_relative_rms | 0.000332936 | 0.978764 | -0.978431 | -293880 | no | 0.000298321 | 1.15078 | -1.15048 | -385652 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_residual_ratio | 4.22529e-05 | 0.125001 | -0.124959 | -295740 | no | 2.43629e-05 | 0.125 | -0.124976 | -512975 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_residual_decrease_fraction | 0.999958 | 0.874999 | -0.124959 | -12.4964 | no | 0.999976 | 0.875 | -0.124976 | -12.4979 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.499999 | -0.499959 | -49.998 | no | 0.999976 | 0.499999 | -0.499977 | -49.9989 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_step1_residual_ratio | 4.22529e-05 | 0.500001 | -0.499959 | -1.18325e+06 | no | 2.43629e-05 | 0.500001 | -0.499977 | -2.0522e+06 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.499999 | -0.499959 | -49.998 | no | 0.999976 | 0.499999 | -0.499977 | -49.9989 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_correction_relative_norm | 2.48036 | 3.9553 | -1.47494 | -59.4648 | no | 2.14256 | 1.43388 | 0.70868 | 33.0763 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_accepted_damping | 1 | 0.5 | 0.5 | 50 | yes | 1 | 0.5 | 0.5 | 50 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_convergence_rate | 1 | 0 | -1 | -100 | no | 1 | 0 | -1 | -100 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | monotonic | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | displacement_relative_l2 | 118.553 | 76.016 | 42.537 | 35.8802 | yes | 104.369 | 41.2901 | 63.0789 | 60.4383 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | final_displacement_relative_l2 | 161.242 | 99.9015 | 61.3405 | 38.0425 | yes | 141.735 | 56.3548 | 85.3802 | 60.2393 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | qp_history_relative_l2 | 1.42269 | 1.41344 | 0.00925 | 0.650177 | yes | 1.38718 | 1.56149 | -0.17431 | -12.5658 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | qp_history_increment_relative_l2 | 2.06285 | 1.63402 | 0.42883 | 20.7882 | yes | 2.18047 | 1.17352 | 1.00695 | 46.1804 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_eqp_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_plastic_work_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_yield_flag_mae | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_residual_relative_rms | 7.87038 | 6.45571 | 1.41467 | 17.9746 | yes | 6.57605 | 7.61022 | -1.03417 | -15.7263 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_energy_relative_error | 55.6153 | 33.6391 | 21.9762 | 39.5147 | yes | 30.4751 | 20.2105 | 10.2646 | 33.6819 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_solver_linearized_residual_relative_rms | 110.048 | 72.1025 | 37.9455 | 34.4809 | yes | 95.0322 | 38.3878 | 56.6444 | 59.6055 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_initial_residual_relative_rms | 7.70893 | 6.31586 | 1.39307 | 18.0709 | yes | 6.53657 | 7.4365 | -0.89993 | -13.7676 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_final_residual_relative_rms | 0.000265331 | 0.789487 | -0.789222 | -297448 | no | 0.000239454 | 0.929569 | -0.92933 | -388104 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_residual_ratio | 4.16406e-05 | 0.125001 | -0.124959 | -300090 | no | 2.44509e-05 | 0.125 | -0.124976 | -511129 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_residual_decrease_fraction | 0.999958 | 0.874999 | -0.124959 | -12.4964 | no | 0.999976 | 0.875 | -0.124976 | -12.4979 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.499999 | -0.499959 | -49.998 | no | 0.999976 | 0.499999 | -0.499977 | -49.9989 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step1_residual_ratio | 4.16406e-05 | 0.500001 | -0.499959 | -1.20065e+06 | no | 2.44509e-05 | 0.500001 | -0.499977 | -2.04482e+06 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.499999 | -0.499959 | -49.998 | no | 0.999976 | 0.499999 | -0.499977 | -49.9989 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_correction_relative_norm | 1.82634 | 2.96607 | -1.13973 | -62.4051 | no | 1.61299 | 1.08774 | 0.52525 | 32.5637 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_accepted_damping | 1 | 0.5 | 0.5 | 50 | yes | 1 | 0.5 | 0.5 | 50 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_convergence_rate | 1 | 0 | -1 | -100 | no | 1 | 0 | -1 | -100 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | nonproportional | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | displacement_relative_l2 | 136.472 | 87.4916 | 48.9804 | 35.8904 | yes | 120.067 | 47.6467 | 72.4203 | 60.3166 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | final_displacement_relative_l2 | 188.2 | 116.542 | 71.658 | 38.0755 | yes | 165.403 | 65.8908 | 99.5122 | 60.1635 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | qp_history_relative_l2 | 1.6354 | 1.6163 | 0.0191 | 1.16791 | yes | 1.57684 | 1.86165 | -0.28481 | -18.0621 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | qp_history_increment_relative_l2 | 2.27941 | 1.75533 | 0.52408 | 22.9919 | yes | 2.45398 | 1.18627 | 1.26771 | 51.6593 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_eqp_increment_relative_l2 | 3.53759 | 3.58952 | -0.05193 | -1.46795 | no | 1.12792 | 3.59069 | -2.46277 | -218.346 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_plastic_work_increment_relative_l2 | 3.57704 | 3.60447 | -0.02743 | -0.766835 | no | 1.12358 | 3.6021 | -2.47852 | -220.591 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_yield_flag_mae | 0.679842 | 0.623715 | 0.056127 | 8.25589 | yes | 0.869565 | 0.6917 | 0.177865 | 20.4545 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_residual_relative_rms | 9.18409 | 7.49328 | 1.69081 | 18.4102 | yes | 7.6666 | 8.80129 | -1.13469 | -14.8004 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_energy_relative_error | 63.0233 | 39.5349 | 23.4884 | 37.2694 | yes | 34.4765 | 23.6821 | 10.7944 | 31.3094 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_solver_linearized_residual_relative_rms | 127.351 | 83.3977 | 43.9533 | 34.5135 | yes | 109.92 | 44.5378 | 65.3822 | 59.4816 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_initial_residual_relative_rms | 8.9927 | 7.33305 | 1.65965 | 18.4555 | yes | 7.6204 | 8.60958 | -0.98918 | -12.9807 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_final_residual_relative_rms | 0.000308756 | 0.916636 | -0.916327 | -296780 | no | 0.000278147 | 1.07621 | -1.07593 | -386821 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_residual_ratio | 4.17361e-05 | 0.125001 | -0.124959 | -299403 | no | 2.4081e-05 | 0.125 | -0.124976 | -518981 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_residual_decrease_fraction | 0.999958 | 0.874999 | -0.124959 | -12.4964 | no | 0.999976 | 0.875 | -0.124976 | -12.4979 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.499999 | -0.499959 | -49.998 | no | 0.999976 | 0.499999 | -0.499977 | -49.9989 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step1_residual_ratio | 4.17361e-05 | 0.500001 | -0.499959 | -1.19791e+06 | no | 2.4081e-05 | 0.500001 | -0.499977 | -2.07623e+06 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.499999 | -0.499959 | -49.998 | no | 0.999976 | 0.499999 | -0.499977 | -49.9989 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_correction_relative_norm | 2.12376 | 3.44292 | -1.31916 | -62.1144 | no | 1.88055 | 1.2592 | 0.62135 | 33.0409 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_accepted_damping | 1 | 0.5 | 0.5 | 50 | yes | 1 | 0.5 | 0.5 | 50 | yes |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_convergence_rate | 1 | 0 | -1 | -100 | no | 1 | 0 | -1 | -100 | no |
+| Multi-step damped Newton | hgo_qp_true_j2 | unload_reload | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | displacement_relative_l2 | 133.171 | 179.628 | -46.457 | -34.8852 | no | 117.103 | 181.139 | -64.036 | -54.6835 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | final_displacement_relative_l2 | 901.625 | 1226.79 | -325.165 | -36.0643 | no | 791.036 | 1226.92 | -435.884 | -55.1029 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | qp_history_relative_l2 | 1.56931 | 1.59715 | -0.02784 | -1.77403 | no | 1.44659 | 1.64586 | -0.19927 | -13.7752 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | qp_history_increment_relative_l2 | 1.38132 | 1.34931 | 0.03201 | 2.31735 | yes | 1.43533 | 1.3548 | 0.08053 | 5.61056 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | qp_reversal_eqp_increment_relative_l2 | 1.09274 | 1.15989 | -0.06715 | -6.1451 | no | 1.00173 | 1.09421 | -0.09248 | -9.23203 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | qp_reversal_plastic_work_increment_relative_l2 | 1.08649 | 1.14838 | -0.06189 | -5.69632 | no | 1.0015 | 1.08667 | -0.08517 | -8.50424 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | qp_reversal_yield_flag_mae | 0.483696 | 0.47029 | 0.013406 | 2.77158 | yes | 0.509058 | 0.442029 | 0.067029 | 13.1673 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_residual_relative_rms | 10.18 | 9.94043 | 0.23957 | 2.35334 | yes | 8.51417 | 10.6234 | -2.10923 | -24.7732 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_energy_relative_error | 159.589 | 189.863 | -30.274 | -18.97 | no | 67.5485 | 194.55 | -127.002 | -188.015 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_solver_linearized_residual_relative_rms | 333.796 | 455.143 | -121.347 | -36.3536 | no | 289.528 | 455.919 | -166.391 | -57.4697 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_initial_residual_relative_rms | 9.97258 | 9.23241 | 0.74017 | 7.42205 | yes | 8.46288 | 9.07086 | -0.60798 | -7.18408 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_final_residual_relative_rms | 0.000342831 | 5.7019e-09 | 0.000342825 | 99.9983 | yes | 0.000309169 | 2.73314e-09 | 0.000309166 | 99.9991 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_residual_ratio | 4.16534e-05 | 7.17603e-10 | 4.16527e-05 | 99.9983 | yes | 2.40653e-05 | 3.62225e-10 | 2.40649e-05 | 99.9985 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_residual_decrease_fraction | 0.999958 | 1 | 4.2e-05 | 0.00420018 | yes | 0.999976 | 1 | 2.4e-05 | 0.00240006 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.99571 | -0.004248 | -0.424818 | no | 0.999976 | 0.997566 | -0.00241 | -0.241006 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_step1_residual_ratio | 4.16534e-05 | 3.54407e-05 | 6.2127e-06 | 14.9152 | yes | 2.40653e-05 | 3.04976e-05 | -6.4323e-06 | -26.7285 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.999965 | 7e-06 | 0.000700029 | yes | 0.999976 | 0.999969 | -7e-06 | -0.000700017 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_correction_relative_norm | 2.31036 | 1.89518 | 0.41518 | 17.9704 | yes | 2.63878 | 1.20058 | 1.4382 | 54.5025 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_accepted_damping | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_convergence_rate | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | cyclic | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | displacement_relative_l2 | 150.115 | 202.646 | -52.531 | -34.9938 | no | 132.005 | 204.058 | -72.053 | -54.5835 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | final_displacement_relative_l2 | 195.608 | 266.315 | -70.707 | -36.1473 | no | 171.835 | 265.597 | -93.762 | -54.5651 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | qp_history_relative_l2 | 1.89193 | 1.88281 | 0.00912 | 0.482047 | yes | 1.81272 | 1.98297 | -0.17025 | -9.39196 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | qp_history_increment_relative_l2 | 2.29735 | 2.14438 | 0.15297 | 6.65854 | yes | 2.54097 | 2.19355 | 0.34742 | 13.6727 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | qp_reversal_eqp_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | qp_reversal_plastic_work_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | qp_reversal_yield_flag_mae | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_residual_relative_rms | 9.8043 | 9.61176 | 0.19254 | 1.96383 | yes | 8.22466 | 10.3148 | -2.09014 | -25.4131 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_energy_relative_error | 67.808 | 69.5227 | -1.7147 | -2.52876 | no | 36.803 | 41.3936 | -4.5906 | -12.4734 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_solver_linearized_residual_relative_rms | 136.492 | 184.674 | -48.182 | -35.3002 | no | 117.312 | 186.125 | -68.813 | -58.6581 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_initial_residual_relative_rms | 9.59892 | 8.91097 | 0.68795 | 7.16695 | yes | 8.17282 | 8.80511 | -0.63229 | -7.7365 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_final_residual_relative_rms | 0.000332936 | 5.45386e-09 | 0.000332931 | 99.9984 | yes | 0.000298321 | 2.62967e-09 | 0.000298318 | 99.9991 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_residual_ratio | 4.22529e-05 | 7.15681e-10 | 4.22522e-05 | 99.9983 | yes | 2.43629e-05 | 3.62627e-10 | 2.43625e-05 | 99.9985 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_residual_decrease_fraction | 0.999958 | 1 | 4.2e-05 | 0.00420018 | yes | 0.999976 | 1 | 2.4e-05 | 0.00240006 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.995714 | -0.004244 | -0.424418 | no | 0.999976 | 0.997579 | -0.002397 | -0.239706 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_step1_residual_ratio | 4.22529e-05 | 3.53203e-05 | 6.9326e-06 | 16.4074 | yes | 2.43629e-05 | 3.01854e-05 | -5.8225e-06 | -23.899 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.999965 | 7e-06 | 0.000700029 | yes | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_correction_relative_norm | 2.48036 | 1.71511 | 0.76525 | 30.8524 | yes | 2.14256 | 1.39766 | 0.7449 | 34.7668 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_accepted_damping | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_convergence_rate | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | monotonic | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | displacement_relative_l2 | 118.553 | 159.965 | -41.412 | -34.9312 | no | 104.369 | 160.96 | -56.591 | -54.222 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | final_displacement_relative_l2 | 161.242 | 219.458 | -58.216 | -36.1047 | no | 141.735 | 218.757 | -77.022 | -54.3423 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | qp_history_relative_l2 | 1.42269 | 1.40433 | 0.01836 | 1.29051 | yes | 1.38718 | 1.42892 | -0.04174 | -3.00898 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | qp_history_increment_relative_l2 | 2.06285 | 1.91324 | 0.14961 | 7.25259 | yes | 2.18047 | 1.97939 | 0.20108 | 9.22187 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_eqp_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_plastic_work_increment_relative_l2 | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | qp_reversal_yield_flag_mae | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_residual_relative_rms | 7.87038 | 7.70549 | 0.16489 | 2.09507 | yes | 6.57605 | 8.26366 | -1.68761 | -25.663 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_energy_relative_error | 55.6153 | 58.2733 | -2.658 | -4.77926 | no | 30.4751 | 44.2937 | -13.8186 | -45.3439 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_solver_linearized_residual_relative_rms | 110.048 | 148.699 | -38.651 | -35.1219 | no | 95.0322 | 149.798 | -54.7658 | -57.6287 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_initial_residual_relative_rms | 7.70893 | 7.1478 | 0.56113 | 7.27896 | yes | 6.53657 | 7.05103 | -0.51446 | -7.87049 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_final_residual_relative_rms | 0.000265331 | 4.41832e-09 | 0.000265327 | 99.9983 | yes | 0.000239454 | 2.13502e-09 | 0.000239452 | 99.9991 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_residual_ratio | 4.16406e-05 | 7.21153e-10 | 4.16399e-05 | 99.9983 | yes | 2.44509e-05 | 3.63025e-10 | 2.44505e-05 | 99.9985 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_residual_decrease_fraction | 0.999958 | 1 | 4.2e-05 | 0.00420018 | yes | 0.999976 | 1 | 2.4e-05 | 0.00240006 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.99571 | -0.004248 | -0.424818 | no | 0.999976 | 0.997576 | -0.0024 | -0.240006 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step1_residual_ratio | 4.16406e-05 | 3.55179e-05 | 6.1227e-06 | 14.7037 | yes | 2.44509e-05 | 3.01739e-05 | -5.723e-06 | -23.4061 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.999964 | 6e-06 | 0.000600025 | yes | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_correction_relative_norm | 1.82634 | 1.31594 | 0.5104 | 27.9466 | yes | 1.61299 | 1.03619 | 0.5768 | 35.7597 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_accepted_damping | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_convergence_rate | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | nonproportional | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | displacement_relative_l2 | 136.472 | 184.103 | -47.631 | -34.9017 | no | 120.067 | 185.395 | -65.328 | -54.4096 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | final_displacement_relative_l2 | 188.2 | 255.992 | -67.792 | -36.0213 | no | 165.403 | 255.394 | -89.991 | -54.4071 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | qp_history_relative_l2 | 1.6354 | 1.62525 | 0.01015 | 0.620643 | yes | 1.57684 | 1.69991 | -0.12307 | -7.80485 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | qp_history_increment_relative_l2 | 2.27941 | 2.11904 | 0.16037 | 7.03559 | yes | 2.45398 | 2.1834 | 0.27058 | 11.0262 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_eqp_increment_relative_l2 | 3.53759 | 4.93811 | -1.40052 | -39.5897 | no | 1.12792 | 4.07847 | -2.95055 | -261.592 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_plastic_work_increment_relative_l2 | 3.57704 | 4.98743 | -1.41039 | -39.429 | no | 1.12358 | 4.15089 | -3.02731 | -269.434 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | qp_reversal_yield_flag_mae | 0.679842 | 0.55336 | 0.126482 | 18.6046 | yes | 0.869565 | 0.458498 | 0.411067 | 47.2727 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_residual_relative_rms | 9.18409 | 8.96903 | 0.21506 | 2.34166 | yes | 7.6666 | 9.62311 | -1.95651 | -25.5199 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_energy_relative_error | 63.0233 | 64.7332 | -1.7099 | -2.71312 | no | 34.4765 | 38.739 | -4.2625 | -12.3635 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_solver_linearized_residual_relative_rms | 127.351 | 172.092 | -44.741 | -35.132 | no | 109.92 | 173.444 | -63.524 | -57.7911 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_initial_residual_relative_rms | 8.9927 | 8.31935 | 0.67335 | 7.48774 | yes | 7.6204 | 8.21637 | -0.59597 | -7.82072 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_final_residual_relative_rms | 0.000308756 | 5.18401e-09 | 0.000308751 | 99.9983 | yes | 0.000278147 | 2.46935e-09 | 0.000278145 | 99.9991 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_residual_ratio | 4.17361e-05 | 7.24843e-10 | 4.17354e-05 | 99.9983 | yes | 2.4081e-05 | 3.62796e-10 | 2.40806e-05 | 99.9985 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_residual_decrease_fraction | 0.999958 | 1 | 4.2e-05 | 0.00420018 | yes | 0.999976 | 1 | 2.4e-05 | 0.00240006 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step_residual_decrease_fraction | 0.999958 | 0.995705 | -0.004253 | -0.425318 | no | 0.999976 | 0.997568 | -0.002408 | -0.240806 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step1_residual_ratio | 4.17361e-05 | 3.55092e-05 | 6.2269e-06 | 14.9197 | yes | 2.4081e-05 | 3.02406e-05 | -6.1596e-06 | -25.5787 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_step1_residual_decrease_fraction | 0.999958 | 0.999964 | 6e-06 | 0.000600025 | yes | 0.999976 | 0.99997 | -6e-06 | -0.000600014 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_correction_relative_norm | 2.12376 | 1.51808 | 0.60568 | 28.5192 | yes | 1.88055 | 1.19932 | 0.68123 | 36.225 | yes |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_accepted_damping | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_convergence_rate | 1 | 1 | 0 | 0 | no | 1 | 1 | 0 | 0 | no |
+| Multi-step line-search Newton | hgo_qp_true_j2 | unload_reload | fem_newton_failure_rate | 0 | 0 | 0 |  | no | 0 | 0 | 0 |  | no |

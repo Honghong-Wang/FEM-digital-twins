@@ -1,0 +1,24 @@
+Model,Metric,Mean,Std,Median,Q1,Q3,IQR,Min,Max,N
+Dual-head active-QP HistoryGNO,Cyclic disp. rel. L2,93.4997,0,93.4997,93.4997,93.4997,0,93.4997,93.4997,1
+Dual-head active-QP HistoryGNO,Cyclic history rel. L2,1.7822,0,1.7822,1.7822,1.7822,0,1.7822,1.7822,1
+Dual-head active-QP HistoryGNO,History-increment rel. L2,0.999504,0,0.999504,0.999504,0.999504,0,0.999504,0.999504,1
+Dual-head active-QP HistoryGNO,QP history rel. L2,2.73049,0,2.73049,2.73049,2.73049,0,2.73049,2.73049,1
+Dual-head active-QP HistoryGNO,QP history-inc. rel. L2,0.999574,0,0.999574,0.999574,0.999574,0,0.999574,0.999574,1
+Dual-head active-QP HistoryGNO,QP eqp rel. L2,1.656,0,1.656,1.656,1.656,0,1.656,1.656,1
+Dual-head active-QP HistoryGNO,QP plastic-work rel. L2,1.61102,0,1.61102,1.61102,1.61102,0,1.61102,1.61102,1
+Dual-head active-QP HistoryGNO,QP von-Mises rel. L2,1.19827,0,1.19827,1.19827,1.19827,0,1.19827,1.19827,1
+Dual-head active-QP HistoryGNO,QP reversal scalar-inc. rel. L2,1.00215,0,1.00215,1.00215,1.00215,0,1.00215,1.00215,1
+Dual-head active-QP HistoryGNO,QP reversal eqp-inc. rel. L2,1.14894,0,1.14894,1.14894,1.14894,0,1.14894,1.14894,1
+Dual-head active-QP HistoryGNO,QP reversal work-inc. rel. L2,1.12553,0,1.12553,1.12553,1.12553,0,1.12553,1.12553,1
+Dual-head active-QP HistoryGNO,QP reversal yield MAE,0.551728,0,0.551728,0.551728,0.551728,0,0.551728,0.551728,1
+Dual-head active-QP HistoryGNO,QP inactive false plasticity,0.400779,0,0.400779,0.400779,0.400779,0,0.400779,0.400779,1
+Dual-head active-QP HistoryGNO,Eqp increment rel. L2,1.83901,0,1.83901,1.83901,1.83901,0,1.83901,1.83901,1
+Dual-head active-QP HistoryGNO,Plastic-work inc. rel. L2,1.78896,0,1.78896,1.78896,1.78896,0,1.78896,1.78896,1
+Dual-head active-QP HistoryGNO,Reversal hist-inc. rel. L2,1.00216,0,1.00216,1.00216,1.00216,0,1.00216,1.00216,1
+Dual-head active-QP HistoryGNO,Reversal yield-flag MAE,0.720243,0,0.720243,0.720243,0.720243,0,0.720243,0.720243,1
+Dual-head active-QP HistoryGNO,Yield-surface RMS,0.000398591,0,0.000398591,0.000398591,0.000398591,0,0.000398591,0.000398591,1
+Dual-head active-QP HistoryGNO,Plastic-work violation abs.,0,0,0,0,0,0,0,0,1
+Dual-head active-QP HistoryGNO,Plastic-work violation target-norm.,0,0,0,0,0,0,0,0,1
+Dual-head active-QP HistoryGNO,Plastic-work violation pred-norm.,0,0,0,0,0,0,0,0,1
+Dual-head active-QP HistoryGNO,FEM residual rel. RMS,79.8267,0,79.8267,79.8267,79.8267,0,79.8267,79.8267,1
+Dual-head active-QP HistoryGNO,FEM energy rel. err.,4118.44,0,4118.44,4118.44,4118.44,0,4118.44,4118.44,1

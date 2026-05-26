@@ -1,0 +1,32 @@
+# J2 Path-Dependent Baseline Robust Statistics
+
+Each row reports both mean/std and robust median/IQR statistics on the cyclic test path.
+
+| Model | Metric | Mean | Std | Median | Q1 | Q3 | IQR | Min | Max | N |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Thermo-hard HistoryGNO | Cyclic disp. rel. L2 | 152.627 | 81.9298 | 136.114 | 106.512 | 219.572 | 113.061 | 34.9859 | 265.949 | 5 |
+| Thermo-hard HistoryGNO | Cyclic history rel. L2 | 1.12327 | 0.00716286 | 1.12757 | 1.11662 | 1.12861 | 0.0119913 | 1.1128 | 1.13074 | 5 |
+| Thermo-hard HistoryGNO | History-increment rel. L2 | 1.09291 | 0.137063 | 1.04937 | 1.00088 | 1.05017 | 0.049287 | 1.00063 | 1.36351 | 5 |
+| Thermo-hard HistoryGNO | Eqp increment rel. L2 | 25.279 | 5.42601 | 27.1331 | 21.0526 | 28.595 | 7.54248 | 17.2419 | 32.3723 | 5 |
+| Thermo-hard HistoryGNO | Plastic-work inc. rel. L2 | 34.3875 | 9.12544 | 37.691 | 27.9413 | 37.8634 | 9.92213 | 20.9589 | 47.483 | 5 |
+| Thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 1.18533 | 0.31286 | 1.0358 | 0.999939 | 1.08303 | 0.0830917 | 0.99982 | 1.80806 | 5 |
+| Thermo-hard HistoryGNO | Reversal yield-flag MAE | 0.429563 | 0.00323248 | 0.430791 | 0.43079 | 0.430791 | 1.37091e-06 | 0.423198 | 0.432247 | 5 |
+| Thermo-hard HistoryGNO | Yield-surface RMS | 0.000559616 | 0.000589009 | 0.000588188 | 1.89271e-07 | 0.000598051 | 0.000597862 | 1.69743e-07 | 0.00161148 | 5 |
+| Thermo-hard HistoryGNO | Plastic-work violation abs. | 1.24055e-13 | 2.48109e-13 | 0 | 0 | 0 | 0 | 0 | 6.20273e-13 | 5 |
+| Thermo-hard HistoryGNO | Plastic-work violation target-norm. | 4.83958e-09 | 9.67915e-09 | 0 | 0 | 0 | 0 | 0 | 2.41979e-08 | 5 |
+| Thermo-hard HistoryGNO | Plastic-work violation pred-norm. | 1.27512e-10 | 2.55023e-10 | 0 | 0 | 0 | 0 | 0 | 6.37558e-10 | 5 |
+| Thermo-hard HistoryGNO | FEM residual rel. RMS | 166.89 | 45.8734 | 186.988 | 117.501 | 187.08 | 69.5789 | 111.317 | 231.564 | 5 |
+| Thermo-hard HistoryGNO | FEM energy rel. err. | 10985.9 | 5079.61 | 10685.2 | 7032.07 | 16255.1 | 9223.05 | 3958.93 | 16998.1 | 5 |
+| Thermo-projected neural CDE | Cyclic disp. rel. L2 | 413.046 | 230.014 | 332.651 | 260.8 | 343.752 | 82.9519 | 260.285 | 867.745 | 5 |
+| Thermo-projected neural CDE | Cyclic history rel. L2 | 0.982134 | 0.0253769 | 0.994575 | 0.993588 | 0.994809 | 0.00122082 | 0.93141 | 0.996291 | 5 |
+| Thermo-projected neural CDE | History-increment rel. L2 | 1.02341 | 0.046893 | 0.99999 | 0.999964 | 0.999998 | 3.40343e-05 | 0.999904 | 1.1172 | 5 |
+| Thermo-projected neural CDE | Eqp increment rel. L2 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 5 |
+| Thermo-projected neural CDE | Plastic-work inc. rel. L2 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 5 |
+| Thermo-projected neural CDE | Reversal hist-inc. rel. L2 | 1.04872 | 0.0972932 | 1.00014 | 1.00001 | 1.0003 | 0.00028348 | 0.999851 | 1.24331 | 5 |
+| Thermo-projected neural CDE | Reversal yield-flag MAE | 0.568094 | 0.00223016 | 0.569209 | 0.569209 | 0.569209 | 4.76837e-07 | 0.563633 | 0.569209 | 5 |
+| Thermo-projected neural CDE | Yield-surface RMS | 0.00114211 | 0.00228027 | 7.6631e-07 | 6.56876e-07 | 6.4213e-06 | 5.76443e-06 | 6.85289e-08 | 0.00570265 | 5 |
+| Thermo-projected neural CDE | Plastic-work violation abs. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| Thermo-projected neural CDE | Plastic-work violation target-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| Thermo-projected neural CDE | Plastic-work violation pred-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| Thermo-projected neural CDE | FEM residual rel. RMS | 908.085 | 405.016 | 782.325 | 534.541 | 1144.6 | 610.056 | 503.586 | 1575.38 | 5 |
+| Thermo-projected neural CDE | FEM energy rel. err. | 316427 | 268417 | 163651 | 115861 | 404227 | 288366 | 93032.3 | 805363 | 5 |

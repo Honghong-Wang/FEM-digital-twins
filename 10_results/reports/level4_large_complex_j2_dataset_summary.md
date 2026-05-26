@@ -1,0 +1,40 @@
+# Level-4 Complex J2 Dataset Summary
+
+| Geometry | Path | Split | Samples | Nodes | Elements | Steps | K final | K seq | Residual RMS | Size MB |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| curved_hole_18x14 | cyclic | test | 1 | 241 | 403 | 4 | yes | no | 3.436e-03 | 2.07 |
+| curved_hole_18x14 | cyclic | train | 1 | 239 | 400 | 4 | yes | no | 3.937e-03 | 2.04 |
+| curved_hole_18x14 | monotonic | test | 1 | 241 | 403 | 4 | yes | no | 2.314e-03 | 2.07 |
+| curved_hole_18x14 | monotonic | train | 1 | 239 | 400 | 4 | yes | no | 2.433e-03 | 2.04 |
+| curved_hole_18x14 | unload_reload | test | 1 | 241 | 403 | 4 | yes | no | 2.566e-03 | 2.07 |
+| curved_hole_18x14 | unload_reload | train | 1 | 239 | 400 | 4 | yes | no | 3.161e-03 | 2.04 |
+| curved_hole_20x15 | cyclic | test | 1 | 286 | 484 | 4 | yes | no | 2.906e-03 | 2.85 |
+| curved_hole_20x15 | cyclic | train | 1 | 285 | 482 | 4 | yes | no | 2.534e-03 | 2.84 |
+| curved_hole_20x15 | monotonic | test | 1 | 286 | 484 | 4 | yes | no | 1.992e-03 | 2.85 |
+| curved_hole_20x15 | monotonic | train | 1 | 285 | 482 | 4 | yes | no | 1.571e-03 | 2.84 |
+| curved_hole_20x15 | unload_reload | test | 1 | 286 | 484 | 4 | yes | no | 2.221e-03 | 2.85 |
+| curved_hole_20x15 | unload_reload | train | 1 | 285 | 482 | 4 | yes | no | 1.944e-03 | 2.84 |
+| multi_hole_18x14 | cyclic | test | 1 | 242 | 399 | 4 | yes | no | 2.926e-03 | 2.09 |
+| multi_hole_18x14 | cyclic | train | 1 | 243 | 401 | 4 | yes | no | 4.096e-03 | 2.10 |
+| multi_hole_18x14 | monotonic | test | 1 | 242 | 399 | 4 | yes | no | 1.694e-03 | 2.09 |
+| multi_hole_18x14 | monotonic | train | 1 | 243 | 401 | 4 | yes | no | 2.578e-03 | 2.10 |
+| multi_hole_18x14 | unload_reload | test | 1 | 242 | 399 | 4 | yes | no | 2.109e-03 | 2.09 |
+| multi_hole_18x14 | unload_reload | train | 1 | 243 | 401 | 4 | yes | no | 3.576e-03 | 2.10 |
+| multi_hole_20x15 | cyclic | test | 1 | 288 | 481 | 4 | yes | no | 2.393e-03 | 2.89 |
+| multi_hole_20x15 | cyclic | train | 1 | 288 | 480 | 4 | yes | no | 3.470e-03 | 2.89 |
+| multi_hole_20x15 | monotonic | test | 1 | 288 | 481 | 4 | yes | no | 1.396e-03 | 2.89 |
+| multi_hole_20x15 | monotonic | train | 1 | 288 | 480 | 4 | yes | no | 1.975e-03 | 2.89 |
+| multi_hole_20x15 | unload_reload | test | 1 | 288 | 481 | 4 | yes | no | 1.710e-03 | 2.89 |
+| multi_hole_20x15 | unload_reload | train | 1 | 288 | 480 | 4 | yes | no | 2.412e-03 | 2.89 |
+| notch_18x14 | cyclic | test | 1 | 242 | 412 | 4 | yes | no | 2.573e-03 | 2.09 |
+| notch_18x14 | cyclic | train | 1 | 242 | 412 | 4 | yes | no | 1.923e-03 | 2.09 |
+| notch_18x14 | monotonic | test | 1 | 242 | 412 | 4 | yes | no | 1.871e-03 | 2.09 |
+| notch_18x14 | monotonic | train | 1 | 242 | 412 | 4 | yes | no | 1.228e-03 | 2.09 |
+| notch_18x14 | unload_reload | test | 1 | 242 | 412 | 4 | yes | no | 2.335e-03 | 2.09 |
+| notch_18x14 | unload_reload | train | 1 | 242 | 412 | 4 | yes | no | 1.432e-03 | 2.09 |
+| notch_20x15 | cyclic | test | 1 | 285 | 489 | 4 | yes | no | 2.602e-03 | 2.84 |
+| notch_20x15 | cyclic | train | 1 | 288 | 493 | 4 | yes | no | 2.285e-03 | 2.90 |
+| notch_20x15 | monotonic | test | 1 | 285 | 489 | 4 | yes | no | 1.867e-03 | 2.84 |
+| notch_20x15 | monotonic | train | 1 | 288 | 493 | 4 | yes | no | 1.688e-03 | 2.90 |
+| notch_20x15 | unload_reload | test | 1 | 285 | 489 | 4 | yes | no | 2.304e-03 | 2.84 |
+| notch_20x15 | unload_reload | train | 1 | 288 | 493 | 4 | yes | no | 2.030e-03 | 2.90 |

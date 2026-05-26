@@ -1,0 +1,18 @@
+# J2 Path-Dependent Baseline Robust Statistics
+
+Each row reports both mean/std and robust median/IQR statistics on the cyclic primary test path.
+All evaluated paths are stored in JSON: `monotonic, cyclic`.
+
+| Model | Metric | Mean | Std | Median | Q1 | Q3 | IQR | Min | Max | N |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Static FNO sequence | Cyclic disp. rel. L2 | 467.51 | 0 | 467.51 | 467.51 | 467.51 | 0 | 467.51 | 467.51 | 1 |
+| Static FNO sequence | Cyclic history rel. L2 | 5.95377 | 0 | 5.95377 | 5.95377 | 5.95377 | 0 | 5.95377 | 5.95377 | 1 |
+| Static FNO sequence | History-increment rel. L2 | 0.999952 | 0 | 0.999952 | 0.999952 | 0.999952 | 0 | 0.999952 | 0.999952 | 1 |
+| Static FNO sequence | Eqp increment rel. L2 | 3.45184 | 0 | 3.45184 | 3.45184 | 3.45184 | 0 | 3.45184 | 3.45184 | 1 |
+| Static FNO sequence | Plastic-work inc. rel. L2 | 1.13257 | 0 | 1.13257 | 1.13257 | 1.13257 | 0 | 1.13257 | 1.13257 | 1 |
+| Static FNO sequence | Reversal hist-inc. rel. L2 | 0.999965 | 0 | 0.999965 | 0.999965 | 0.999965 | 0 | 0.999965 | 0.999965 | 1 |
+| Static FNO sequence | Reversal yield-flag MAE | 0.558676 | 0 | 0.558676 | 0.558676 | 0.558676 | 0 | 0.558676 | 0.558676 | 1 |
+| Static FNO sequence | Yield-surface RMS | 0.651403 | 0 | 0.651403 | 0.651403 | 0.651403 | 0 | 0.651403 | 0.651403 | 1 |
+| Static FNO sequence | Plastic-work violation abs. | 2.41505e-05 | 0 | 2.41505e-05 | 2.41505e-05 | 2.41505e-05 | 0 | 2.41505e-05 | 2.41505e-05 | 1 |
+| Static FNO sequence | Plastic-work violation target-norm. | 0.372772 | 0 | 0.372772 | 0.372772 | 0.372772 | 0 | 0.372772 | 0.372772 | 1 |
+| Static FNO sequence | Plastic-work violation pred-norm. | 0.494192 | 0 | 0.494192 | 0.494192 | 0.494192 | 0 | 0.494192 | 0.494192 | 1 |

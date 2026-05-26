@@ -1,0 +1,11 @@
+Protocol,Sparse config,Target,Metric,Direction,Gain mean,Gain std,Gain median,Gain IQR,Improved paths,Paths,Eval paths
+reversal_curriculum,s4_t2,field,coverage_95,higher,0.857878,0.0664414,0.837272,0.0581052,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,field,crps,lower,-0.499694,0.407398,-0.498942,0.294958,0,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,field,ece,lower,0.637554,0.014362,0.639164,0.0180598,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,field,nll,lower,81654.2,37109.2,91812.4,27424,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,history,coverage_95,higher,0.828808,0.015057,0.825908,0.0199145,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,history,ece,lower,0.627299,0.00727738,0.628851,0.00554275,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,history,nll,lower,425599,278262,337023,290152,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,material_parameter,coverage_95,higher,0.88125,0.0444226,0.883333,0.033333,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,material_parameter,ece,lower,0.61776,0.0246029,0.615938,0.0167183,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"
+reversal_curriculum,s4_t2,material_parameter,nll,lower,110535,126831,65209.9,103107,4,4,"cyclic,nonproportional,pre_stress,random_amplitude"

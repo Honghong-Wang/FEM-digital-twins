@@ -1,0 +1,29 @@
+Model,Metric,Mean,Std,Median,Q1,Q3,IQR,Min,Max,N
+True differentiable J2 QP-HistoryGNO,Cyclic disp. rel. L2,809.976,0,809.976,809.976,809.976,0,809.976,809.976,1
+True differentiable J2 QP-HistoryGNO,Cyclic history rel. L2,1.17644,0,1.17644,1.17644,1.17644,0,1.17644,1.17644,1
+True differentiable J2 QP-HistoryGNO,History-increment rel. L2,1.00062,0,1.00062,1.00062,1.00062,0,1.00062,1.00062,1
+True differentiable J2 QP-HistoryGNO,QP history rel. L2,1.76502,0,1.76502,1.76502,1.76502,0,1.76502,1.76502,1
+True differentiable J2 QP-HistoryGNO,QP history-inc. rel. L2,1.00095,0,1.00095,1.00095,1.00095,0,1.00095,1.00095,1
+True differentiable J2 QP-HistoryGNO,QP eqp rel. L2,9.923,0,9.923,9.923,9.923,0,9.923,9.923,1
+True differentiable J2 QP-HistoryGNO,QP plastic-work rel. L2,11.0406,0,11.0406,11.0406,11.0406,0,11.0406,11.0406,1
+True differentiable J2 QP-HistoryGNO,QP von-Mises rel. L2,1.08533,0,1.08533,1.08533,1.08533,0,1.08533,1.08533,1
+True differentiable J2 QP-HistoryGNO,QP reversal scalar-inc. rel. L2,1.00003,0,1.00003,1.00003,1.00003,0,1.00003,1.00003,1
+True differentiable J2 QP-HistoryGNO,QP reversal eqp-inc. rel. L2,6.75146,0,6.75146,6.75146,6.75146,0,6.75146,6.75146,1
+True differentiable J2 QP-HistoryGNO,QP reversal work-inc. rel. L2,7.95738,0,7.95738,7.95738,7.95738,0,7.95738,7.95738,1
+True differentiable J2 QP-HistoryGNO,QP reversal yield MAE,0.490385,0,0.490385,0.490385,0.490385,0,0.490385,0.490385,1
+True differentiable J2 QP-HistoryGNO,QP inactive false plasticity,0.50006,0,0.50006,0.50006,0.50006,0,0.50006,0.50006,1
+True differentiable J2 QP-HistoryGNO,True-J2 consistency rel. RMS,3.70645e-07,0,3.70645e-07,3.70645e-07,3.70645e-07,0,3.70645e-07,3.70645e-07,1
+True differentiable J2 QP-HistoryGNO,True-J2 active consistency rel. RMS,3.70645e-07,0,3.70645e-07,3.70645e-07,3.70645e-07,0,3.70645e-07,3.70645e-07,1
+True differentiable J2 QP-HistoryGNO,True-J2 negative dgamma,0,0,0,0,0,0,0,0,1
+True differentiable J2 QP-HistoryGNO,True-J2 active QP frac.,1,0,1,1,1,0,1,1,1
+True differentiable J2 QP-HistoryGNO,Eqp increment rel. L2,13.1766,0,13.1766,13.1766,13.1766,0,13.1766,13.1766,1
+True differentiable J2 QP-HistoryGNO,Plastic-work inc. rel. L2,15.2637,0,15.2637,15.2637,15.2637,0,15.2637,15.2637,1
+True differentiable J2 QP-HistoryGNO,Reversal hist-inc. rel. L2,1.00048,0,1.00048,1.00048,1.00048,0,1.00048,1.00048,1
+True differentiable J2 QP-HistoryGNO,Reversal yield-flag MAE,0.558824,0,0.558824,0.558824,0.558824,0,0.558824,0.558824,1
+True differentiable J2 QP-HistoryGNO,Yield-surface RMS,2.71388e-07,0,2.71388e-07,2.71388e-07,2.71388e-07,0,2.71388e-07,2.71388e-07,1
+True differentiable J2 QP-HistoryGNO,Plastic-work violation abs.,0,0,0,0,0,0,0,0,1
+True differentiable J2 QP-HistoryGNO,Plastic-work violation target-norm.,0,0,0,0,0,0,0,0,1
+True differentiable J2 QP-HistoryGNO,Plastic-work violation pred-norm.,0,0,0,0,0,0,0,0,1
+True differentiable J2 QP-HistoryGNO,FEM residual rel. RMS,36.5397,0,36.5397,36.5397,36.5397,0,36.5397,36.5397,1
+True differentiable J2 QP-HistoryGNO,FEM energy rel. err.,3377.5,0,3377.5,3377.5,3377.5,0,3377.5,3377.5,1
+True differentiable J2 QP-HistoryGNO,FEM tangent-solver rel. RMS,2.10348,0,2.10348,2.10348,2.10348,0,2.10348,2.10348,1

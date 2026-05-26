@@ -1,0 +1,15 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-path metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-thermo-hard HistoryGNO | Cyclic history rel. L2 | 1.5*IQR | 1.53723 | 1.53819 | 1 | 20260521=1.53841 | 1.53779 | 0.000331573 | 1.53766 | 0.000239253 | 1.53745 | 1.53841 |
+| QP-thermo-hard HistoryGNO | History-increment rel. L2 | 1.5*IQR | 1.00002 | 1.00008 | 1 | 20260521=1.00009 | 1.00005 | 1.74699e-05 | 1.00005 | 1.64509e-05 | 1.00004 | 1.00009 |
+| QP-thermo-hard HistoryGNO | QP history rel. L2 | 1.5*IQR | 2.4362 | 2.43745 | 1 | 20260521=2.43768 | 2.43691 | 0.000413118 | 2.43671 | 0.000314713 | 2.43653 | 2.43768 |
+| QP-thermo-hard HistoryGNO | QP history-inc. rel. L2 | 1.5*IQR | 1.00006 | 1.00015 | 1 | 20260521=1.00018 | 1.00012 | 3.48903e-05 | 1.00011 | 2.2769e-05 | 1.00008 | 1.00018 |
+| QP-thermo-hard HistoryGNO | Eqp increment rel. L2 | 1.5*IQR | 4.66715 | 11.3458 | 1 | 20260521=12.9641 | 8.75549 | 2.23855 | 8.15956 | 1.66965 | 6.64085 | 12.9641 |
+| QP-thermo-hard HistoryGNO | Plastic-work inc. rel. L2 | 1.5*IQR | 4.54295 | 11.637 | 1 | 20260521=13.5118 | 8.93035 | 2.42597 | 8.26909 | 1.77352 | 6.69092 | 13.5118 |
+| QP-thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 1.5*IQR | 1.00002 | 1.00005 | 1 | 20260521=1.00007 | 1.00004 | 1.49194e-05 | 1.00004 | 8.9407e-06 | 1.00002 | 1.00007 |
+| QP-thermo-hard HistoryGNO | FEM residual rel. RMS | 1.5*IQR | 7.54072 | 49.4422 | 1 | 20260520=69.6457 | 36.4077 | 17.3379 | 33.4744 | 10.4754 | 21.9354 | 69.6457 |
+| QP-thermo-hard HistoryGNO | FEM energy rel. err. | 1.5*IQR | -185.567 | 1938.71 | 1 | 20260520=2257.16 | 1043.39 | 651.882 | 787.067 | 531.069 | 419.578 | 2257.16 |

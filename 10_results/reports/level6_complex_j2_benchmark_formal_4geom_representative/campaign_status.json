@@ -1,0 +1,87 @@
+{
+  "data_root": "<project-root>\\05_data_pipeline\\processed\\level6_complex_j2_benchmark_formal_3geom",
+  "report_root": "<project-root>\\10_results\\reports\\level6_complex_j2_benchmark_formal_3geom",
+  "data": {
+    "cases_seen": [
+      "multi_hole_14x11"
+    ],
+    "expected_cases": [
+      "multi_hole_14x11",
+      "notch_14x11",
+      "curved_hole_14x11",
+      "random_holes_14x11"
+    ],
+    "merged_npz": 0,
+    "expected_merged_npz": 48,
+    "missing_merged_npz": [
+      "multi_hole_14x11\\monotonic\\train.npz",
+      "multi_hole_14x11\\monotonic\\test.npz",
+      "multi_hole_14x11\\unload_reload\\train.npz",
+      "multi_hole_14x11\\unload_reload\\test.npz",
+      "multi_hole_14x11\\cyclic\\train.npz",
+      "multi_hole_14x11\\cyclic\\test.npz",
+      "multi_hole_14x11\\nonproportional\\train.npz",
+      "multi_hole_14x11\\nonproportional\\test.npz",
+      "multi_hole_14x11\\random_amplitude\\train.npz",
+      "multi_hole_14x11\\random_amplitude\\test.npz",
+      "multi_hole_14x11\\pre_stress\\train.npz",
+      "multi_hole_14x11\\pre_stress\\test.npz",
+      "notch_14x11\\monotonic\\train.npz",
+      "notch_14x11\\monotonic\\test.npz",
+      "notch_14x11\\unload_reload\\train.npz",
+      "notch_14x11\\unload_reload\\test.npz",
+      "notch_14x11\\cyclic\\train.npz",
+      "notch_14x11\\cyclic\\test.npz",
+      "notch_14x11\\nonproportional\\train.npz",
+      "notch_14x11\\nonproportional\\test.npz",
+      "notch_14x11\\random_amplitude\\train.npz",
+      "notch_14x11\\random_amplitude\\test.npz",
+      "notch_14x11\\pre_stress\\train.npz",
+      "notch_14x11\\pre_stress\\test.npz",
+      "curved_hole_14x11\\monotonic\\train.npz",
+      "curved_hole_14x11\\monotonic\\test.npz",
+      "curved_hole_14x11\\unload_reload\\train.npz",
+      "curved_hole_14x11\\unload_reload\\test.npz",
+      "curved_hole_14x11\\cyclic\\train.npz",
+      "curved_hole_14x11\\cyclic\\test.npz",
+      "curved_hole_14x11\\nonproportional\\train.npz",
+      "curved_hole_14x11\\nonproportional\\test.npz",
+      "curved_hole_14x11\\random_amplitude\\train.npz",
+      "curved_hole_14x11\\random_amplitude\\test.npz",
+      "curved_hole_14x11\\pre_stress\\train.npz",
+      "curved_hole_14x11\\pre_stress\\test.npz",
+      "random_holes_14x11\\monotonic\\train.npz",
+      "random_holes_14x11\\monotonic\\test.npz",
+      "random_holes_14x11\\unload_reload\\train.npz",
+      "random_holes_14x11\\unload_reload\\test.npz",
+      "random_holes_14x11\\cyclic\\train.npz",
+      "random_holes_14x11\\cyclic\\test.npz",
+      "random_holes_14x11\\nonproportional\\train.npz",
+      "random_holes_14x11\\nonproportional\\test.npz",
+      "random_holes_14x11\\random_amplitude\\train.npz",
+      "random_holes_14x11\\random_amplitude\\test.npz",
+      "random_holes_14x11\\pre_stress\\train.npz",
+      "random_holes_14x11\\pre_stress\\test.npz"
+    ],
+    "missing_merged_npz_count": 48,
+    "shard_npz": 3,
+    "tmp_npz": 0,
+    "latest_files": [
+      "<project-root>\\05_data_pipeline\\processed\\level6_complex_j2_benchmark_formal_3geom\\multi_hole_14x11\\monotonic\\.train_shards\\train_shard_0000.npz",
+      "<project-root>\\05_data_pipeline\\processed\\level6_complex_j2_benchmark_formal_3geom\\multi_hole_14x11\\monotonic\\.train_shards\\train_shard_0001.npz",
+      "<project-root>\\05_data_pipeline\\processed\\level6_complex_j2_benchmark_formal_3geom\\multi_hole_14x11\\monotonic\\.train_shards\\train_shard_0002.npz"
+    ]
+  },
+  "tables": {
+    "completed_case_protocol_summaries": 0,
+    "expected_case_protocol_summaries": 12,
+    "summaries": []
+  },
+  "log_tail": [
+    "START \u5468\u4e94 2026/05/22  5:52:00.60",
+    "START \u5468\u4e94 2026/05/22  5:55:47.28",
+    "START \u5468\u4e94 2026/05/22  5:59:35.76",
+    "START \u5468\u4e94 2026/05/22  6:02:18.61"
+  ],
+  "err_tail": []
+}

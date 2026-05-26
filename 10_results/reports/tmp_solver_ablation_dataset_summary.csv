@@ -1,0 +1,9 @@
+geometry,load_path,split,samples,nodes,elements,load_steps,fields,has_final_tangent,has_tangent_sequence,has_qp_history,has_qp_plastic_strain,q_points,newton_residual_rms,reference_energy_mean,size_mb,path
+shared,cyclic,test,1,530,231,8,2,False,False,True,True,3,0.0015371952502830199,-0.0002872329318808407,0.9544315338134766,05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp\cyclic\test.npz
+shared,cyclic,train,2,532,233,8,2,False,False,True,True,3,0.00101469014760084,-0.00023606630449045883,1.9013729095458984,05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp\cyclic\train.npz
+shared,monotonic,test,1,530,231,8,2,False,False,True,True,3,0.0014390708931837173,-0.00031624864482464896,0.9544429779052734,05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp\monotonic\test.npz
+shared,monotonic,train,2,532,233,8,2,False,False,True,True,3,0.0009728488243159427,-0.00022550507522823548,1.9013843536376953,05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp\monotonic\train.npz
+shared,nonproportional,test,1,530,231,8,2,False,False,True,True,3,0.0019700610614093584,-0.0005170748946493217,0.9544658660888672,05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp\nonproportional\test.npz
+shared,nonproportional,train,2,532,233,8,2,False,False,True,True,3,0.0012705600793335087,-0.00034831375045008147,1.901407241821289,05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp\nonproportional\train.npz
+shared,unload_reload,test,1,530,231,8,2,False,False,True,True,3,0.0015752100534303917,-0.00035572662341732623,0.9544582366943359,05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp\unload_reload\test.npz
+shared,unload_reload,train,2,532,233,8,2,False,False,True,True,3,0.001064554141736459,-0.0002735605973854911,1.9013996124267578,05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp\unload_reload\train.npz

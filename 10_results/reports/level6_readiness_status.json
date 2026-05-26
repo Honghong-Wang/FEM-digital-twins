@@ -1,0 +1,99 @@
+{
+  "level": "Level 6+",
+  "passed_checks": 8,
+  "total_checks": 8,
+  "blocking_gaps": [],
+  "warnings": [],
+  "checks": [
+    {
+      "name": "FEM fair baseline",
+      "pass": true,
+      "severity": "blocker",
+      "path": "<project-root>\\11_paper\\tables\\fem2d_final_fair_baseline_table.csv",
+      "actual": 6,
+      "required": 6,
+      "note": "requires at least 6 rows"
+    },
+    {
+      "name": "J2 stateful baseline",
+      "pass": true,
+      "severity": "blocker",
+      "path": "<project-root>\\11_paper\\tables\\j2_path_dependent_baseline_table.csv",
+      "actual": 5,
+      "required": 5,
+      "note": "requires at least 5 rows"
+    },
+    {
+      "name": "Complex T6/QP all-step audit",
+      "pass": true,
+      "severity": "blocker",
+      "path": "<project-root>\\11_paper\\tables\\level4_t6_qp_allstep_12case_main_table.csv",
+      "actual": 12,
+      "required": 12,
+      "note": "requires at least 12 rows"
+    },
+    {
+      "name": "Multi-geometry multi-path matrix",
+      "pass": true,
+      "severity": "blocker",
+      "path": "<project-root>\\11_paper\\tables\\level4_multigeometry_multipath_matrix_case_path.csv",
+      "actual": 144,
+      "required": 144,
+      "note": "requires at least 144 rows"
+    },
+    {
+      "name": "Faithful frontier baseline",
+      "pass": true,
+      "severity": "blocker",
+      "path": "<project-root>\\11_paper\\tables\\frontier_faithful_baseline_table.csv",
+      "actual": 5,
+      "required": 5,
+      "note": "requires at least 5 rows"
+    },
+    {
+      "name": "Solver-in-loop formal evidence",
+      "pass": true,
+      "severity": "blocker",
+      "path": "<project-root>\\11_paper\\tables\\solver_in_loop_formal_main_table.csv",
+      "actual": {
+        "official_ready": true,
+        "main_rows": 20,
+        "cases": 3,
+        "load_paths": 4,
+        "ablations": 5
+      },
+      "required": {
+        "official_ready": true,
+        "cases": ">=3",
+        "load_paths": ">=4",
+        "ablations": ">=5"
+      },
+      "note": "tmp single-case diagnostics do not count as Level-6 solver-in-loop evidence"
+    },
+    {
+      "name": "QP history learning evidence",
+      "pass": true,
+      "severity": "warning",
+      "path": "<project-root>\\11_paper\\tables\\qp_history_repair_notch16_summary.csv",
+      "actual": 7,
+      "required": ">=7 diagnostic rows plus honest limitation framing",
+      "note": "passes only as failure/repair diagnosis unless QP history relative errors demonstrably decrease"
+    },
+    {
+      "name": "Digital-twin posterior calibration formal evidence",
+      "pass": true,
+      "severity": "warning",
+      "path": "<project-root>\\10_results\\reports\\j2_sparse_dt_posterior_calibration_formal_audit.md",
+      "actual": {
+        "formal_audit_pass": true,
+        "current_rows": 45,
+        "current_evidence_available": true
+      },
+      "required": "9-condition formal audit pass for Level-6+ digital-twin claim",
+      "note": "current 5-seed/2-sample evidence is usable as auxiliary evidence, not a full formal main claim"
+    }
+  ],
+  "next_actions": [
+    "Update manuscript language to Level-6 CMAME strong-claim mode and recompile."
+  ]
+}

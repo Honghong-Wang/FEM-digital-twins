@@ -1,0 +1,17 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-primary metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+All evaluated paths are stored in JSON: `monotonic, cyclic`.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| True differentiable J2 QP-HistoryGNO | Cyclic history rel. L2 | 1.5*IQR | 2.18817 | 2.22116 | 1 | 20260518=2.0632 | 2.178 | 0.0574871 | 2.20847 | 0.00824666 | 2.0632 | 2.209 |
+| True differentiable J2 QP-HistoryGNO | History-increment rel. L2 | 1.5*IQR | 0.985699 | 1.0245 | 1 | 20260518=1.19375 | 1.04091 | 0.0765149 | 1.00044 | 0.00970078 | 1.00015 | 1.19375 |
+| True differentiable J2 QP-HistoryGNO | QP history rel. L2 | 1.5*IQR | 3.37562 | 3.40785 | 1 | 20260518=3.22956 | 3.36077 | 0.0656767 | 3.39503 | 0.00805879 | 3.22956 | 3.3958 |
+| True differentiable J2 QP-HistoryGNO | QP history-inc. rel. L2 | 1.5*IQR | 0.935954 | 1.1082 | 1 | 20260518=1.59974 | 1.12927 | 0.235815 | 1.00212 | 0.0430624 | 1.00032 | 1.59974 |
+| True differentiable J2 QP-HistoryGNO | QP eqp rel. L2 | 1.5*IQR | 13.974 | 20.2374 | 1 | 20260518=7.76358 | 15.8083 | 4.21597 | 16.9982 | 1.56586 | 7.76358 | 20.0681 |
+| True differentiable J2 QP-HistoryGNO | QP plastic-work rel. L2 | 1.5*IQR | 15.5804 | 20.9122 | 2 | 20260518=7.74585; 20260519=21.7357 | 16.7228 | 4.73469 | 17.64 | 1.33295 | 7.74585 | 21.7357 |
+| True differentiable J2 QP-HistoryGNO | QP von-Mises rel. L2 | 1.5*IQR | 1.32883 | 1.46017 | 1 | 20260518=1.25236 | 1.37624 | 0.0644002 | 1.4063 | 0.0328333 | 1.25236 | 1.43353 |
+| True differentiable J2 QP-HistoryGNO | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.990041 | 1.01723 | 1 | 20260518=1.36618 | 1.07478 | 0.145721 | 1.00031 | 0.00679815 | 1.00015 | 1.36618 |
+| True differentiable J2 QP-HistoryGNO | Reversal yield-flag MAE | 1.5*IQR | 0.858388 | 0.867102 | 1 | 20260518=0.729121 | 0.836456 | 0.053674 | 0.863834 | 0.00217867 | 0.729121 | 0.863834 |
+| True differentiable J2 QP-HistoryGNO | Yield-surface RMS | 1.5*IQR | -0.0105905 | 0.017651 | 1 | 20260518=0.0198269 | 0.00546669 | 0.0076646 | 0.000445942 | 0.00706037 | 8.76757e-08 | 0.0198269 |

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this research code, please cite the associated manuscript."
+title: "A mechanics-audited stateful operator for path-dependent finite-element digital twins"
+authors:
+  - family-names: "HH"
+    affiliation: "UCL; FYNU"
+version: "0.1.0"
+date-released: "2026-05-24"
+abstract: "Research code for mechanics-audited stateful neural operators for path-dependent finite-element digital twins, including J2 plasticity rollouts, FEM residual and energy audits, solver diagnostics, and sparse-observation posterior calibration."
+keywords:
+  - "neural operator"
+  - "finite element"
+  - "digital twin"
+  - "path-dependent plasticity"
+  - "mechanics audit"

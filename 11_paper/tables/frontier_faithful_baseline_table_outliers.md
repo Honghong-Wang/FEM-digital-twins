@@ -1,0 +1,28 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-primary metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+All evaluated paths are stored in JSON: `monotonic, cyclic, nonproportional`.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-thermo-hard HistoryGNO | Cyclic history rel. L2 | 1.5*IQR | 1.12117 | 1.14167 | 1 | 20260520=0.824645 | 1.07111 | 0.123251 | 1.13365 | 0.00512373 | 0.824645 | 1.13443 |
+| QP-thermo-hard HistoryGNO | History-increment rel. L2 | 1.5*IQR | 1.00002 | 1.00017 | 2 | 20260517=0.997514; 20260520=1.0003 | 0.999619 | 0.00105567 | 1.00009 | 3.76701e-05 | 0.997514 | 1.0003 |
+| QP-thermo-hard HistoryGNO | QP history rel. L2 | 1.5*IQR | 1.85661 | 1.88633 | 1 | 20260520=1.4896 | 1.79657 | 0.153514 | 1.87468 | 0.00743067 | 1.4896 | 1.87562 |
+| QP-thermo-hard HistoryGNO | QP history-inc. rel. L2 | 1.5*IQR | 1.00005 | 1.00031 | 2 | 20260517=0.997837; 20260520=1.00085 | 0.999843 | 0.00103722 | 1.00016 | 6.7234e-05 | 0.997837 | 1.00085 |
+| QP-thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 1.5*IQR | 0.999879 | 1.00042 | 1 | 20260517=0.99939 | 1.00004 | 0.000336904 | 1.0002 | 0.000136495 | 0.99939 | 1.00033 |
+| QP-thermo-hard HistoryGNO | Reversal yield-flag MAE | 1.5*IQR | 0.460563 | 0.463522 | 1 | 20260520=0.487225 | 0.466931 | 0.0101511 | 0.461679 | 0.000739545 | 0.461667 | 0.487225 |
+| QP-thermo-hard HistoryGNO | Yield-surface RMS | 1.5*IQR | -2.4343e-05 | 4.14682e-05 | 1 | 20260520=0.167092 | 0.0334219 | 0.0668351 | 4.70675e-07 | 1.64528e-05 | 6.60308e-08 | 0.167092 |
+| QP-thermo-hard HistoryGNO | FEM residual rel. RMS | 1.5*IQR | 22.6838 | 52.2933 | 1 | 20260520=162.996 | 61.5074 | 50.8689 | 38.5575 | 7.40237 | 31.006 | 162.996 |
+| QP-thermo-hard HistoryGNO | FEM energy rel. err. | 1.5*IQR | -1920.83 | 6034.81 | 1 | 20260520=22286.6 | 5773.64 | 8295.04 | 1751.81 | 1988.91 | 715.816 | 22286.6 |
+| Faithful HANO strain-stress spectral-window NO | Cyclic disp. rel. L2 | 1.5*IQR | 105.74 | 221.568 | 1 | 20260520=310.012 | 183.566 | 67.248 | 169.054 | 28.957 | 111.455 | 310.012 |
+| Faithful HANO strain-stress spectral-window NO | Reversal hist-inc. rel. L2 | 1.5*IQR | 1.00673 | 1.05248 | 1 | 20260518=1.0056 | 1.02707 | 0.013636 | 1.02394 | 0.0114392 | 1.0056 | 1.04658 |
+| Faithful HANO strain-stress spectral-window NO | Yield-surface RMS | 1.5*IQR | -0.0893526 | 0.65085 | 1 | 20260519=0.785149 | 0.319509 | 0.260581 | 0.242173 | 0.185051 | 0.00872749 | 0.785149 |
+| Faithful HANO strain-stress spectral-window NO | Plastic-work violation pred-norm. | 1.5*IQR | -11.7459 | 19.5766 | 1 | 20260520=31.6554 | 9.39116 | 11.6466 | 7.46973 | 7.83063 | 0 | 31.6554 |
+| Faithful HANO strain-stress spectral-window NO | HANO stress rel. L2 | 1.5*IQR | 5.00058 | 16.2775 | 1 | 20260519=19.1022 | 11.8735 | 3.81352 | 10.5208 | 2.81923 | 8.46635 | 19.1022 |
+| Faithful HANO strain-stress spectral-window NO | FEM energy rel. err. | 1.5*IQR | -399559 | 1.12765e+06 | 1 | 20260520=1.85859e+06 | 612648 | 650730 | 448127 | 381803 | 28427.7 | 1.85859e+06 |
+| HANO-style window NO | Cyclic disp. rel. L2 | 1.5*IQR | 153.795 | 200.288 | 1 | 20260517=143.68 | 172.362 | 16.4208 | 171.357 | 11.6233 | 143.68 | 192.69 |
+| HANO-style window NO | Reversal yield-flag MAE | 1.5*IQR | 0.506062 | 0.549896 | 1 | 20260519=0.499135 | 0.524037 | 0.0133306 | 0.528516 | 0.0109586 | 0.499135 | 0.536576 |
+| HANO-style window NO | FEM energy rel. err. | 1.5*IQR | -119281 | 260405 | 1 | 20260520=311743 | 100249 | 112056 | 34580.3 | 94921.5 | 13799.1 | 311743 |
+| INCDE-style Euler neural CDE | Cyclic disp. rel. L2 | 1.5*IQR | 112.857 | 308.846 | 1 | 20260520=71.7999 | 197.447 | 71.8527 | 204.54 | 48.9972 | 71.7999 | 289.19 |
+| INCDE-style Euler neural CDE | Reversal yield-flag MAE | 1.5*IQR | 0.497701 | 0.503827 | 1 | 20260519=0.504633 | 0.501265 | 0.00194909 | 0.501339 | 0.00153148 | 0.498822 | 0.504633 |
+| TINN-style thermo-projected neural CDE | Cyclic disp. rel. L2 | 1.5*IQR | 112.819 | 308.921 | 1 | 20260520=71.7999 | 197.408 | 71.7982 | 204.538 | 49.0254 | 71.7999 | 288.964 |

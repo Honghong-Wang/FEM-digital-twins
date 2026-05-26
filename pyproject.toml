@@ -1,0 +1,37 @@
+[project]
+name = "mechanics-audited-stateful-operator"
+version = "0.1.0"
+description = "Research code for mechanics-audited stateful neural operators for path-dependent finite-element digital twins."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "HH" }
+]
+dependencies = [
+  "numpy",
+  "scipy",
+  "torch",
+  "pyyaml",
+  "h5py",
+  "matplotlib",
+  "scikit-learn",
+  "tqdm"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff"
+]
+typing = [
+  "mypy"
+]
+
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

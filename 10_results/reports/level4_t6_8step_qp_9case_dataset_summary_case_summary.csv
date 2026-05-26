@@ -1,0 +1,10 @@
+geometry,family,files,samples,load_paths,splits,node_min,node_max,element_min,element_max,steps,q_points,qp_history,qp_plastic_strain,final_tangent,tangent_sequence,residual_rms_mean,size_mb
+curved_hole_14x11,curved_hole,8,12,4,"test,train",532,533,236,237,8,3,True,True,False,False,0.0014828528371892769,11.589469909667969
+curved_hole_16x12,curved_hole,8,12,4,"test,train",665,668,299,300,8,3,True,True,False,False,0.0009035402721817859,14.644889831542969
+curved_hole_18x14,curved_hole,8,12,4,"test,train",880,881,400,401,8,3,True,True,False,False,0.0009170644031402341,19.49925994873047
+multi_hole_14x11,multi_hole,8,12,4,"test,train",530,532,231,233,8,3,True,True,False,False,0.0013555238064116228,11.423362731933594
+multi_hole_16x12,multi_hole,8,12,4,"test,train",672,674,299,299,8,3,True,True,False,False,0.0011244010786644557,14.638328552246094
+multi_hole_18x14,multi_hole,8,12,4,"test,train",885,887,400,400,8,3,True,True,False,False,0.0010791874906581973,19.50493621826172
+notch_14x11,notch,8,12,4,"test,train",543,545,244,246,8,3,True,True,False,False,0.0011656490537229874,11.997703552246094
+notch_16x12,notch,8,12,4,"test,train",673,673,306,306,8,3,True,True,False,False,0.00087365350498357,14.923484802246094
+notch_18x14,notch,8,12,4,"test,train",895,895,412,412,8,3,True,True,False,False,0.0008411636930464408,20.025474548339844

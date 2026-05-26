@@ -1,0 +1,25 @@
+# J2 Path-Dependent Baseline Robust Statistics
+
+Each row reports both mean/std and robust median/IQR statistics on the cyclic primary test path.
+All evaluated paths are stored in JSON: `monotonic, cyclic`.
+
+| Model | Metric | Mean | Std | Median | Q1 | Q3 | IQR | Min | Max | N |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-aware active-zone thermo-hard HistoryGNO | Cyclic disp. rel. L2 | 74.072 | 41.4085 | 72.4802 | 42.535 | 73.3838 | 30.8488 | 31.803 | 150.158 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Cyclic history rel. L2 | 0.993142 | 0.00339744 | 0.991471 | 0.991003 | 0.992372 | 0.00136924 | 0.991002 | 0.999863 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | History-increment rel. L2 | 1.0001 | 6.35345e-05 | 1.00014 | 1.00006 | 1.00014 | 8.49962e-05 | 1 | 1.00017 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | QP history rel. L2 | 0.985704 | 0.00704522 | 0.981995 | 0.981671 | 0.983619 | 0.00194722 | 0.981518 | 0.999714 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | QP history-inc. rel. L2 | 1.00019 | 0.000111857 | 1.00023 | 1.00013 | 1.00027 | 0.000142097 | 1 | 1.00031 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | QP eqp rel. L2 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | QP plastic-work rel. L2 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | QP von-Mises rel. L2 | 0.664503 | 0.166628 | 0.577098 | 0.566333 | 0.624785 | 0.0584524 | 0.559673 | 0.994625 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Eqp increment rel. L2 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Plastic-work inc. rel. L2 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Reversal hist-inc. rel. L2 | 0.999817 | 0.000100343 | 0.999779 | 0.999769 | 0.999841 | 7.11679e-05 | 0.999698 | 0.999996 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Reversal yield-flag MAE | 0.136172 | 7.19757e-06 | 0.136167 | 0.136166 | 0.136176 | 9.90927e-06 | 0.136166 | 0.136184 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Yield-surface RMS | 3.81356e-05 | 4.2184e-05 | 9.54412e-06 | 1.8296e-06 | 8.94919e-05 | 8.76623e-05 | 2.19864e-09 | 8.981e-05 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Plastic-work violation abs. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Plastic-work violation target-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | Plastic-work violation pred-norm. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | FEM residual rel. RMS | 99.2952 | 45.4624 | 103.757 | 72.6155 | 121.163 | 48.547 | 31.9271 | 167.014 | 5 |
+| QP-aware active-zone thermo-hard HistoryGNO | FEM energy rel. err. | 5782.67 | 4981.4 | 3751.05 | 2981.27 | 6981.42 | 4000.15 | 386.771 | 14812.8 | 5 |

@@ -1,0 +1,10 @@
+# J2 Path-Dependent Baseline Outlier Diagnostics
+
+Outliers are detected on cyclic-path metrics using a 1.5 IQR rule when IQR is nonzero, otherwise a 3 sigma rule is used.
+
+| Model | Metric | Rule | Lower | Upper | Outlier count | Outlier seeds | Mean | Std | Median | IQR | Min | Max |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-thermo-hard HistoryGNO | Eqp increment rel. L2 | 1.5*IQR | 2.6986 | 5.82139 | 1 | 20260521=8.57053 | 4.84922 | 1.95939 | 4.32469 | 0.780699 | 2.83089 | 8.57053 |
+| QP-thermo-hard HistoryGNO | Plastic-work inc. rel. L2 | 1.5*IQR | 2.77621 | 6.14485 | 1 | 20260521=9.51915 | 5.18198 | 2.26662 | 4.53886 | 0.842161 | 2.93084 | 9.51915 |
+| QP-thermo-hard HistoryGNO | FEM residual rel. RMS | 1.5*IQR | -24.4575 | 212.839 | 1 | 20260520=289.336 | 123.361 | 92.239 | 123.111 | 59.324 | 15.9791 | 289.336 |
+| QP-thermo-hard HistoryGNO | FEM energy rel. err. | 1.5*IQR | -4097.85 | 11872.1 | 1 | 20260520=26890 | 7540.27 | 9855.74 | 2947.55 | 3992.48 | 89.5723 | 26890 |

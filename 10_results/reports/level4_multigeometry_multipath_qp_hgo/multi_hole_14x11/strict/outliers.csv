@@ -1,0 +1,4 @@
+Model,Metric,Rule,Lower,Upper,Outlier count,Outlier seeds,Mean,Std,Median,IQR,Min,Max
+QP-thermo-hard HistoryGNO,QP history-inc. rel. L2,1.5*IQR,0.998936,1.00086,1,20260519=0.998852,0.999785,0.000503189,1.0001,0.000479996,0.998852,1.00018
+QP-thermo-hard HistoryGNO,Reversal hist-inc. rel. L2,1.5*IQR,0.999198,1.00102,1,20260518=1.00287,1.00056,0.00116443,0.99989,0.000454903,0.99985,1.00287
+QP-thermo-hard HistoryGNO,FEM energy rel. err.,1.5*IQR,-1214.75,5182.61,1,20260520=20462.6,5233.48,7658.25,1506.91,1599.34,230.08,20462.6

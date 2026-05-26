@@ -1,0 +1,11 @@
+# J2 Path-Dependent Baseline Pathwise Table
+
+Data root: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\notch_16x12`
+Train load paths: `monotonic, unload_reload`
+Evaluated paths: `monotonic, cyclic`
+Protocol: 50 epochs, 5 seeds
+
+| Model | Load path | Seeds | Disp. rel. L2 | History rel. L2 | History-increment rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | QP eqp rel. L2 | QP plastic-work rel. L2 | QP von-Mises rel. L2 | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | HANO strain rel. L2 | HANO stress rel. L2 | FEM residual rel. RMS | FEM energy rel. err. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| QP-aware thermo-hard HistoryGNO | monotonic | 5 | 91.0321 +/- 20.3088 | 1.3960 +/- 0.6255 | 1.2409 +/- 0.4794 | 1.7322 +/- 1.1523 | 1.4110 +/- 0.8184 | 6.4481 +/- 10.5600 | 6.5673 +/- 10.8056 | 0.9299 +/- 0.2253 | 5.0452 +/- 8.0905 | 5.1977 +/- 8.3955 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0003 +/- 0.0005 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 |  |  | 150.5054 +/- 86.4198 | 175.1851 +/- 154.9247 |
+| QP-aware thermo-hard HistoryGNO | cyclic | 5 | 85.3670 +/- 18.9961 | 1.2811 +/- 0.4674 | 1.0785 +/- 0.1574 | 1.5729 +/- 0.9262 | 1.1311 +/- 0.2623 | 2.4123 +/- 2.8190 | 2.3925 +/- 2.7807 | 0.9212 +/- 0.2410 | 2.0881 +/- 2.1761 | 2.0902 +/- 2.1804 | 0.9991 +/- 0.0016 | 0.2822 +/- 0.2904 | 0.0003 +/- 0.0005 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 |  |  | 156.7148 +/- 90.0304 | 12045.9499 +/- 11187.5701 |

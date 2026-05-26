@@ -1,0 +1,6 @@
+Model,Seed,Train final loss,Cyclic disp. rel. L2,Cyclic history rel. L2,History-increment rel. L2,QP history rel. L2,QP history-inc. rel. L2,Eqp increment rel. L2,Plastic-work inc. rel. L2,Reversal hist-inc. rel. L2,Reversal yield-flag MAE,Yield-surface RMS,Plastic-work violation abs.,Plastic-work violation target-norm.,Plastic-work violation pred-norm.,FEM residual rel. RMS,FEM energy rel. err.
+QP-thermo-hard HistoryGNO,20260517,1572,75.0937,1.12389,1.00009,1.80619,1.00016,3.86385,4.01311,0.999885,0.430798,3.54022e-07,0,0,0,61.9349,937.04
+QP-thermo-hard HistoryGNO,20260518,325.959,70.2148,1.07237,0.999281,1.73545,1.00317,2.94359,3.08667,1.0189,0.440061,5.55599e-05,0,0,0,22.7968,142.362
+QP-thermo-hard HistoryGNO,20260519,5277.33,88.3167,1.10881,0.998725,1.7845,0.999492,3.0483,3.12861,1.00493,0.433431,3.46235e-05,0,0,0,34.3,671.765
+QP-thermo-hard HistoryGNO,20260520,2144.24,86.77,1.1241,1.00012,1.80656,1.00018,4.39167,4.65634,0.999881,0.430802,4.48115e-07,0,0,0,175.523,8683.72
+QP-thermo-hard HistoryGNO,20260521,1201.91,106.185,1.12142,0.99955,1.80186,0.999998,3.64859,3.80022,1.00063,0.43122,1.0156e-05,0,0,0,116.883,1843.81

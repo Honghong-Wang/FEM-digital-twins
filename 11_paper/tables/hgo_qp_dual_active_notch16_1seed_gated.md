@@ -1,0 +1,10 @@
+# J2 Path-Dependent Baseline Table
+
+Data root: `05_data_pipeline\processed\level4_formal_complex_j2_t6_8step_qp_9case\notch_16x12`
+Train load paths: `monotonic, cyclic`
+Primary table: cyclic path, 50 epochs, 1 seeds
+Evaluated paths stored in JSON: `monotonic, cyclic`
+
+| Model | Seeds | Cyclic disp. rel. L2 | Cyclic history rel. L2 | History-increment rel. L2 | QP history rel. L2 | QP history-inc. rel. L2 | QP eqp rel. L2 | QP plastic-work rel. L2 | QP von-Mises rel. L2 | QP reversal scalar-inc. rel. L2 | QP reversal eqp-inc. rel. L2 | QP reversal work-inc. rel. L2 | QP reversal yield MAE | QP inactive false plasticity | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | HANO strain rel. L2 | HANO stress rel. L2 | FEM residual rel. RMS | FEM energy rel. err. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Dual-head active-QP HistoryGNO | 1 | 93.4999 +/- 0.0000 | 1.7819 +/- 0.0000 | 0.9995 +/- 0.0000 | 2.7301 +/- 0.0000 | 0.9996 +/- 0.0000 | 1.3162 +/- 0.0000 | 1.2899 +/- 0.0000 | 1.1926 +/- 0.0000 | 1.0022 +/- 0.0000 | 1.0498 +/- 0.0000 | 1.0390 +/- 0.0000 | 0.5517 +/- 0.0000 | 0.4007 +/- 0.0000 | 1.4267 +/- 0.0000 | 1.3946 +/- 0.0000 | 1.0022 +/- 0.0000 | 0.7202 +/- 0.0000 | 0.0003 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 | 0.0000 +/- 0.0000 |  |  | 79.8107 +/- 0.0000 | 4117.8916 +/- 0.0000 |

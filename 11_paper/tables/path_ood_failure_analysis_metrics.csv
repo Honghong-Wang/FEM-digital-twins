@@ -1,0 +1,31 @@
+dataset,case,case_label,metric,metric_label,direction,mean,std
+structured J2,strict,Strict monotonic,history_relative_l2,Cyclic history rel. L2,lower is better,1.1643629948298135,0.102596570496463
+structured J2,strict,Strict monotonic,eq_plastic_strain_increment_relative_l2,Eqp increment rel. L2,lower is better,3.5930560509363807,1.1120898544702458
+structured J2,strict,Strict monotonic,reversal_yield_flag_mae,Reversal yield-flag MAE,lower is better,0.6276215791702271,0.023642545773862978
+structured J2,strict,Strict monotonic,predicted_yield_surface_relative_rms,Yield-surface RMS,lower is better,0.529116286834081,0.03714417107160565
+structured J2,strict,Strict monotonic,predicted_plastic_work_lower_bound_relative_violation,Plastic-work lower-bound violation,lower is better,0.7007055670643847,0.6736860213889948
+structured J2,curriculum,Unload curriculum,history_relative_l2,Cyclic history rel. L2,lower is better,0.9866950233777365,0.046073828252031795
+structured J2,curriculum,Unload curriculum,eq_plastic_strain_increment_relative_l2,Eqp increment rel. L2,lower is better,2.3066088914871217,0.6021518427990997
+structured J2,curriculum,Unload curriculum,reversal_yield_flag_mae,Reversal yield-flag MAE,lower is better,0.5733133037885031,0.026229724050600027
+structured J2,curriculum,Unload curriculum,predicted_yield_surface_relative_rms,Yield-surface RMS,lower is better,0.464437594016393,0.015728086457300082
+structured J2,curriculum,Unload curriculum,predicted_plastic_work_lower_bound_relative_violation,Plastic-work lower-bound violation,lower is better,0.16763231356938682,0.21138650654946975
+structured J2,upper_bound,Cyclic-seen upper bound,history_relative_l2,Cyclic history rel. L2,lower is better,0.8584100564320882,0.03782038254698405
+structured J2,upper_bound,Cyclic-seen upper bound,eq_plastic_strain_increment_relative_l2,Eqp increment rel. L2,lower is better,1.6885625918706257,0.40712760509613777
+structured J2,upper_bound,Cyclic-seen upper bound,reversal_yield_flag_mae,Reversal yield-flag MAE,lower is better,0.49746054212252294,0.018490691297298443
+structured J2,upper_bound,Cyclic-seen upper bound,predicted_yield_surface_relative_rms,Yield-surface RMS,lower is better,0.3678960343201955,0.025675291808042063
+structured J2,upper_bound,Cyclic-seen upper bound,predicted_plastic_work_lower_bound_relative_violation,Plastic-work lower-bound violation,lower is better,0.03519498643775781,0.05628332675783025
+shared-hole J2,strict,Strict monotonic,history_relative_l2,Cyclic history rel. L2,lower is better,1.0902721285820007,0.0953819607471015
+shared-hole J2,strict,Strict monotonic,eq_plastic_strain_increment_relative_l2,Eqp increment rel. L2,lower is better,2.07001371383667,0.4898964023156621
+shared-hole J2,strict,Strict monotonic,reversal_yield_flag_mae,Reversal yield-flag MAE,lower is better,0.6823848128318787,0.042690270846583826
+shared-hole J2,strict,Strict monotonic,predicted_yield_surface_relative_rms,Yield-surface RMS,lower is better,0.5578043818473816,0.032392902766382355
+shared-hole J2,strict,Strict monotonic,predicted_plastic_work_lower_bound_relative_violation,Plastic-work lower-bound violation,lower is better,1.095127409696579,0.9186343429556871
+shared-hole J2,curriculum,Unload curriculum,history_relative_l2,Cyclic history rel. L2,lower is better,0.9091702103614807,0.03552608299929402
+shared-hole J2,curriculum,Unload curriculum,eq_plastic_strain_increment_relative_l2,Eqp increment rel. L2,lower is better,1.473679494857788,0.22698972771208112
+shared-hole J2,curriculum,Unload curriculum,reversal_yield_flag_mae,Reversal yield-flag MAE,lower is better,0.6499453186988831,0.0057872686254143105
+shared-hole J2,curriculum,Unload curriculum,predicted_yield_surface_relative_rms,Yield-surface RMS,lower is better,0.5073452770709992,0.025312019659696827
+shared-hole J2,curriculum,Unload curriculum,predicted_plastic_work_lower_bound_relative_violation,Plastic-work lower-bound violation,lower is better,0.32195495069026947,0.24839897071478464
+shared-hole J2,upper_bound,Cyclic-seen upper bound,history_relative_l2,Cyclic history rel. L2,lower is better,0.8020576715469361,0.049993349234995633
+shared-hole J2,upper_bound,Cyclic-seen upper bound,eq_plastic_strain_increment_relative_l2,Eqp increment rel. L2,lower is better,1.183438229560852,0.2174440049006224
+shared-hole J2,upper_bound,Cyclic-seen upper bound,reversal_yield_flag_mae,Reversal yield-flag MAE,lower is better,0.5607823848724365,0.005864842850979169
+shared-hole J2,upper_bound,Cyclic-seen upper bound,predicted_yield_surface_relative_rms,Yield-surface RMS,lower is better,0.3857832789421082,0.040815645019237984
+shared-hole J2,upper_bound,Cyclic-seen upper bound,predicted_plastic_work_lower_bound_relative_violation,Plastic-work lower-bound violation,lower is better,0.08697512913495302,0.16856836905887315

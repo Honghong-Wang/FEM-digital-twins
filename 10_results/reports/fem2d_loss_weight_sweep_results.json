@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "epochs": 1,
+    "num_seeds": 1,
+    "eval_samples": 4,
+    "batch_size": 4,
+    "seed": 20260516,
+    "device": "cpu"
+  },
+  "ranked": [
+    {
+      "name": "residual_adaptive_grid=5x4_n=8_curriculum=linear",
+      "loss_balancer": "residual_adaptive",
+      "pde_weight": 0.0,
+      "boundary_weight": 0.0,
+      "energy_weight": 0.0,
+      "nx": 5,
+      "ny": 4,
+      "train_samples": 8,
+      "eval_samples": 4,
+      "data_dir": "<project-root>\\05_data_pipeline\\processed\\fem2d_plane_stress_sweeps\\nx5_ny4_train8_eval4",
+      "physics_curriculum": "linear",
+      "objective": 2.3344194114208223,
+      "summary": {
+        "num_seeds": 1,
+        "training_strategy": {
+          "physics_curriculum": "linear",
+          "physics_warmup_epochs": 10,
+          "physics_start_scale": 0.0,
+          "physics_end_scale": 1.0,
+          "final_physics_scale": 0.1,
+          "gradnorm_penalty_weight": 0.1,
+          "normalize_physics": true
+        },
+        "train_final_loss": {
+          "mean": 39.277567863464355,
+          "std": 0.0
+        },
+        "loss_balancer_weights": {
+          "boundary": {
+            "mean": 0.884846031665802,
+            "std": 0.0
+          },
+          "calibration": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "data": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "energy": {
+            "mean": 5.405541896820068,
+            "std": 0.0
+          },
+          "pde_residual": {
+            "mean": 6.945483684539795,
+            "std": 0.0
+          }
+        },
+        "test": {
+          "boundary_relative": {
+            "mean": 0.22106242179870605,
+            "std": 0.0
+          },
+          "boundary_rms": {
+            "mean": 0.054411813616752625,
+            "std": 0.0
+          },
+          "coverage_95": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "crps": {
+            "mean": 0.2907417416572571,
+            "std": 0.0
+          },
+          "ece": {
+            "mean": 0.17499999701976776,
+            "std": 0.0
+          },
+          "energy_error_relative": {
+            "mean": 1.079853892326355,
+            "std": 0.0
+          },
+          "gaussian_nll": {
+            "mean": 0.9213505983352661,
+            "std": 0.0
+          },
+          "interval_width_95": {
+            "mean": 3.1833252906799316,
+            "std": 0.0
+          },
+          "max_abs_error": {
+            "mean": 0.6802358627319336,
+            "std": 0.0
+          },
+          "pde_residual_relative": {
+            "mean": 1.0658434629440308,
+            "std": 0.0
+          },
+          "pde_residual_rms": {
+            "mean": 0.07026374340057373,
+            "std": 0.0
+          },
+          "relative_l2": {
+            "mean": 1.0747979879379272,
+            "std": 0.0
+          },
+          "sharpness": {
+            "mean": 0.9550007581710815,
+            "std": 0.0
+          }
+        },
+        "ood_material": {
+          "boundary_relative": {
+            "mean": 0.5642050504684448,
+            "std": 0.0
+          },
+          "boundary_rms": {
+            "mean": 0.05955129861831665,
+            "std": 0.0
+          },
+          "coverage_95": {
+            "mean": 1.0,
+            "std": 0.0
+          },
+          "crps": {
+            "mean": 0.26750680804252625,
+            "std": 0.0
+          },
+          "ece": {
+            "mean": 0.19218750298023224,
+            "std": 0.0
+          },
+          "energy_error_relative": {
+            "mean": 1.2690399885177612,
+            "std": 0.0
+          },
+          "gaussian_nll": {
+            "mean": 0.8923009037971497,
+            "std": 0.0
+          },
+          "interval_width_95": {
+            "mean": 3.1520111560821533,
+            "std": 0.0
+          },
+          "max_abs_error": {
+            "mean": 0.3620017468929291,
+            "std": 0.0
+          },
+          "pde_residual_relative": {
+            "mean": 1.2849584817886353,
+            "std": 0.0
+          },
+          "pde_residual_rms": {
+            "mean": 0.06632910668849945,
+            "std": 0.0
+          },
+          "relative_l2": {
+            "mean": 1.3103437423706055,
+            "std": 0.0
+          },
+          "sharpness": {
+            "mean": 0.941669762134552,
+            "std": 0.0
+          }
+        },
+        "ood_loading": {
+          "boundary_relative": {
+            "mean": 0.06896085292100906,
+            "std": 0.0
+          },
+          "boundary_rms": {
+            "mean": 0.055103983730077744,
+            "std": 0.0
+          },
+          "coverage_95": {
+            "mean": 0.90625,
+            "std": 0.0
+          },
+          "crps": {
+            "mean": 0.4900125563144684,
+            "std": 0.0
+          },
+          "ece": {
+            "mean": 0.04999998211860657,
+            "std": 0.0
+          },
+          "energy_error_relative": {
+            "mean": 1.011052131652832,
+            "std": 0.0
+          },
+          "gaussian_nll": {
+            "mean": 1.2250107526779175,
+            "std": 0.0
+          },
+          "interval_width_95": {
+            "mean": 3.1542067527770996,
+            "std": 0.0
+          },
+          "max_abs_error": {
+            "mean": 2.535702705383301,
+            "std": 0.0
+          },
+          "pde_residual_relative": {
+            "mean": 1.0133705139160156,
+            "std": 0.0
+          },
+          "pde_residual_rms": {
+            "mean": 0.15902087092399597,
+            "std": 0.0
+          },
+          "relative_l2": {
+            "mean": 1.0046472549438477,
+            "std": 0.0
+          },
+          "sharpness": {
+            "mean": 0.94691401720047,
+            "std": 0.0
+          }
+        },
+        "ood_uncertainty_separation": {
+          "ood_material_sharpness_ratio": {
+            "mean": 0.9860408529286828,
+            "std": 0.0
+          },
+          "ood_loading_sharpness_ratio": {
+            "mean": 0.9915322151302807,
+            "std": 0.0
+          }
+        }
+      }
+    }
+  ]
+}

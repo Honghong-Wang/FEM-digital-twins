@@ -1,0 +1,11 @@
+Protocol,Sparse config,Target,Metric,Direction,Gain mean,Gain std,Gain median,Gain IQR,Improved paths,Paths,Eval paths
+strict_path_ood,s4_t2,field,coverage_95,higher,0.889987,0.0271789,0.895313,0.024512,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,field,crps,lower,-1.58699,0.347782,-1.4941,0.08434,0,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,field,ece,lower,0.613424,0.0295151,0.632671,0.046248,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,field,nll,lower,49625.4,28154.3,53626,41037.7,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,history,coverage_95,higher,0.808787,0.0168492,0.800879,0.006044,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,history,ece,lower,0.622657,0.0279383,0.630035,0.027837,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,history,nll,lower,2.37352e+06,774981,2.57228e+06,560700,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,material_parameter,coverage_95,higher,0.815,0.0324894,0.8125,0.033333,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,material_parameter,ece,lower,0.519125,0.0281827,0.512083,0.034167,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
+strict_path_ood,s4_t2,material_parameter,nll,lower,39598.5,37866.1,20403.1,26545.3,5,5,"cyclic,nonproportional,pre_stress,random_amplitude,unload_reload"
