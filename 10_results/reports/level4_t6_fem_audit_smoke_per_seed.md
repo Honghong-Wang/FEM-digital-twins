@@ -1,7 +1,0 @@
-# J2 Path-Dependent Baseline Per-Seed Appendix
-
-Per-seed cyclic-path metrics for diagnosing stochastic training stability and outliers.
-
-| Model | Seed | Train final loss | Cyclic disp. rel. L2 | Cyclic history rel. L2 | History-increment rel. L2 | Eqp increment rel. L2 | Plastic-work inc. rel. L2 | Reversal hist-inc. rel. L2 | Reversal yield-flag MAE | Yield-surface RMS | Plastic-work violation abs. | Plastic-work violation target-norm. | Plastic-work violation pred-norm. | FEM residual rel. RMS | FEM energy rel. err. |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Thermo-hard HistoryGNO | 20260517 | 73887.3 | 129.044 | 2.90228 | 1.01344 | 787.982 | 1106.33 | 0 | 0 | 4.92805e-07 | 0 | 0 | 0 | 381.964 | 119038 |

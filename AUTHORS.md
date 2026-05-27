@@ -6,11 +6,10 @@
 - Affiliation 1: UCL
 - Affiliation 2: FYNU
 
-## Manuscript metadata
+## Project metadata
 
 - Working title: Mechanics-audited stateful operators for path-dependent finite-element digital twins
-- Target journal: Engineering Applications of Artificial Intelligence
-- Repository type: research code and manuscript artifact package
+- Repository type: research code, data protocol, and reproducibility package
 
 ## Authorship note
 
