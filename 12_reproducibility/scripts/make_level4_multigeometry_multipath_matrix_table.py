@@ -32,7 +32,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
             "Aggregate the large Level-4 complex-geometry x path-family J2 matrix into "
-            "paper-ready summary and appendix tables."
+            "paper-ready summary and detailed tables."
         )
     )
     parser.add_argument(
@@ -83,7 +83,7 @@ def main() -> None:
     summary_rows = _aggregate_rows(case_rows)
     _write_csv(args.case_path_csv, case_rows)
     _write_csv(args.summary_csv, summary_rows)
-    _write_markdown(args.case_path_md, case_rows, title="Level-4 Multi-Geometry Multi-Path Matrix Appendix")
+    _write_markdown(args.case_path_md, case_rows, title="Level-4 Multi-Geometry Multi-Path Matrix Details")
     _write_markdown(args.summary_md, summary_rows, title="Level-4 Multi-Geometry Multi-Path Matrix Summary")
     _write_manifest(args.manifest_json, out_root, case_rows, summary_rows)
     print(f"wrote {args.summary_csv}")

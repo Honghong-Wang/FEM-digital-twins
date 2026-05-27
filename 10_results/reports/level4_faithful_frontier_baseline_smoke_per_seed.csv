@@ -1,4 +1,0 @@
-Model,Seed,Train final loss,Cyclic disp. rel. L2,Cyclic history rel. L2,History-increment rel. L2,Eqp increment rel. L2,Plastic-work inc. rel. L2,Reversal hist-inc. rel. L2,Reversal yield-flag MAE,Yield-surface RMS,Plastic-work violation abs.,Plastic-work violation target-norm.,Plastic-work violation pred-norm.
-HANO-window recent-history NO,20260517,55671,97.7181,3.94058,1.24179,4.53703,44.5856,1.1804,0.679439,0.585559,0.0349355,2.86979,0.0648451
-INCDE Euler neural CDE,20260517,74392.9,114.781,2.85597,1.13621,6.64236,26.0815,1.09707,0.542343,0.46907,0.370667,30.5477,1.13952
-Thermo-projected neural CDE,20260517,74385.8,114.781,1.04972,1.00004,0.985059,0.994195,1.00077,0.951613,0,0,0,0

@@ -1,6 +1,0 @@
-Model,Seed,Train final loss,Cyclic disp. rel. L2,Cyclic history rel. L2,History-increment rel. L2,QP history rel. L2,QP history-inc. rel. L2,Eqp increment rel. L2,Plastic-work inc. rel. L2,Reversal hist-inc. rel. L2,Reversal yield-flag MAE,Yield-surface RMS,Plastic-work violation abs.,Plastic-work violation target-norm.,Plastic-work violation pred-norm.,FEM residual rel. RMS,FEM energy rel. err.,HANO strain rel. L2,HANO stress rel. L2
-QP-thermo-hard HistoryGNO,20260517,4.33703e+06,1269.77,1.18273,1.0007,1.96085,1.00125,19.4561,24.2654,1.00042,0.455988,5.67484e-08,0,0,0,461.073,119780,,
-Faithful HANO strain-stress spectral-window NO,20260517,3.39803e+08,7832.84,9.86946,3.03459,,,4077.34,29612.5,5.67466,0.51846,0.293275,5.74947,214622,7.2476,494.254,374075,142.397,6.01509
-HANO-style window NO,20260517,2.15803e+08,14076,2.94964,1.13575,,,582.265,6750.69,1.45043,0.523169,0.130037,0.0158689,592.373,0.0877452,752.195,300431,,
-INCDE-style Euler neural CDE,20260517,1.0475e+07,1169.09,3.23487,1.07646,,,347.276,5247.5,1.27457,0.528482,0.0717916,0,0,0,600.322,473092,,
-TINN-style thermo-projected neural CDE,20260517,1.04779e+07,1169.08,1.18066,1.0004,,,14.3996,16.8012,1.00007,0.455988,0,0,0,0,600.296,473082,,

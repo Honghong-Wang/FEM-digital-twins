@@ -1,2 +1,0 @@
-geometry,load_path,split,samples,nodes,elements,load_steps,fields,has_final_tangent,has_tangent_sequence,has_qp_history,has_qp_plastic_strain,q_points,newton_residual_rms,reference_energy_mean,size_mb,path
-shared,monotonic,train,1,532,233,12,2,False,False,True,True,3,0.0011387815818384964,-0.0003228473723925999,1.382394790649414,05_data_pipeline\processed\tmp_level6_formal_onesample_timing\monotonic\train.npz

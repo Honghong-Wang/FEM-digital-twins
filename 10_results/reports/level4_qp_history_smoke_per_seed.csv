@@ -1,3 +1,0 @@
-Model,Seed,Train final loss,Cyclic disp. rel. L2,Cyclic history rel. L2,History-increment rel. L2,Eqp increment rel. L2,Plastic-work inc. rel. L2,Reversal hist-inc. rel. L2,Reversal yield-flag MAE,Yield-surface RMS,Plastic-work violation abs.,Plastic-work violation target-norm.,Plastic-work violation pred-norm.,FEM residual rel. RMS,FEM energy rel. err.
-Thermo-hard HistoryGNO,20260517,8004.43,79.6891,1.4635,1.00648,29.4576,47.8817,1.00771,0.9,7.28556e-07,0,0,0,190.771,50254.8
-Thermo-projected neural CDE,20260517,2.49241e+06,2162.42,1.44144,1.0003,2.26948,2.22904,1.0004,0.9,0,0,0,0,129.703,18556.3

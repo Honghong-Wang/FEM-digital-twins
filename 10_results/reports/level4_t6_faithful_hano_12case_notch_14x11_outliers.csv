@@ -1,7 +1,0 @@
-Model,Metric,Rule,Lower,Upper,Outlier count,Outlier seeds,Mean,Std,Median,IQR,Min,Max
-Faithful HANO strain-stress spectral-window NO,Yield-surface RMS,1.5*IQR,-0.107637,0.66467,1,20260519=0.80866,0.311957,0.274688,0.190058,0.193077,0.00403186,0.80866
-Faithful HANO strain-stress spectral-window NO,Plastic-work violation pred-norm.,1.5*IQR,-17.3785,35.1928,1,20260520=132.526,31.869,50.6185,9.00443,13.1428,0,132.526
-Faithful HANO strain-stress spectral-window NO,HANO strain rel. L2,1.5*IQR,25.3444,76.2183,2,20260517=13.09; 20260518=189.754,69.8381,61.7008,44.7842,12.7185,13.09,189.754
-Faithful HANO strain-stress spectral-window NO,HANO stress rel. L2,1.5*IQR,3.93654,20.0708,1,20260519=20.5309,13.266,3.93745,11.9401,4.03357,9.85146,20.5309
-Faithful HANO strain-stress spectral-window NO,FEM residual rel. RMS,1.5*IQR,352.027,1881.28,1,20260518=7751.54,2330.69,2726.77,1215.99,382.314,452.603,7751.54
-Faithful HANO strain-stress spectral-window NO,FEM energy rel. err.,1.5*IQR,-302936,1.53638e+06,1,20260518=1.69454e+07,3.77253e+06,6.59128e+06,603246,459830,80519.6,1.69454e+07

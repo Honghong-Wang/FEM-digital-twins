@@ -1,2 +1,0 @@
-geometry,family,files,samples,load_paths,splits,node_min,node_max,element_min,element_max,steps,q_points,qp_history,qp_plastic_strain,final_tangent,tangent_sequence,residual_rms_mean,size_mb
-shared,shared,1,1,1,train,532,532,233,233,12,3,True,True,False,False,0.0011387815818384964,1.382394790649414

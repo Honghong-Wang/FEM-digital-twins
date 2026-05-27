@@ -11,7 +11,7 @@ This package is prepared as a full public code release for the project
 - Reproducibility scripts: `12_reproducibility/scripts`.
 - Configuration and protocol notes: `05_data_pipeline`, `06_models`,
   `07_training`, `08_experiments`, and `09_validation_verification`.
-- Compact evidence artifacts: `10_results` and `11_paper`.
+- Main-paper evidence artifacts: `11_paper`.
 - Public smoke data and runnable example: `data/public_j2_smoke` and `examples`.
 
 ## Excluded large artifacts
@@ -20,6 +20,7 @@ This package is prepared as a full public code release for the project
 - Regenerated full processed datasets.
 - Long formal training directories.
 - Model checkpoints and temporary logs.
+- Extended diagnostics and result dumps outside the main paper.
 - Local caches and build intermediates.
 - Main paper PDF and private editorial files.
 

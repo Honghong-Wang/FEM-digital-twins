@@ -1,7 +1,0 @@
-Model,Metric,Rule,Lower,Upper,Outlier count,Outlier seeds,Mean,Std,Median,IQR,Min,Max
-QP-aware active-zone thermo-hard HistoryGNO,Cyclic disp. rel. L2,1.5*IQR,-3.73828,119.657,1,20260520=150.158,74.072,41.4085,72.4802,30.8488,31.803,150.158
-QP-aware active-zone thermo-hard HistoryGNO,Cyclic history rel. L2,1.5*IQR,0.988949,0.994426,1,20260517=0.999863,0.993142,0.00339744,0.991471,0.00136924,0.991002,0.999863
-QP-aware active-zone thermo-hard HistoryGNO,QP history rel. L2,1.5*IQR,0.978751,0.98654,1,20260517=0.999714,0.985704,0.00704522,0.981995,0.00194722,0.981518,0.999714
-QP-aware active-zone thermo-hard HistoryGNO,QP von-Mises rel. L2,1.5*IQR,0.478654,0.712464,1,20260517=0.994625,0.664503,0.166628,0.577098,0.0584524,0.559673,0.994625
-QP-aware active-zone thermo-hard HistoryGNO,Reversal hist-inc. rel. L2,1.5*IQR,0.999663,0.999947,1,20260517=0.999996,0.999817,0.000100343,0.999779,7.11679e-05,0.999698,0.999996
-QP-aware active-zone thermo-hard HistoryGNO,FEM energy rel. err.,1.5*IQR,-3018.96,12981.7,1,20260519=14812.8,5782.67,4981.4,3751.05,4000.15,386.771,14812.8

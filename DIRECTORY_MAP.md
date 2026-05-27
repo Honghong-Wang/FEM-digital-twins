@@ -35,9 +35,8 @@ paper folder.
 - `data/public_j2_smoke`: small public smoke dataset.
 - `05_data_pipeline`: data schema and protocol notes, without large processed
   datasets.
-- `10_results`: compact reports, tables, and figures.
-- `11_paper`: paper figures and evidence tables only; paper PDFs and private
-  editorial files are not included.
+- `11_paper`: main-paper figures and evidence tables only; paper PDFs,
+  extended diagnostics, and private editorial files are not included.
 
 ## Research notes retained for context
 

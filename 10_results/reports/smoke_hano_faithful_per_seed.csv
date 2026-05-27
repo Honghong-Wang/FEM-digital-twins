@@ -1,3 +1,0 @@
-Model,Seed,Train final loss,Cyclic disp. rel. L2,Cyclic history rel. L2,History-increment rel. L2,Eqp increment rel. L2,Plastic-work inc. rel. L2,Reversal hist-inc. rel. L2,Reversal yield-flag MAE,Yield-surface RMS,Plastic-work violation abs.,Plastic-work violation target-norm.,Plastic-work violation pred-norm.
-Faithful HANO strain-stress window NO,20260517,8.26686e+07,5071.01,7.73248,2.55373,188.782,34391.2,4.67963,0.507671,0.383235,0,0,0
-HANO-style window NO,20260517,3.08091e+08,17487.8,7.92396,1.65437,402.137,18988.4,2.75839,0.524677,0.119591,0,0,0

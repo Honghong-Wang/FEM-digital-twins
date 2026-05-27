@@ -26,8 +26,7 @@ See `AUTHORS.md` and `CITATION.cff` for citation metadata.
   `12_reproducibility/scripts`.
 - Public smoke data under `data/public_j2_smoke`.
 - Lightweight runnable example under `examples`.
-- Curated result tables, reports, and paper figures under `10_results` and
-  `11_paper`.
+- Curated main-paper tables and figures under `11_paper`.
 - GitHub Actions workflow for unit-test validation.
 
 The paper PDF is not included in this code-release package. The repository
@@ -70,8 +69,8 @@ a release gate.
 
 ## Reproducibility entry points
 
-The formal campaigns are represented by executable scripts and frozen compact
-result summaries. Full reruns can be computationally expensive; the package
+The formal campaigns are represented by executable scripts and compact
+main-paper artifacts. Full reruns can be computationally expensive; the package
 therefore separates lightweight checks from formal long-run campaigns.
 
 ```text
@@ -96,10 +95,10 @@ Sparse-observation posterior calibration:
 
 ## Data policy
 
-GitHub is used for code, compact evidence tables, figures, and a small public
-smoke dataset. Large processed FEM datasets, raw archives, checkpoints, and long
-training folders are intentionally excluded and should be deposited in a data
-archive if the full formal campaign is released.
+GitHub is used for code, main-paper evidence tables, figures, and a small public
+smoke dataset. Extended diagnostics, large processed FEM datasets, raw archives,
+checkpoints, and long training folders are intentionally excluded and should be
+deposited separately if released.
 
 See `DATA_MANIFEST.md` and `CODE_AVAILABILITY.md`.
 

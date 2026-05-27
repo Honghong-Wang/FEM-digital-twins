@@ -515,8 +515,8 @@ def main() -> None:
     _write_table_markdown(args.md_out, payload)
     _write_robust_stats_csv(args.robust_csv_out, payload)
     _write_robust_stats_markdown(args.robust_md_out, payload)
-    _write_per_seed_appendix_csv(args.per_seed_csv_out, payload)
-    _write_per_seed_appendix_markdown(args.per_seed_md_out, payload)
+    _write_per_seed_detail_csv(args.per_seed_csv_out, payload)
+    _write_per_seed_detail_markdown(args.per_seed_md_out, payload)
     _write_outlier_diagnostics_csv(args.outlier_csv_out, payload)
     _write_outlier_diagnostics_markdown(args.outlier_md_out, payload)
     _write_pathwise_csv(args.pathwise_csv_out, payload)
@@ -1408,15 +1408,15 @@ def _write_robust_stats_markdown(path: Path, payload: dict) -> None:
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def _write_per_seed_appendix_csv(path: Path, payload: dict) -> None:
+def _write_per_seed_detail_csv(path: Path, payload: dict) -> None:
     _write_rows_csv(path, _per_seed_rows(payload))
 
 
-def _write_per_seed_appendix_markdown(path: Path, payload: dict) -> None:
+def _write_per_seed_detail_markdown(path: Path, payload: dict) -> None:
     rows = _per_seed_rows(payload)
     eval_paths = ", ".join(payload["metadata"].get("eval_load_paths", []))
     lines = [
-        "# J2 Path-Dependent Baseline Per-Seed Appendix",
+        "# J2 Path-Dependent Baseline Per-Seed Details",
         "",
         "Per-seed cyclic-primary metrics for diagnosing stochastic training stability and outliers.",
         f"All evaluated paths are stored in JSON: `{eval_paths}`.",

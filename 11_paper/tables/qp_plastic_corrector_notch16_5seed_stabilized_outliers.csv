@@ -1,8 +1,0 @@
-Model,Metric,Rule,Lower,Upper,Outlier count,Outlier seeds,Mean,Std,Median,IQR,Min,Max
-QP plastic-memory corrector HistoryGNO,Cyclic disp. rel. L2,1.5*IQR,52.8365,112.196,2,20260519=183.074; 20260520=34.8738,94.2642,48.6529,88.3411,14.8399,34.8738,183.074
-QP plastic-memory corrector HistoryGNO,QP eqp rel. L2,1.5*IQR,0.810326,1.31205,1,20260519=1.99137,1.22664,0.385486,1.03661,0.125432,0.982809,1.99137
-QP plastic-memory corrector HistoryGNO,QP plastic-work rel. L2,1.5*IQR,0.829895,1.27973,1,20260519=1.93183,1.21135,0.362915,1.03132,0.112459,0.983951,1.93183
-QP plastic-memory corrector HistoryGNO,QP von-Mises rel. L2,1.5*IQR,1.16763,1.20122,1,20260519=1.20364,1.1876,0.00877688,1.18631,0.00839806,1.17919,1.20364
-QP plastic-memory corrector HistoryGNO,Eqp increment rel. L2,1.5*IQR,0.73298,1.44037,1,20260519=2.23927,1.28985,0.47956,1.05581,0.176847,0.980799,2.23927
-QP plastic-memory corrector HistoryGNO,Plastic-work inc. rel. L2,1.5*IQR,0.758466,1.3982,1,20260519=2.17651,1.27267,0.456101,1.04827,0.159933,0.981922,2.17651
-QP plastic-memory corrector HistoryGNO,FEM residual rel. RMS,1.5*IQR,48.0297,149.429,2,20260518=35.5081; 20260520=196.907,105.87,52.35,99.4774,25.3497,35.5081,196.907

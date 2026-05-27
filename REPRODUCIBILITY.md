@@ -43,5 +43,6 @@ The repository includes scripts and compact summaries for:
 
 Full formal reruns can be expensive and may require regenerating the large FEM
 datasets that are not committed to GitHub. The entry points are under
-`12_reproducibility/scripts`; compact output tables and reports are under
-`10_results` and `11_paper`.
+`12_reproducibility/scripts`; curated main-paper artifacts are under `11_paper`.
+New local reruns may write temporary outputs under `10_results`, which is not
+part of the public main-paper artifact set.

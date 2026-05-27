@@ -1,5 +1,0 @@
-Model,Metric,Rule,Lower,Upper,Outlier count,Outlier seeds,Mean,Std,Median,IQR,Min,Max
-Faithful HANO strain-stress spectral-window NO,Cyclic disp. rel. L2,1.5*IQR,119.896,165.57,2,20260520=322.958; 20260521=119.792,173.43,75.3329,138.936,11.4187,119.792,322.958
-Faithful HANO strain-stress spectral-window NO,Cyclic history rel. L2,1.5*IQR,0.731737,2.73555,1,20260518=3.02872,1.94382,0.604739,1.94085,0.500953,1.28223,3.02872
-Faithful HANO strain-stress spectral-window NO,Plastic-work violation pred-norm.,1.5*IQR,-10.2497,18.6677,1,20260520=47.9323,12.7398,17.8713,7.01804,7.22933,0.330692,47.9323
-Faithful HANO strain-stress spectral-window NO,FEM energy rel. err.,1.5*IQR,-245201,2.17375e+06,1,20260521=2.90121e+06,1.19115e+06,943416,1.03782e+06,604738,88181.6,2.90121e+06

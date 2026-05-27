@@ -641,7 +641,7 @@ def _write_markdown(
     lines = [
         f"# {title}",
         "",
-        "This table promotes material/history posterior calibration from appendix diagnostics to the main evidence chain.",
+        "This table promotes material/history posterior calibration from extended diagnostics to the main evidence chain.",
         "",
         "| " + " | ".join(headers) + " |",
         "| " + " | ".join(["---"] * len(headers)) + " |",

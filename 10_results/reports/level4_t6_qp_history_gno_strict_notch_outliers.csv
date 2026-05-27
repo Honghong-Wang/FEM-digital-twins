@@ -1,4 +1,0 @@
-Model,Metric,Rule,Lower,Upper,Outlier count,Outlier seeds,Mean,Std,Median,IQR,Min,Max
-QP-thermo-hard HistoryGNO,Eqp increment rel. L2,1.5*IQR,3.30276,4.75276,1,20260521=5.40288,4.17204,0.67437,4.02309,0.3625,3.37871,5.40288
-QP-thermo-hard HistoryGNO,Plastic-work inc. rel. L2,1.5*IQR,3.32494,4.64561,2,20260517=3.27689; 20260521=5.42292,4.12524,0.710782,3.95584,0.330168,3.27689,5.42292
-QP-thermo-hard HistoryGNO,FEM energy rel. err.,1.5*IQR,-720.596,7100.65,1,20260520=24055.3,6745.39,8742.81,2939.29,1955.31,352.32,24055.3
