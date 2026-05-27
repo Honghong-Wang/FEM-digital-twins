@@ -13,5 +13,4 @@
 
 ## Authorship note
 
-This package is prepared for a single-author manuscript submission and associated
-research-code release.
+This package is prepared as a single-author research-code release.

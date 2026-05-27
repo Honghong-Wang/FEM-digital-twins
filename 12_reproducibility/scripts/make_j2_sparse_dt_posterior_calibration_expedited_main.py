@@ -96,7 +96,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
             "Convert the completed 5-seed calibrated sparse-DT posterior run into an "
-            "expedited manuscript main table while the full 9-condition formal campaign runs."
+            "expedited compact table while the full 9-condition formal campaign runs."
         )
     )
     parser.add_argument("--summary-json", type=Path, default=DEFAULT_SUMMARY)

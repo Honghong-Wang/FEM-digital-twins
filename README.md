@@ -30,7 +30,7 @@ See `AUTHORS.md` and `CITATION.cff` for citation metadata.
   `11_paper`.
 - GitHub Actions workflow for unit-test validation.
 
-The manuscript PDF is not included in this code-release package. The repository
+The paper PDF is not included in this code-release package. The repository
 contains code, public example data, and compact evidence artifacts needed to
 inspect the computational chain.
 
@@ -64,7 +64,7 @@ $env:PYTHON_EXE = "python"
 ```
 
 The supported lightweight release checks are Python compilation, unit tests,
-integration tests, example execution, and manuscript evidence audits. Static
+integration tests, example execution, and evidence artifact audits. Static
 typing is partial for the NumPy/SciPy/Torch numerical kernels and is not used as
 a release gate.
 

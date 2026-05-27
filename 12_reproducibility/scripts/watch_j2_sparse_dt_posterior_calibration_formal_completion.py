@@ -21,7 +21,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
             "Watch the 9-condition sparse-DT posterior calibration campaign. "
-            "When all conditions are complete, aggregate the manuscript tables and run the formal audit."
+            "When all conditions are complete, aggregate the formal tables and run the formal audit."
         )
     )
     parser.add_argument("--poll-seconds", type=int, default=300)
@@ -47,7 +47,7 @@ def main() -> None:
                 flush=True,
             )
             if complete:
-                print("all conditions complete; aggregating formal manuscript tables", flush=True)
+                print("all conditions complete; aggregating formal tables", flush=True)
                 _run(_aggregate_command())
                 print("running formal audit", flush=True)
                 _run([sys.executable, str(AUDIT_SCRIPT)])

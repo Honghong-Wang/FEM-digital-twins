@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this research code, please cite the associated manuscript."
+message: "If you use this research code, please cite the associated study."
 title: "Mechanics-audited stateful operators for path-dependent finite-element digital twins"
 authors:
   - family-names: "HH"

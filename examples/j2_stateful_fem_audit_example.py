@@ -1,7 +1,7 @@
 """Medium-difficulty public example for path-dependent FEM digital twins.
 
 This script is intentionally self-contained. It does not expose the full research
-source code used in the manuscript. The example demonstrates the public-facing
+source code used in the study. The example demonstrates the public-facing
 workflow:
 
 1. load a small J2 finite-element path dataset;

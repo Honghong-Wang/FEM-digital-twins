@@ -21,7 +21,7 @@ This package is prepared as a full public code release for the project
 - Long formal training directories.
 - Model checkpoints and temporary logs.
 - Local caches and build intermediates.
-- Main manuscript PDF and submission-only files.
+- Main paper PDF and private editorial files.
 
 ## Reproduction boundary
 

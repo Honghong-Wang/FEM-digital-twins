@@ -12,7 +12,7 @@ REPORT_ROOT = PROJECT_ROOT / "10_results" / "reports"
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Evaluate CMAME Level-6 readiness from audited evidence artifacts.")
+    parser = argparse.ArgumentParser(description="Evaluate formal readiness from audited evidence artifacts.")
     parser.add_argument(
         "--json-out",
         type=Path,
@@ -118,8 +118,8 @@ def _check_qp_history() -> dict:
     summary = TABLE_ROOT / "qp_history_repair_notch16_summary.csv"
     rows = _read_rows(summary)
     has_formal_rows = len(rows) >= 7
-    # This remains a warning rather than a hard failure because CMAME can accept a strong failure-analysis story
-    # if the manuscript does not claim that QP memory is fully solved.
+    # This remains a warning rather than a hard failure because a carefully scoped study can
+    # use the QP-memory gap as failure analysis instead of claiming it is fully solved.
     return {
         "name": "QP history learning evidence",
         "pass": has_formal_rows,
@@ -160,7 +160,7 @@ def _level_from_checks(checks: list[dict]) -> str:
     if any(not check["pass"] for check in blockers):
         return "Level 4A+"
     if warning_failures:
-        return "Level 6-CMAME-ready with warnings"
+        return "Level 6-ready with warnings"
     return "Level 6+"
 
 
@@ -173,12 +173,12 @@ def _next_actions(checks: list[dict]) -> list[str]:
         )
     if "Digital-twin posterior calibration formal evidence" in failed:
         actions.append(
-            "Keep posterior calibration as auxiliary evidence until the 9-condition formal matrix can be run and audited; do not block CMAME Level-6 readiness on this warning."
+            "Keep posterior calibration as auxiliary evidence until the 9-condition formal matrix can be run and audited; do not block formal readiness on this warning."
         )
     if "QP history learning evidence" in failed:
         actions.append("Run a 5-seed QP-history repair table and report history-increment/reversal metrics.")
     if not actions:
-        actions.append("Update manuscript language to Level-6 CMAME strong-claim mode and recompile.")
+        actions.append("Update the paper language to match the audited evidence level.")
     return actions
 
 

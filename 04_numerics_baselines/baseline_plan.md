@@ -29,7 +29,7 @@
 | L1 | 非线性弹性结构 | 验证 mechanics consistency |
 | L2 | 多物理耦合结构 | 验证 operator generalization |
 | L3 | 稀疏观测反问题 | 验证 digital twin 能力 |
-| L4 | 跨 benchmark family 泛化 | 支撑 CMAME 论文主实验 |
+| L4 | 跨 benchmark family 泛化 | 支撑主实验 |
 
 ## OOD 与不确定性对比
 

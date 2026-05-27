@@ -337,7 +337,7 @@ def _rbf_transfer_weights(
 
 @dataclass(frozen=True)
 class BaselineRegistry:
-    """Checklist for the comparison suite expected by the manuscript."""
+    """Checklist for the comparison suite used by the study."""
 
     include_fem: bool = True
     include_rom: bool = True

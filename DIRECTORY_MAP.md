@@ -1,7 +1,7 @@
 # Directory map
 
-This package is organized as a public code repository rather than as a manuscript
-submission folder.
+This package is organized as a public code repository rather than as a private
+paper folder.
 
 ## Core code
 
@@ -36,8 +36,8 @@ submission folder.
 - `05_data_pipeline`: data schema and protocol notes, without large processed
   datasets.
 - `10_results`: compact reports, tables, and figures.
-- `11_paper`: paper figures and evidence tables only; manuscript PDFs and
-  submission files are not included.
+- `11_paper`: paper figures and evidence tables only; paper PDFs and private
+  editorial files are not included.
 
 ## Research notes retained for context
 
