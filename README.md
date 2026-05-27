@@ -2,7 +2,7 @@
 
 This repository contains the full research code for the study
 
-> A mechanics-audited stateful operator for path-dependent finite-element digital twins
+> Mechanics-audited stateful operators for path-dependent finite-element digital twins
 
 The code supports experiments on stateful neural operators for nonlinear
 finite-element J2 plasticity paths. The main question is whether learned

@@ -2,7 +2,7 @@
 
 This package is prepared as a full public code release for the project
 
-> A mechanics-audited stateful operator for path-dependent finite-element digital twins.
+> Mechanics-audited stateful operators for path-dependent finite-element digital twins.
 
 ## Public code contents
 

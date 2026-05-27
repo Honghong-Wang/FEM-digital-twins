@@ -138,7 +138,20 @@ def _annotate_panel(ax: plt.Axes, label: str, title: str) -> None:
         ha="left",
         bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.75, "pad": 1.5},
     )
-    ax.set_title(title, loc="left", fontsize=8.5, pad=6)
+
+
+def _annotate_panel_above(ax: plt.Axes, label: str) -> None:
+    ax.text(
+        0.00,
+        1.08,
+        label,
+        transform=ax.transAxes,
+        fontsize=8.5,
+        fontweight="bold",
+        va="bottom",
+        ha="left",
+        clip_on=False,
+    )
 
 
 def make_level6_readiness_dashboard() -> None:
@@ -174,7 +187,6 @@ def make_level6_readiness_dashboard() -> None:
     for yi, row in zip(y, rows):
         label = "pass" if row["pass"] else ("warning" if row["severity"] == "warning" else "gap")
         ax.text(0.50, yi, label, color="white", ha="center", va="center", fontsize=8, fontweight="bold")
-    fig.suptitle("Level-6 evidence readiness audit", fontsize=11, fontweight="bold")
     ax.text(
         0,
         -0.85,
@@ -244,12 +256,6 @@ def make_solver_in_loop_formal_evidence() -> None:
         columnspacing=0.8,
         handlelength=1.0,
     )
-    fig.suptitle(
-        "Formal solver-in-loop evidence: 3 complex geometries, 4 path tests, 5 ablation arms",
-        fontsize=10.5,
-        fontweight="bold",
-        y=0.985,
-    )
     _write(fig, "solver_in_loop_formal_evidence")
 
 
@@ -263,10 +269,10 @@ def make_solver_in_loop_reduction_heatmap() -> None:
     ]
     ablations = ABLATION_ORDER[1:]
     fig, axes = plt.subplots(1, 4, figsize=(7.8, 2.8), sharey=True)
-    fig.subplots_adjust(wspace=0.20, left=0.16, right=0.91, bottom=0.22, top=0.78)
+    fig.subplots_adjust(wspace=0.20, left=0.16, right=0.91, bottom=0.22, top=0.74)
 
     vmax = 60.0
-    for ax, (metric, title) in zip(axes, metrics):
+    for idx, (ax, (metric, title)) in enumerate(zip(axes, metrics)):
         matrix = np.full((len(ablations), len(PATH_ORDER)), np.nan)
         labels = [["" for _ in PATH_ORDER] for _ in ablations]
         for i, ablation in enumerate(ablations):
@@ -292,7 +298,7 @@ def make_solver_in_loop_reduction_heatmap() -> None:
             ax.set_yticklabels([ABLATION_LABELS[a] for a in ablations], fontsize=7.5)
         else:
             ax.tick_params(axis="y", labelleft=False)
-        ax.set_title(title, fontsize=8.3)
+        _annotate_panel_above(ax, f"({chr(ord('a') + idx)})")
         for i in range(matrix.shape[0]):
             for j in range(matrix.shape[1]):
                 value = matrix[i, j]
@@ -307,12 +313,6 @@ def make_solver_in_loop_reduction_heatmap() -> None:
     cb = fig.colorbar(im, cax=cax)
     cb.set_label("Improvement vs no solver loss (%)", fontsize=7.5)
     cb.ax.tick_params(labelsize=7)
-    fig.suptitle(
-        "Solver-in-loop reduction map: improvement must be read metric-by-metric",
-        fontsize=11,
-        fontweight="bold",
-        y=0.97,
-    )
     _write(fig, "solver_in_loop_reduction_heatmap")
 
 
@@ -338,7 +338,7 @@ def make_multigeometry_path_matrix() -> None:
     fig, axes = plt.subplots(1, 3, figsize=(8.1, 5.0), sharey=True)
     fig.subplots_adjust(left=0.27, right=0.97, bottom=0.13, top=0.86, wspace=0.18)
 
-    for ax, (col, title) in zip(axes, metrics):
+    for idx, (ax, (col, title)) in enumerate(zip(axes, metrics)):
         matrix = np.full((len(cases), len(PATH_ORDER)), np.nan)
         for i, case in enumerate(cases):
             for j, path in enumerate(PATH_ORDER):
@@ -361,7 +361,7 @@ def make_multigeometry_path_matrix() -> None:
             ax.set_yticklabels([c.replace("_", " ") for c in cases], fontsize=6.8)
         else:
             ax.tick_params(axis="y", labelleft=False)
-        ax.set_title(title + "\n(log10 mean)", fontsize=8.5)
+        _annotate_panel(ax, f"({chr(ord('a') + idx)})", title)
         for i in range(matrix.shape[0]):
             for j in range(matrix.shape[1]):
                 value = matrix[i, j]
@@ -371,12 +371,6 @@ def make_multigeometry_path_matrix() -> None:
                 ax.text(j, i, text, ha="center", va="center", fontsize=5.8, color="white")
         ax.tick_params(length=0)
         ax.spines[:].set_visible(False)
-    fig.suptitle(
-        "Complex-geometry/path evidence matrix: 12 T6/QP cases under strict path-OOD",
-        fontsize=11,
-        fontweight="bold",
-        y=0.98,
-    )
     _write(fig, "level6_multigeometry_path_matrix")
 
 
@@ -412,16 +406,8 @@ def make_qp_history_repair_diagnostic() -> None:
         if col == "FEM residual rel. RMS":
             ax.set_yscale("log")
         _style_axis(ax)
-    axes[0, 0].set_title("(a) overall QP history can improve", loc="left", fontsize=8.5)
-    axes[0, 1].set_title("(b) scalar plastic memory remains hard", loc="left", fontsize=8.5)
-    axes[1, 0].set_title("(c) plastic work shows the same collapse", loc="left", fontsize=8.5)
-    axes[1, 1].set_title("(d) FEM audit improves despite memory errors", loc="left", fontsize=8.5)
-    fig.suptitle(
-        "QP-history repair diagnostics: evidence and limitation in notch 16x12",
-        fontsize=11,
-        fontweight="bold",
-        y=0.98,
-    )
+    for ax, label in zip(axes.flat, ["(a)", "(b)", "(c)", "(d)"]):
+        _annotate_panel(ax, label, "")
     _write(fig, "qp_history_repair_diagnostic")
 
 

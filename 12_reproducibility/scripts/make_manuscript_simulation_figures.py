@@ -34,6 +34,27 @@ def main() -> None:
     print(f"wrote figures to {FIG_DIR}")
 
 
+def panel_label(ax: plt.Axes, label: str) -> None:
+    ax.text(
+        0.018,
+        0.975,
+        f"({label})",
+        transform=ax.transAxes,
+        ha="left",
+        va="top",
+        fontsize=10.5,
+        fontweight="bold",
+        color="#111111",
+        bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.82, "pad": 1.8},
+        zorder=20,
+    )
+
+
+def panel_from_title(ax: plt.Axes, title: str) -> None:
+    if len(title) >= 3 and title[0] == "(" and title[2] == ")":
+        panel_label(ax, title[1])
+
+
 def _make_theory_chain_legacy() -> None:
     fig, ax = plt.subplots(figsize=(7.2, 4.2))
     fig.subplots_adjust(left=0, right=1, bottom=0, top=1)
@@ -554,7 +575,7 @@ def make_j2_dataset_protocol() -> None:
         zorder=4,
     )
     ax_mesh.set_aspect("equal")
-    ax_mesh.set_title("shared complex J2 mesh", fontsize=10, fontweight="bold")
+    panel_label(ax_mesh, "a")
     ax_mesh.set_xlabel("$x$")
     ax_mesh.set_ylabel("$y$")
     ax_mesh.legend(frameon=False, loc="lower left", fontsize=8)
@@ -568,7 +589,7 @@ def make_j2_dataset_protocol() -> None:
         if family == "nonproportional":
             ax_paths.plot(steps, load[:, 1], marker="s", linewidth=1.2, linestyle="--", color=color, alpha=0.75, label=f"{label}: $f_y$")
     ax_paths.axhline(0.0, color="#555555", linewidth=0.8)
-    ax_paths.set_title("loading-path families used for path-OOD testing", fontsize=10, fontweight="bold")
+    panel_label(ax_paths, "b")
     ax_paths.set_xlabel("load step")
     ax_paths.set_ylabel("load factor")
     ax_paths.set_xticks(np.arange(1, 9))
@@ -595,10 +616,10 @@ def make_j2_dataset_protocol() -> None:
         ax_protocol.add_patch(box)
         ax_protocol.text(0.08, y + 0.122, title, ha="left", va="center", fontsize=8.7, fontweight="bold", color=color)
         ax_protocol.text(0.08, y + 0.057, body, ha="left", va="center", fontsize=7.7, color="#222222")
-    ax_protocol.set_title("training/evaluation protocol", fontsize=10, fontweight="bold")
+    panel_label(ax_protocol, "c")
 
     ax_tensors.axis("off")
-    ax_tensors.set_title("common tensor interface", fontsize=10, fontweight="bold")
+    panel_label(ax_tensors, "d")
     rows = [
         ("mesh", "$x_i, E$"),
         ("parameters", "$\\mu$"),
@@ -622,7 +643,6 @@ def make_j2_dataset_protocol() -> None:
         color="#555555",
     )
 
-    fig.suptitle("Dataset and path-OOD protocol for shared-geometry J2 plasticity", fontweight="bold")
     save(fig, "j2_dataset_protocol")
 
 
@@ -646,7 +666,7 @@ def make_pcgno_repair() -> None:
     ax.set_xticks(x)
     ax.set_xticklabels([label for _, label in metrics])
     ax.set_ylabel("Lower is better")
-    ax.set_title("PCGNO FEM-evidence repair")
+    panel_label(ax, "a")
     ax.grid(True, axis="y", alpha=0.25)
     ax.legend(frameon=False)
     save(fig, "pcgno_repair_evidence")
@@ -662,14 +682,13 @@ def make_fem_baseline() -> None:
     ]
     colors = ["#4c78a8", "#f58518", "#54a24b"]
     fig, axes = plt.subplots(1, 3, figsize=(11.5, 3.8), constrained_layout=True)
-    for ax, (metric, title), color in zip(axes, metrics, colors):
+    for ax, (metric, title), color, panel in zip(axes, metrics, colors, ["a", "b", "c"]):
         values = [float(row[metric]) for row in rows]
         ax.bar(models, values, color=color, alpha=0.9)
-        ax.set_title(title)
+        panel_label(ax, panel)
         ax.set_ylabel("Relative metric")
         ax.tick_params(axis="x", rotation=35, labelsize=8)
         ax.grid(True, axis="y", alpha=0.25)
-    fig.suptitle("Layer 1 FEM snapshot operator evidence", fontweight="bold")
     save(fig, "fem_snapshot_baseline_evidence")
 
 
@@ -685,14 +704,13 @@ def make_j2_memory() -> None:
     ]
     fig, axes = plt.subplots(1, len(metrics), figsize=(14.0, 4.0), constrained_layout=True)
     colors = ["#1f77b4", "#6baed6", "#9467bd", "#ff7f0e", "#2ca02c"]
-    for ax, (metric, title) in zip(axes, metrics):
+    for ax, (metric, title), panel in zip(axes, metrics, ["a", "b", "c", "d", "e"]):
         values = [parse_mean(row[metric]) for row in rows]
         ax.bar(models, values, color=colors[: len(models)], alpha=0.9)
-        ax.set_title(title, fontsize=10)
+        panel_label(ax, panel)
         ax.tick_params(axis="x", rotation=50, labelsize=8)
         ax.grid(True, axis="y", alpha=0.25)
     axes[0].set_ylabel("Lower is better")
-    fig.suptitle("Layer 2 J2 path-dependent memory diagnostics", fontweight="bold")
     save(fig, "j2_memory_diagnostics")
 
 
@@ -723,27 +741,27 @@ def make_j2_history_rollout() -> None:
 
     ax_load.plot(steps, loads, marker="o", color="#e45756", linewidth=1.8)
     ax_load.axhline(0.0, color="#555555", linewidth=0.8)
-    ax_load.set_title("cyclic load factor")
+    panel_label(ax_load, "a")
     ax_load.set_xlabel("step")
     ax_load.set_ylabel("$f_x$")
 
     ax_eqp.plot(steps, eqp, marker="o", color="#4c78a8", linewidth=1.8)
-    ax_eqp.set_title("FEM target mean $\\bar{\\varepsilon}^p$")
+    panel_label(ax_eqp, "b")
     ax_eqp.set_xlabel("step")
     ax_eqp.set_ylabel("mean history")
 
     ax_work.plot(steps, plastic_work, marker="o", color="#f58518", linewidth=1.8)
-    ax_work.set_title("FEM target mean $W^p$")
+    panel_label(ax_work, "c")
     ax_work.set_xlabel("step")
     ax_work.set_ylabel("mean history")
 
     ax_dgamma.plot(steps, plastic_multiplier, marker="o", color="#9467bd", linewidth=1.8)
-    ax_dgamma.set_title("FEM target mean $\\Delta\\gamma$")
+    panel_label(ax_dgamma, "d")
     ax_dgamma.set_xlabel("step")
     ax_dgamma.set_ylabel("mean increment")
 
     ax_yield.plot(steps, yield_fraction, marker="o", color="#54a24b", linewidth=1.8)
-    ax_yield.set_title("FEM target yield fraction")
+    panel_label(ax_yield, "e")
     ax_yield.set_xlabel("step")
     ax_yield.set_ylabel("active element fraction")
     ax_yield.set_ylim(-0.05, 1.05)
@@ -756,13 +774,12 @@ def make_j2_history_rollout() -> None:
         ax_diag.bar(x + (i - 1) * width, values, width=width, label=label, color=color, alpha=0.9)
     ax_diag.set_xticks(x)
     ax_diag.set_xticklabels([label for _, label in diagnostic_metrics], fontsize=8)
-    ax_diag.set_title("learned rollout diagnostics")
+    panel_label(ax_diag, "f")
     ax_diag.set_ylabel("lower is better")
     ax_diag.legend(frameon=False, fontsize=8)
 
     for ax in axes.ravel():
         ax.grid(True, alpha=0.25)
-    fig.suptitle("J2 cyclic history rollout and path-OOD diagnostics", fontweight="bold")
     save(fig, "j2_history_rollout_diagnostics")
 
 
@@ -780,15 +797,14 @@ def make_path_ood_summary() -> None:
     colors = ["#d62728", "#ff7f0e", "#2ca02c"]
     fig, axes = plt.subplots(1, len(selected), figsize=(14.5, 4.0), constrained_layout=True)
     row_by_metric = {row["metric"]: row for row in rows}
-    for ax, metric in zip(axes, selected):
+    for ax, metric, panel in zip(axes, selected, ["a", "b", "c", "d", "e"]):
         row = row_by_metric[metric]
         values = [parse_mean(row[key]) for key in case_keys]
         ax.bar(case_labels, values, color=colors, alpha=0.9)
-        ax.set_title(metric.replace(" relative ", "\nrel. ").replace(" lower-bound ", "\nlower-bound "), fontsize=9)
+        panel_label(ax, panel)
         ax.tick_params(axis="x", rotation=25, labelsize=8)
         ax.grid(True, axis="y", alpha=0.25)
     axes[0].set_ylabel("Lower is better")
-    fig.suptitle("Layer 3 shared-hole J2 path-OOD diagnostics", fontweight="bold")
     save(fig, "j2_path_ood_summary")
 
 
@@ -855,7 +871,7 @@ def make_t6_complex_scale() -> None:
         ax.set_xticklabels(mesh_order)
         ax.set_xlabel("mesh size")
         ax.set_ylabel(ylabel)
-        ax.set_title(title, fontsize=10, fontweight="bold")
+        panel_from_title(ax, title)
         ax.grid(True, alpha=0.25)
     ax_nodes.axhline(1000, color="#8c564b", linewidth=1.0, linestyle="--")
     ax_nodes.text(2.05, 1017, "1000-node level", fontsize=8, color="#8c564b")
@@ -870,7 +886,7 @@ def make_t6_complex_scale() -> None:
     ax_residual.set_xticklabels(mesh_order)
     ax_residual.set_yticks(np.arange(len(family_order)))
     ax_residual.set_yticklabels([family_labels[family] for family in family_order])
-    ax_residual.set_title("(d) Newton residual audit", fontsize=10, fontweight="bold")
+    panel_label(ax_residual, "d")
     for i in range(len(family_order)):
         for j in range(len(mesh_order)):
             ax_residual.text(j, i, f"{residual[i, j]:.1e}", ha="center", va="center", fontsize=7.5)
@@ -879,10 +895,6 @@ def make_t6_complex_scale() -> None:
 
     total_files = sum(int(row["files"]) for row in rows)
     total_samples = sum(int(row["samples"]) for row in rows)
-    fig.suptitle(
-        f"T6/QP complex FEM scale matrix: 12 cases, {total_files} files, {total_samples} path samples, T=8, q=3",
-        fontweight="bold",
-    )
     save(fig, "t6_complex_scale_matrix")
 
 
@@ -951,11 +963,10 @@ def make_t6_qp_fem_audit() -> None:
     ax_qp.set_xticks(x)
     ax_qp.set_xticklabels(geometry_labels, rotation=15)
     ax_qp.set_ylabel("relative L2")
-    ax_qp.set_title("(d) QP state rollout remains difficult", fontsize=10, fontweight="bold")
+    panel_label(ax_qp, "d")
     ax_qp.grid(True, axis="y", alpha=0.25)
     ax_qp.legend(frameon=False, fontsize=8)
 
-    fig.suptitle("T6 quadrature-point HistoryGNO and all-step FEM audit evidence", fontweight="bold")
     save(fig, "t6_qp_fem_audit_evidence")
 
 
@@ -992,7 +1003,7 @@ def make_t6_qp_representative_allstep() -> None:
         ax.set_xticks(x)
         ax.set_xticklabels(labels, fontsize=8)
         ax.set_ylabel(ylabel)
-        ax.set_title(title, fontsize=10, fontweight="bold")
+        panel_from_title(ax, title)
         if log_y:
             ax.set_yscale("log")
         ax.grid(True, axis="y", alpha=0.25)
@@ -1003,10 +1014,6 @@ def make_t6_qp_representative_allstep() -> None:
         for idx, node_count in enumerate(nodes):
             if node_count >= 1000:
                 ax.text(idx, top * 0.82, "1000+", ha="center", va="center", fontsize=8, color="#8c564b")
-    fig.suptitle(
-        "Representative 12-case T6/QP all-step long runs: 50 epochs, five seeds, strict cyclic test",
-        fontweight="bold",
-    )
     save(fig, "t6_qp_allstep_representative_evidence")
 
 
@@ -1023,7 +1030,7 @@ def make_t6_qp_12case_allstep_matrix() -> None:
         ("QP history rel. L2", "QP memory error", False),
     ]
     fig, axes = plt.subplots(2, 2, figsize=(11.4, 6.8), constrained_layout=True)
-    for ax, (metric, title, log_scale) in zip(axes.ravel(), metric_specs):
+    for ax, (metric, title, log_scale), panel in zip(axes.ravel(), metric_specs, ["a", "b", "c", "d"]):
         values = np.zeros((len(families), len(sizes)))
         labels = np.empty(values.shape, dtype=object)
         for i, family in enumerate(families):
@@ -1037,16 +1044,12 @@ def make_t6_qp_12case_allstep_matrix() -> None:
         ax.set_xticklabels(sizes)
         ax.set_yticks(np.arange(len(families)))
         ax.set_yticklabels(family_labels)
-        ax.set_title(title + (" (log10)" if log_scale else ""), fontsize=10, fontweight="bold")
+        panel_label(ax, panel)
         for i in range(values.shape[0]):
             for j in range(values.shape[1]):
                 color = "white" if plotted[i, j] > np.nanmean(plotted) else "#111111"
                 ax.text(j, i, labels[i, j], ha="center", va="center", fontsize=7.2, color=color)
         fig.colorbar(image, ax=ax, shrink=0.82)
-    fig.suptitle(
-        "Complete 12-case T6/QP all-step FEM audit matrix: 50 epochs, five seeds",
-        fontweight="bold",
-    )
     save(fig, "t6_qp_allstep_12case_matrix")
 
 
@@ -1092,7 +1095,7 @@ def _plot_audit_metric(
     ax.set_xticks(x)
     ax.set_xticklabels(["multi-hole", "notch", "curved hole"], rotation=15)
     ax.set_ylabel(ylabel)
-    ax.set_title(title, fontsize=10, fontweight="bold")
+    panel_from_title(ax, title)
     if log_y:
         ax.set_yscale("log")
     ax.grid(True, axis="y", alpha=0.25)

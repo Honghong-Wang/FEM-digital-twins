@@ -91,7 +91,18 @@ def _write_figure(png_path: Path, pdf_path: Path, rows: list[dict[str, object]])
     x_values = list(range(len(CASES)))
     fig, axes = plt.subplots(2, 3, figsize=(13.5, 7.2), constrained_layout=True)
     axes_flat = axes.reshape(-1)
-    for ax, (metric, label, direction) in zip(axes_flat, METRICS):
+    for panel_idx, (ax, (metric, label, direction)) in enumerate(zip(axes_flat, METRICS)):
+        ax.text(
+            0.02,
+            0.98,
+            f"({chr(ord('a') + panel_idx)})",
+            transform=ax.transAxes,
+            ha="left",
+            va="top",
+            fontsize=11,
+            fontweight="bold",
+            bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.80, "pad": 1.5},
+        )
         for dataset in datasets:
             means = [
                 _lookup(rows, dataset, case, metric, "mean")
@@ -117,6 +128,15 @@ def _write_figure(png_path: Path, pdf_path: Path, rows: list[dict[str, object]])
         ax.grid(True, axis="y", alpha=0.25)
         ax.set_ylabel(direction)
     axes_flat[-1].axis("off")
+    axes_flat[-1].text(
+        0.0,
+        1.08,
+        "(f)",
+        transform=axes_flat[-1].transAxes,
+        fontsize=11,
+        fontweight="bold",
+        va="top",
+    )
     axes_flat[-1].text(
         0.0,
         0.96,
