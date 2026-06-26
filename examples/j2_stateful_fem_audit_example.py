@@ -1,7 +1,7 @@
 """Medium-difficulty public example for path-dependent FEM digital twins.
 
-This script is intentionally self-contained. It does not expose the full research
-source code used in the study. The example demonstrates the public-facing
+This script is intentionally self-contained and smaller than the full research
+implementation under ``src/pcgno_dt``. It demonstrates the public-facing
 workflow:
 
 1. load a small J2 finite-element path dataset;
@@ -10,9 +10,9 @@ workflow:
 4. report field, history, linearized FEM residual, energy, and plastic-work
    diagnostics.
 
-The model here is a small ridge-regression transition model. It is not the full
-HistoryGraphOperator used in the paper. Its purpose is to show the data interface
-and audit logic without releasing the complete research implementation.
+The model here is a small ridge-regression transition model, not the full
+HistoryGraphOperator. Its purpose is to show the data interface and audit logic
+with a fast, inspectable baseline.
 """
 
 from __future__ import annotations
